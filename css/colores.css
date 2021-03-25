@@ -1,0 +1,69 @@
+.bgRosaIne {
+	 background: #d1308a;
+}
+ .bgMorado {
+	 background: #34344e;
+}
+ .bgGrisTenue {
+	 background: #f9f9f9;
+}
+ .bgGrisTabla {
+	 background: #ddd;
+}
+ .bgGris {
+	 background: #f4f4f4;
+}
+ .bgBlanco {
+	 background: #fff;
+}
+ .bgAzul {
+	 background: #48487c;
+}
+ .bgRosa {
+	 background: #962464;
+}
+ .bgGrafica1 {
+	 background: #d2127e;
+}
+ .bgGrafica2 {
+	 background: #79144c;
+}
+ .bgGrafica3 {
+	 background: #efb5d3;
+}
+ .txBlanco {
+	 color: #fff;
+}
+ .txRosaIne {
+	 color: #d1308a;
+}
+ .txRosa2 {
+	 color: #d2127e;
+}
+ .txGris {
+	 color: #707070;
+}
+ .txAqua {
+	 color: #4199a0;
+}
+ .txMorado {
+	 color: #7a4493;
+}
+ .txRosa {
+	 color: #962464;
+}
+ .txGris2 {
+	 color: #4b3943;
+}
+ .linkAzul {
+	 color: #5b5bde;
+	 text-decoration: underline;
+	 font-family: 'Roboto-Regular', sans-serif;
+}
+ .preguntas-frecuentes .bgAzul {
+	 background: #48487c !important;
+}
+ .pie-pagina.bgMorado {
+	 background: #34344e !important;
+}
+ 

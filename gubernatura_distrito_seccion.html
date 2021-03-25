@@ -1,0 +1,828 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Publicacion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+     <script src="./js/gubernatura.js"></script>
+   
+    <link rel="stylesheet" href="./fontawesome/css/all.css">   
+   <link rel="stylesheet" href="./css/flexbox.css">
+    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/moleculas.css">
+    <link rel="stylesheet" href="./css/roboto-fontface.css">   
+    <link rel="stylesheet" href="./css/fuentes.css">
+    <link rel="stylesheet" href="./css/app.component.css">
+    <link rel="stylesheet" href="./css/botones.css">
+    <link rel="stylesheet" href="./css/colores.css">
+    <link rel="stylesheet" href="./css/generales.css">
+    <link rel="stylesheet" href="./css/graficaBarras.css">
+    <link rel="stylesheet" href="./css/medias.css">
+   
+    <link rel="stylesheet" href="./css/paddings.css">
+    <link rel="stylesheet" href="./css/tamanos.css">
+    <link rel="stylesheet" href="./css/transiciones.css">
+    
+    
+    <link rel="stylesheet" href="./css/encabezado.component.css">
+    <link rel="stylesheet" href="./css/avance-nacional.component.css">
+    <link rel="stylesheet" href="./css/boton-compartir.component.css">
+    <link rel="stylesheet" href="./css/buscador.component.css">
+    <link rel="stylesheet" href="./css/estadistica-nacional.component.css">
+    <link rel="stylesheet" href="./css/menu-lateral.component.css">
+    <link rel="stylesheet" href="./css/buscador.component.css">
+    <link rel="stylesheet" href="./css/resumen-distrito-mapa.component.css">
+    <link rel="stylesheet" href="./css/votos-distrito.component.css">
+
+
+  
+    
+    
+    
+</head>
+<body>
+  <div style="display: none;"></div>  
+  <app-root _nghost-lnm-c90="" ng-version="9.0.7">
+      <app-boton-compartir _ngcontent-lnm-c90="" _nghost-lnm-c82="">
+          <div _ngcontent-lnm-c82="" class="boton-compartir dis-flex flex-col">
+              <div _ngcontent-lnm-c82="" class="fondo dis-flex flex-col pt-1">
+                  <div _ngcontent-lnm-c82="" class="redes">
+                      <div _ngcontent-lnm-c82="" class="boton whatsapp dis-flex">
+                          <i _ngcontent-lnm-c82="" aria-hidden="true" class="fas fa-phone-alt"></i>
+                      </div>
+                      <div _ngcontent-lnm-c82="" class="boton facebook dis-flex">
+                          <i _ngcontent-lnm-c82="" aria-hidden="true" class="fab fa-facebook-f"></i>
+                      </div>
+                      <div _ngcontent-lnm-c82="" class="boton twitter dis-flex">
+                          <i _ngcontent-lnm-c82="" aria-hidden="true" class="fab fa-twitter"></i>
+                      </div>
+                  </div>
+                  <div _ngcontent-lnm-c82="" class="principal dis-flex">
+                      <i _ngcontent-lnm-c82="" aria-hidden="true" class="fas fa-share-alt"></i>
+                  </div>
+              </div>
+              <p _ngcontent-lnm-c82="" class="text-center"> Compartir </p>
+          </div>
+      </app-boton-compartir>
+      <app-encabezado _ngcontent-lnm-c90="" _nghost-lnm-c83="">
+          <header _ngcontent-lnm-c83="" class="total-encabezado sombra w-100">
+              <div _ngcontent-lnm-c83="">
+                  <div _ngcontent-lnm-c83="" class="container-fluid bgMorado txBlanco d-none d-xl-block">
+                      <div _ngcontent-lnm-c83="" class="row">
+                          <div _ngcontent-lnm-c83="" class="col-md-9 offset-md-3">
+                              <ul _ngcontent-lnm-c83="" class="dis-flex justify-e m-0 p-1">
+                                  <li _ngcontent-lnm-c83="" routerlink="/preguntas-frecuentes" class="pl-3 pr-3 cursorPointer" tabindex="0" ng-reflect-router-link="/preguntas-frecuentes"><i _ngcontent-lnm-c83="" aria-hidden="true" class="fas fa-question-circle"></i> Preguntas frecuentes</li>
+                                  <li _ngcontent-lnm-c83="" class="pl-3 pr-3 borde-izq-solido"><i _ngcontent-lnm-c83="" aria-hidden="true" class="fas fa-info-circle"></i> Centro de Ayuda </li><li _ngcontent-lnm-c83="" class="pl-3 pr-3 tamanio-fuente borde-izq-solido dis-flex"><span _ngcontent-lnm-c83="" class="minimo">A</span><input _ngcontent-lnm-c83="" type="range" id="customRange1" class="input-rango"><span _ngcontent-lnm-c83="" class="maximo"><strong _ngcontent-lnm-c83="">A</strong></span></li>
+                                  <li _ngcontent-lnm-c83="" class="pl-3 pr-3 modo-dark borde-izq-solido dis-flex"><span _ngcontent-lnm-c83="" class="claro">Claro</span><label _ngcontent-lnm-c83="" for="modo_dia_y_noche" class="switch margin-r-40 margin-b-0"><input _ngcontent-lnm-c83="" type="checkbox" id="modo_dia_y_noche" value="Modo día o noche" aria-label="Modo día o noche"><span _ngcontent-lnm-c83="" class="slider round"></span></label><span _ngcontent-lnm-c83="" class="obscuro">Oscuro</span></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div _ngcontent-lnm-c83="" class="container-fluid bgGrisTenue encabezado py-2">
+                      <div _ngcontent-lnm-c83="" class="row">
+                          <div _ngcontent-lnm-c83="" class="col-3 col-md-2 dis-flex d-none d-md-flex">
+                              <img _ngcontent-lnm-c83="" src="assets/img/generales/ceepac_logo.png" alt="Logo PREP" class="max-logo img-fluid">
+                          </div>
+                          <div _ngcontent-lnm-c83="" class="col-3 col-md-2 pl-2 pr-0 d-block d-md-none">
+                              <div _ngcontent-lnm-c83="" class="dis-flex w-100 h-100">
+                                  <img _ngcontent-lnm-c83="" src="assets/img/generales/slp.png" alt="Logo PREP" class="img-fluid">
+                              </div>
+                          </div>
+                          <div _ngcontent-lnm-c83="" class="col-7 col-md-8 dis-flex flex-col">
+                              <h1 _ngcontent-lnm-c83="">Programa de Resultados <span _ngcontent-lnm-c83="" class="txRosaIne">E</span>lectorales Preliminares 2021</h1>
+                              <p _ngcontent-lnm-c83="" class="subtitulo d-none d-md-block">Elecciones Estatales de <span _ngcontent-lnm-c83="" class="txRosaIne">San Luis Potosí</span></p>
+                          </div>
+                          <div _ngcontent-lnm-c83="" class="col-2 col-md-2 dis-flex d-none d-md-flex">
+                              <img _ngcontent-lnm-c83="" src="assets/img/generales/slp.png" alt="Logo PREP" class="max-logo img-fluid">
+                          </div>
+                      </div>
+                  </div>
+                  <div _ngcontent-lnm-c83="" class="container-fluid menu d-none d-xl-block">
+                      <div _ngcontent-lnm-c83="" class="row">
+                          <div _ngcontent-lnm-c83="" class="w-5 dis-flex flex-col cursorPointer boton-home" onclick="window.location.href='./diputaciones.html'">
+                              <i _ngcontent-lnm-c83="" aria-hidden="true" class="ine ine-home px24"></i>
+                              <p _ngcontent-lnm-c83="" class="px14">Inicio</p>
+                          </div>
+                          <div _ngcontent-lnm-c83="" class="w-95">
+                              <div _ngcontent-lnm-c83="" class="container-fluid">
+                                  <div _ngcontent-lnm-c83="" class="row">
+                                      <div _ngcontent-lnm-c83="" class="col-md-2 dis-flex bgGrafica3 txBlanco py-3" onclick="window.location.href='./gubernatura.html'">
+                                          <p _ngcontent-lnm-c83="" class="titulo-diputaciones">
+                                              <strong _ngcontent-lnm-c83="">Gubernatura</strong>
+                                          </p>
+                                      </div>
+                                      
+                                      <div _ngcontent-lnm-c83="" class="col-md-2 dis-flex bgRosaIne txBlanco py-3">
+                                          <p _ngcontent-lnm-c83="" class="titulo-diputaciones">
+                                              <strong _ngcontent-lnm-c83="">Diputaciones</strong>
+                                          </p>
+                                      </div>
+                                      
+                                      <div _ngcontent-lnm-c83="" class="col-md-2 dis-flex bgGrafica3 txBlanco py-3" onclick="window.location.href='./ayuntamientos.html'">
+                                          <p _ngcontent-lnm-c83="" class="titulo-diputaciones">
+                                              <strong _ngcontent-lnm-c83="">Ayuntamientos</strong>
+                                          </p>
+                                      </div>
+                                      
+                                      <div _ngcontent-lnm-c83="" class="col-md-6 dis-flex">
+                                          <ul _ngcontent-lnm-c83="" class="w-100 dis-flex space-b justify-e m-0">
+                                              <li _ngcontent-lnm-c83="" routerlinkactive="router-link-active" class="pr-4 base-datos cursorPointer font-medium dis-flex" tabindex="0" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="/base-de-datos">
+                                                  <i _ngcontent-lnm-c83="" aria-hidden="true" class="ine ine-base-datos mr-2 px24"></i>
+                                                  <p _ngcontent-lnm-c83="">Base de Datos</p>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div _ngcontent-lnm-c83="" class="hidebar" ng-reflect-ng-class="[object Object]">
+                      <div _ngcontent-lnm-c83="" class="row size-avance padding-t-10 padding-b-10">
+                          <div _ngcontent-lnm-c83="" class="col-2">
+                              <div _ngcontent-lnm-c83="" class="center-vertical">
+                                  <span _ngcontent-lnm-c83="" class="align-middle">
+                                      <strong _ngcontent-lnm-c83="" class="txRosaIne"> Avance Local</strong>
+                                  </span>
+                              </div>
+                          </div>
+                          <div _ngcontent-lnm-c83="" class="col-3">
+                              <div _ngcontent-lnm-c83="" class="card cards-avance p-1">
+                                  <div _ngcontent-lnm-c83="" class="titulo">
+                                      <div _ngcontent-lnm-c83="" class="row">
+                                          <div _ngcontent-lnm-c83="" class="col-6">
+                                              <strong _ngcontent-lnm-c83=""> Actas capturadas </strong>
+                                          </div>
+                                          <div _ngcontent-lnm-c83="" class="col-6 text-right"> (0.0000%) </div>
+                                              
+                                      </div>
+                                      <div _ngcontent-lnm-c83="" class="row">
+                                          <div _ngcontent-lnm-c83="" class="col-6">
+                                              <strong _ngcontent-lnm-c83=""> 0 </strong> de 157,859 
+                                          </div>
+                                          <div _ngcontent-lnm-c83="" class="col-6">
+                                              <div _ngcontent-lnm-c83="" class="center-vertical">
+                                                  <div _ngcontent-lnm-c83="" class="borde-barra w-100">
+                                                      <div _ngcontent-lnm-c83="" class="barra-avance" style="width: 0%;">
+                                                      </div>
+                                                  </div>                                                      
+                                              </div>
+                                          </div>
+                                      </div>                                          
+                                  </div>
+                              </div>                                  
+                          </div>
+                          <div _ngcontent-lnm-c83="" class="col-3">
+                              <div _ngcontent-lnm-c83="" class="card cards-avance p-1">
+                                  <div _ngcontent-lnm-c83="" class="titulo">
+                                      <p _ngcontent-lnm-c83="" class="prueba text-center">
+                                          <strong _ngcontent-lnm-c83="">
+                                              <i _ngcontent-lnm-c83="" data-toggle="modal" data-target="#modalParticipacion" class="fas fa-question-circle cursor-hand"></i> Participación ciudadana 
+                                          </strong>
+                                      </p>
+                                  </div>
+                                  <div _ngcontent-lnm-c83="" class="contenido dis-flex flex-col">
+                                      <p _ngcontent-lnm-c83="" class="participacion">
+                                          <strong _ngcontent-lnm-c83=""> 0.0000% </strong>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div _ngcontent-lnm-c83="" class="col-3">
+                              <div _ngcontent-lnm-c83="" class="card cards-avance p-1">
+                                  <div _ngcontent-lnm-c83="" class="titulo">
+                                      <p _ngcontent-lnm-c83="" class="prueba">
+                                          <strong _ngcontent-lnm-c83=""> Último corte </strong>
+                                      </p>
+                                  </div>
+                                  <div _ngcontent-lnm-c83="" class="contenido dis-flex flex-col">
+                                      <div _ngcontent-lnm-c83="" class="dis-flex w-100">
+                                          <p _ngcontent-lnm-c83="" class="fecha mr-1"> 24 noviembre 2020 </p>
+                                          <div _ngcontent-lnm-c83="" class="dis-flex flex-col borde-tiempo">
+                                              <p _ngcontent-lnm-c83="" class="tiempo-centro"> Tiempo del Centro </p>
+                                              <p _ngcontent-lnm-c83="" class="utc"> 21:30 h UTC-5 </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div _ngcontent-lnm-c83="" class="col-1">
+                              <div _ngcontent-lnm-c83="" class="center-vertical">
+                                  <div _ngcontent-lnm-c83="" class="actualizar dis-flex flex-col bgRosaIne txBlanco px-4 py-1 px14 cursorPointer">
+                                      <i _ngcontent-lnm-c83="" aria-hidden="true" class="fas fa-redo"></i> Actualizar 
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </header>
+      </app-encabezado>
+      
+      
+      <div _ngcontent-lnm-c90="" class="cuerpo container-fluid">
+          <div _ngcontent-lnm-c90="" class="row">
+              <div _ngcontent-lnm-c90="" class="col-12 my-3 d-xl-none">
+                  <app-avance-nacional _ngcontent-lnm-c90="" _nghost-lnm-c84="">
+                      <div _ngcontent-lnm-c84="" class="card dis-flex flex-col space-a avance-nacional h-100">
+                          <div _ngcontent-lnm-c84="" class="container-fluid bgPrototipo">
+                              <div _ngcontent-lnm-c84="" class="row">
+                                  <div _ngcontent-lnm-c84="" class="dis-flex space-b col-9 pl-0">
+                                      <h3 _ngcontent-lnm-c84="" class="txRosaIne px20">
+                                          <strong _ngcontent-lnm-c84="">Avance Local</strong>
+                                      </h3>
+                                  </div>
+                                  <div _ngcontent-lnm-c84="" class="col-3 dis-flex justify-e">
+                                      <div _ngcontent-lnm-c84="" class="actualizar dis-flex flex-col bgRosaIne txBlanco px-4 py-1 px14 cursorPointer">
+                                          <i _ngcontent-lnm-c84="" aria-hidden="true" class="fas fa-redo"></i> Actualizar 
+                                      </div>
+                                  </div>
+                              </div></div><div _ngcontent-lnm-c84="" class="container-fluid px-0 py-2">
+                                  <div _ngcontent-lnm-c84="" class="row px-1">
+                                      <div _ngcontent-lnm-c84="" class="col-4 px-1">
+                                          <div _ngcontent-lnm-c84="" class="card cards-avance h-12v p-1">
+                                              <div _ngcontent-lnm-c84="" class="titulo">
+                                                  <p _ngcontent-lnm-c84=""><strong _ngcontent-lnm-c84=""> Actas capturadas </strong></p>
+                                              </div>
+                                              <div _ngcontent-lnm-c84="" class="contenido capturadas">
+                                                  <p _ngcontent-lnm-c84=""><strong _ngcontent-lnm-c84=""> 0 </strong> de 157,859 </p>
+                                                  <p _ngcontent-lnm-c84=""> (0.0000%) </p>
+                                                  <div _ngcontent-lnm-c84="" class="borde-barra w-100">
+                                                      <div _ngcontent-lnm-c84="" class="barra-avance" style="width: 0%;">
+                                                          
+                                                      </div>
+                                                          
+                                                  </div>
+                                                      
+                                              </div>
+                                                  
+                                          </div>
+                                              
+                                      </div>
+                                      <div _ngcontent-lnm-c84="" class="col-4 px-1">
+                                          <div _ngcontent-lnm-c84="" class="card cards-avance h-12v p-1">
+                                              <div _ngcontent-lnm-c84="" class="titulo">
+                                                  <p _ngcontent-lnm-c84="" class="prueba">
+                                                      <strong _ngcontent-lnm-c84="">
+                                                          <i _ngcontent-lnm-c84="" data-toggle="modal" data-target="#modalParticipacion" class="fas fa-question-circle cursor-hand"></i> Participación ciudadana 
+                                                      </strong>
+                                                  </p>
+                                              </div>
+                                              <div _ngcontent-lnm-c84="" class="contenido dis-flex flex-col pt-3">
+                                                  <p _ngcontent-lnm-c84="" class="participacion">
+                                                      <strong _ngcontent-lnm-c84=""> 0.0000% </strong>
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div _ngcontent-lnm-c84="" class="col-4 px-1"><div _ngcontent-lnm-c84="" class="card cards-avance h-12v p-1">
+                                              <div _ngcontent-lnm-c84="" class="titulo">
+                                                  <p _ngcontent-lnm-c84=""><strong _ngcontent-lnm-c84=""> Último corte </strong></p>
+                                              </div>
+                                              <div _ngcontent-lnm-c84="" class="contenido dis-flex flex-col align-e pt-3">
+                                                  <div _ngcontent-lnm-c84="" class="dis-flex w-100">
+                                                      <p _ngcontent-lnm-c84="" class="fecha mr-1"> 24 noviembre 2020 </p>
+                                                      <div _ngcontent-lnm-c84="" class="dis-flex flex-col borde-tiempo">
+                                                          <p _ngcontent-lnm-c84="" class="tiempo-centro"> Tiempo del Centro </p>
+                                                          <p _ngcontent-lnm-c84="" class="utc"> 21:30 h UTC-5 </p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </app-avance-nacional>
+              </div>
+              
+              <div _ngcontent-lnm-c90="" class="px-0 bgMorado col-md-12 col-xl-2" ng-reflect-ng-class="col-md-12 col-xl-2">
+                  <app-menu-lateral _ngcontent-lnm-c90="" _nghost-lnm-c85="">
+                      <div _ngcontent-lnm-c85="" class="bgPrototipo">
+                          <div _ngcontent-lnm-c85="" placement="right" show-delay="200" class="colapsador dis-flex d-none d-xl-block abierto" ng-reflect-placement="right" ng-reflect-show-delay="200" ng-reflect-ng-class="abierto" ng-reflect-tooltip-value="Ocultar Menú">
+                              <i _ngcontent-lnm-c85="" aria-hidden="true" class="fas fa-chevron-left" ng-reflect-ng-class="fa-chevron-left"></i>
+                          </div><!--bindings={  "ng-reflect-ng-if": "false"}-->
+                          <div _ngcontent-lnm-c85="" class="container-fluid barra-lateral txBlanco px14">
+                              <div _ngcontent-lnm-c85="" class="row pl-2">
+                                  <div _ngcontent-lnm-c85="" class="col-12">
+                                      <div _ngcontent-lnm-c85="" class="pt-2">
+                                          <h3 _ngcontent-lnm-c85="" class="px16"><strong _ngcontent-lnm-c85="">Consulta de votación</strong></h3>
+                                      </div>
+                                      <div _ngcontent-lnm-c85="" class="row mb-4"><div _ngcontent-lnm-c85="" class="col">
+                                              <p _ngcontent-lnm-c85="">Selecciona el reporte que deseas consultar:</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <div _ngcontent-lnm-c85="" class="row my-4">
+                                  <div _ngcontent-lnm-c85="" class="col">
+                                      <p _ngcontent-lnm-c85="" class="px16">Detalle por:</p>
+                                      <div _ngcontent-lnm-c85="" class="row grupo-combos pl-2">
+                                          
+                                          
+                                          <div _ngcontent-lnm-c85="" class="col-4 col-xl-12 combo mb-2">
+                                              <label _ngcontent-lnm-c85="" for="distrito" class="px14"> Distrito </label>
+                                              <div _ngcontent-lnm-c85="" class="input-group df-sw">
+                                                  <div _ngcontent-lnm-c85="" class="dropdown w-100 bgBlanco">
+                                                      <button _ngcontent-lnm-c85="" type="button" id="dDistrito" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle dis-flex space-b w-100 p-1 px14" disabled=""> &nbsp; Distrito 1. Jesus Maria <i _ngcontent-lnm-c85="" aria-hidden="true" class="mcad mcad-drop-down_flecha mr-1"></i></button>
+                                                      <div _ngcontent-lnm-c85="" aria-labelledby="dDistrito" class="dropdown-menu px14 w-100">
+                                                          <a _ngcontent-lnm-c85="" href="" class="dropdown-item">Todas</a><!--bindings={ "ng-reflect-ng-for-of": null}-->
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div _ngcontent-lnm-c85="" class="col-12 d-none d-xl-block combo mb-2">
+                                              <label _ngcontent-lnm-c85="" for="seccion" class="px14"> Sección </label>
+                                              <div _ngcontent-lnm-c85="" class="input-group df-sw">
+                                                  <div _ngcontent-lnm-c85="" class="dropdown w-100 bgBlanco">
+                                                      <button _ngcontent-lnm-c85="" type="button" id="dSeccion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle dis-flex space-b w-100 p-1 px14" disabled=""> &nbsp; Seccion 375 <i _ngcontent-lnm-c85="" aria-hidden="true" class="mcad mcad-drop-down_flecha mr-1"></i></button>
+                                                      <div _ngcontent-lnm-c85="" aria-labelledby="dSeccion" size="3" class="dropdown-menu px14 w-100">
+                                                          <a _ngcontent-lnm-c85="" href="" class="dropdown-item">Todas</a><!--bindings={ "ng-reflect-ng-for-of": null}-->
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div _ngcontent-lnm-c85="" class="col-12 d-none d-xl-block combo mb-2">
+                                              <label _ngcontent-lnm-c85="" for="casilla" class="px14"> Casilla </label>
+                                              <div _ngcontent-lnm-c85="" class="input-group df-sw">
+                                                  
+                                                    <select name="cbcasilla" id="cbcasilla" class="dropdown w-100 bgBlanco" onchange="combo_casilla()">
+                                                        <option value="0">Todos</option>
+                                                        <option value="1">Casilla Básica 1</option>
+                                                    </select> 
+                                                  
+                                              </div>
+                                          </div>
+                                          
+                                          <!--bindings={}-->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div><!--bindings={"ng-reflect-ng-if": "true" }--><!--bindings={"ng-reflect-ng-if": "false"}--><!--bindings={ "ng-reflect-ng-if": "false"}--><!--bindings={  "ng-reflect-ng-if": "false"}-->
+                      </div>
+                  </app-menu-lateral>
+              </div>
+              <div _ngcontent-lnm-c90="" class="bgGrisTenue px-0 my-3 my-xl-0 col-md-12 col-xl-10" ng-reflect-ng-class="col-md-12 col-xl-10">
+                  <div _ngcontent-lnm-c90="" class="container-fluid py-xl-3">
+                      <div _ngcontent-lnm-c90="" class="row">
+                          <div _ngcontent-lnm-c90="" class="col-xl-8 d-none d-xl-block altoAvance">
+                              <app-avance-nacional _ngcontent-lnm-c90="" _nghost-lnm-c84="">
+                                  <div _ngcontent-lnm-c84="" class="card dis-flex flex-col space-a avance-nacional h-100">
+                                      <div _ngcontent-lnm-c84="" class="container-fluid bgPrototipo">
+                                          <div _ngcontent-lnm-c84="" class="row">
+                                              <div _ngcontent-lnm-c84="" class="dis-flex space-b col-9 pl-0">
+                                                  <h3 _ngcontent-lnm-c84="" class="txRosaIne px20">
+                                                      <strong _ngcontent-lnm-c84="">Avance Local</strong>
+                                                  </h3>
+                                              </div>
+                                              <div _ngcontent-lnm-c84="" class="col-3 dis-flex justify-e">
+                                                  <div _ngcontent-lnm-c84="" class="actualizar dis-flex flex-col bgRosaIne txBlanco px-4 py-1 px14 cursorPointer">
+                                                      <i _ngcontent-lnm-c84="" aria-hidden="true" class="fas fa-redo"></i> Actualizar 
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div _ngcontent-lnm-c84="" class="container-fluid px-0 py-2">
+                                          <div _ngcontent-lnm-c84="" class="row px-1">
+                                              <div _ngcontent-lnm-c84="" class="col-4 px-1">
+                                                  <div _ngcontent-lnm-c84="" class="card cards-avance h-12v p-1">
+                                                      <div _ngcontent-lnm-c84="" class="titulo">
+                                                          <p _ngcontent-lnm-c84=""><strong _ngcontent-lnm-c84=""> Actas capturadas </strong></p>
+                                                      </div>
+                                                      <div _ngcontent-lnm-c84="" class="contenido capturadas">
+                                                          <p _ngcontent-lnm-c84=""><strong _ngcontent-lnm-c84=""> 0 </strong> de 157,859 </p>
+                                                          <p _ngcontent-lnm-c84=""> (0.0000%) </p>
+                                                          <div _ngcontent-lnm-c84="" class="borde-barra w-100">
+                                                              <div _ngcontent-lnm-c84="" class="barra-avance" style="width: 0%;">
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div _ngcontent-lnm-c84="" class="col-4 px-1">
+                                                  <div _ngcontent-lnm-c84="" class="card cards-avance h-12v p-1">
+                                                      <div _ngcontent-lnm-c84="" class="titulo">
+                                                          <p _ngcontent-lnm-c84="" class="prueba"><strong _ngcontent-lnm-c84=""><i _ngcontent-lnm-c84="" data-toggle="modal" data-target="#modalParticipacion" class="fas fa-question-circle cursor-hand"></i> Participación ciudadana </strong></p>
+                                                      </div>
+                                                      <div _ngcontent-lnm-c84="" class="contenido dis-flex flex-col pt-3">
+                                                          <p _ngcontent-lnm-c84="" class="participacion"><strong _ngcontent-lnm-c84=""> 0.0000% </strong></p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div _ngcontent-lnm-c84="" class="col-4 px-1">
+                                                  <div _ngcontent-lnm-c84="" class="card cards-avance h-12v p-1">
+                                                      <div _ngcontent-lnm-c84="" class="titulo">
+                                                          <p _ngcontent-lnm-c84=""><strong _ngcontent-lnm-c84=""> Último corte </strong></p>
+                                                      </div>
+                                                      <div _ngcontent-lnm-c84="" class="contenido dis-flex flex-col align-e pt-3">
+                                                          <div _ngcontent-lnm-c84="" class="dis-flex w-100">
+                                                              <p _ngcontent-lnm-c84="" class="fecha mr-1"> 24 noviembre 2020 </p>
+                                                              <div _ngcontent-lnm-c84="" class="dis-flex flex-col borde-tiempo">
+                                                                  <p _ngcontent-lnm-c84="" class="tiempo-centro"> Tiempo del Centro </p>
+                                                                  <p _ngcontent-lnm-c84="" class="utc"> 21:30 h UTC-5 </p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </app-avance-nacional>
+                          </div>
+                          <div _ngcontent-lnm-c90="" class="col-xl-4 d-none d-xl-block altoAvance pl-0">
+                              <app-buscador _ngcontent-lnm-c90="" _nghost-lnm-c86="">
+                                  <div _ngcontent-lnm-c86="" class="buscador card bgMorado txBlanco dis-flex space-a align-s pl-2 pr-2 h-100">
+                                      <div _ngcontent-lnm-c86="" class="container-fluid bgPrototipo">
+                                          <div _ngcontent-lnm-c86="" class="row">
+                                              <div _ngcontent-lnm-c86="" class="col-12 px-0">
+                                                  <p _ngcontent-lnm-c86="" class="px16"> Conoce los resultados de tu casilla </p>
+                                                  <p _ngcontent-lnm-c86="" class="px10 pl-1">
+                                                      <i _ngcontent-lnm-c86="" aria-hidden="true" data-toggle="modal" data-target="#modalCasilla" class="fas fa-question-circle px14 cursor-hand"></i> Para conocer los resultados de tu casilla, ingresa los siguientes datos. 
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div _ngcontent-lnm-c86="" class="container-fluid">
+                                          <form _ngcontent-lnm-c86="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+                                              <div _ngcontent-lnm-c86="" class="row px-1">
+                                                  <div _ngcontent-lnm-c86="" class="col-md-5 px-1">
+                                                      <div _ngcontent-lnm-c86="" class="form-group m-0">
+                                                          <label _ngcontent-lnm-c86="" for="seccion" class="m-0 px14">Sección</label>
+                                                          <div _ngcontent-lnm-c86="" class="input-group df-sw">
+                                                              <div _ngcontent-lnm-c86="" class="dropdown w-100 bgBlanco">
+                                                                  <input _ngcontent-lnm-c86="" type="text" id="valueSeccion" name="valueSeccion" ngmodel="" required="" valueseccion="" class="form-control ng-untouched ng-pristine ng-invalid" ng-reflect-name="valueSeccion" ng-reflect-model="" ng-reflect-required="">
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div _ngcontent-lnm-c86="" class="col-md-7 px-1">
+                                                      <div _ngcontent-lnm-c86="" class="form-group">
+                                                          <label _ngcontent-lnm-c86="" for="primerApellido" class="m-0 px14">Primer apellido</label>
+                                                          <div _ngcontent-lnm-c86="" class="input-group df-sw">
+                                                              <div _ngcontent-lnm-c86="" class="dropdown w-100 bgBlanco">
+                                                                  <input _ngcontent-lnm-c86="" type="text" id="apellido" name="apellido" ngmodel="" required="" apellido="" class="form-control ng-untouched ng-pristine ng-invalid" ng-reflect-name="apellido" ng-reflect-model="" ng-reflect-required="">
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div _ngcontent-lnm-c86="" class="row px-1">
+                                                  <div _ngcontent-lnm-c86="" class="col-md-5 px-1">
+                                                      <div _ngcontent-lnm-c86="" class="form-group">
+                                                          <label _ngcontent-lnm-c86="" for="submit" class="m-0 px14">&nbsp;</label>
+                                                          <div _ngcontent-lnm-c86="" class="input-group df-sw">
+                                                              <button _ngcontent-lnm-c86="" type="submit" class="btn btn-block px14 px-1 btn-rosa-buscador"> Consulta </button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </form>
+                                      </div>
+                                  </div>
+                              </app-buscador>
+                          </div>
+                      </div>
+                  </div>
+                  <router-outlet _ngcontent-lnm-c90=""></router-outlet>
+                  <app-votos-distrito _nghost-lnm-c47="">
+                      <router-outlet _ngcontent-lnm-c47=""></router-outlet>
+
+
+                        <app-seccion-resumen _nghost-skx-c59=""><div _ngcontent-skx-c59="" class="seccion-resumen container-fluid"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col-md-12"><div _ngcontent-skx-c59="" class="card p-3"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col-12 col-lg-10"><h3 _ngcontent-skx-c59="" class="titulo-seccion"> Gubernatura - <span _ngcontent-skx-c59="" class="txRosaIne"><strong _ngcontent-skx-c59="">Sección - </strong>Casilla</span></h3><h4 _ngcontent-skx-c59=""><a _ngcontent-skx-c59="" routerlinkactive="router-link-active" class="linkAzul" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="circunscripcion1/entidad/baja-" href="/diputaciones/nacional/circunscripcion1/baja-california/distrito1-mexicali/seccion/375/circunscripcion1/entidad/baja-california">San Luis Potosí</a> / <a _ngcontent-skx-c59="" routerlinkactive="router-link-active" class="linkAzul" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="circunscripcion1/entidad/baja-" href="/diputaciones/nacional/circunscripcion1/baja-california/distrito1-mexicali/seccion/375/circunscripcion1/entidad/baja-california/distrito/distrito1-mexicali">Distrito 1. Jesus Maria</a> / Seccion 375 </h4><div _ngcontent-skx-c59="" class="texto font-medium"><p _ngcontent-skx-c59=""> El total de votos calculado prueba y porcentaje que se muestran, se refieren a los votos asentados en las Actas PREP hasta el momento. </p><p _ngcontent-skx-c59=""> Por presentación, los decimales de los porcentajes muestran sólo cuatro dígitos. No obstante, al considerar todos los decimales, suman 200%. </p></div></div></div><div _ngcontent-skx-c59="" class="row pb-4"><div _ngcontent-skx-c59="" class="col"><h4 _ngcontent-skx-c59="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-skx-c59="">Votos en Actas Contabilizadas</strong></h4></div></div><div _ngcontent-skx-c59="" class="acta-digitalizada container-fluid"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col-5 pl-0"><p _ngcontent-skx-c59="" class="font-medium text-left padding-b-15"> Imagen procedente de: </p><div _ngcontent-skx-c59="" class="container-fluid pl-0"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col-5 dis-flex border-rightB padding-r-0"><div _ngcontent-skx-c59="" class="grupo dis-flex color-gris"><i _ngcontent-skx-c59="" class="far fa-file color-gris"></i><i _ngcontent-skx-c59="" class="far fa-hourglass color-gris"></i><p _ngcontent-skx-c59="" class="color-gris"> Acta en proceso </p></div></div><div _ngcontent-skx-c59="" class="col-4 dis-flex padding-l-0 padding-r-0 border-rightB"><div _ngcontent-skx-c59="" tooltip="Acta PREP digitalizada por medio de escáner." placement="top" max-width="500" class="grupo dis-flex cursor-hand" ng-reflect-tooltip-value="Acta PREP digitalizada por med" ng-reflect-placement="top" ng-reflect-max-width="500"><i _ngcontent-skx-c59="" class="far fa-file"></i><i _ngcontent-skx-c59="" aria-hidden="true" class="fas fa-print"></i><p _ngcontent-skx-c59="" class="color-gris"> Escáner </p></div></div><div _ngcontent-skx-c59="" class="col-3 dis-flex padding-l-0"><div _ngcontent-skx-c59="" tooltip="Acta PREP digitalizada por medio de dispositivo móvil." placement="top" max-width="500" class="grupo dis-flex cursor-hand" ng-reflect-tooltip-value="Acta PREP digitalizada por med" ng-reflect-placement="top" ng-reflect-max-width="500"><i _ngcontent-skx-c59="" class="far fa-file"></i><i _ngcontent-skx-c59="" class="fas fa-mobile-alt"></i><p _ngcontent-skx-c59="" class="color-gris"> Móvil </p></div></div></div></div></div></div></div><div _ngcontent-skx-c59="" class="container-fluid"><div _ngcontent-skx-c59="" class="row dis-flex pb-1 mt-2"><div _ngcontent-skx-c59="" class="boton-scroll dis-flex cursorPointer"><i _ngcontent-skx-c59="" aria-hidden="true" class="fas fa-chevron-left"></i></div><div _ngcontent-skx-c59="" class="col-11"><div _ngcontent-skx-c59="" class="row dis-flex justify-s scrollH"><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PAN.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "1"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PRI.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "2"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "3"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PVEM.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "4"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PT.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "5"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "6"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PANAL.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "7"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "8"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "9"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PAN.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "1,3,6"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PAN.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "1,3"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PAN.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "1,6"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "3,6"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PT.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "5,8,9"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PT.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "5,8"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PT.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "5,9"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><div _ngcontent-skx-c59="" class="col-6 col-sm-4 col-md-3 col-lg-2 px-1"><div _ngcontent-skx-c59="" class="card-resumen"><div _ngcontent-skx-c59="" class="encabezado dis-flex w-100 py-2"><div _ngcontent-skx-c59="" class="dis-flex w-100"><div _ngcontent-skx-c59="" class="row w-100 dis-flex"><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-skx-c59="" class="pe p-0" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                          "ng-reflect-ng-for-of": "8,9"
+                        }--></div></div></div><div _ngcontent-skx-c59="" class="cuerpo dis-flex bgGrisTenue p-2"><div _ngcontent-skx-c59="" class="w-50"><p _ngcontent-skx-c59="">Votos</p><p _ngcontent-skx-c59="" class="votos"><strong _ngcontent-skx-c59="">0</strong></p></div><div _ngcontent-skx-c59="" class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p _ngcontent-skx-c59="">Porcentaje</p><p _ngcontent-skx-c59="">0.0000%</p></div></div></div></div><!--bindings={
+                          "ng-reflect-ng-for-of": "[object Object],[object Object"
+                        }--></div></div><div _ngcontent-skx-c59="" class="boton-scroll dis-flex cursorPointer"><i _ngcontent-skx-c59="" aria-hidden="true" class="fas fa-chevron-right"></i></div></div></div><div _ngcontent-skx-c59="" class="container-fluid resumen-votacion"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col-12 col-lg-8 col-xl-8 bgGris py-2 pxx"><p _ngcontent-skx-c59="" class="titulo"><strong _ngcontent-skx-c59="">Resumen de la votación</strong></p><div _ngcontent-skx-c59="" class="container-fluid"><div _ngcontent-skx-c59="" class="row dis-flex"><div _ngcontent-skx-c59="" class="apartado dis-flex flex-col"><div _ngcontent-skx-c59="" class="dis-flex w-100 align-s"><p _ngcontent-skx-c59="" class="subtitulo"> Votos acumulados &nbsp; </p><span _ngcontent-skx-c59="" tooltip="Es la sumatoria de los votos obtenidos por Partido Político, Coalición o Candidatura Independiente." placement="top" show-delay="200" ng-reflect-tooltip-value="Es la sumatoria de los votos o" ng-reflect-placement="top" ng-reflect-show-delay="200"><i _ngcontent-skx-c59="" aria-hidden="true" class="fas fa-info-circle"></i></span></div><div _ngcontent-skx-c59="" class="row dis-flex w-100 space-b"><p _ngcontent-skx-c59="" class="col-12 cantidad"><strong _ngcontent-skx-c59=""> 0 </strong></p><p _ngcontent-skx-c59="" class="col-12 porcentaje"> 0.0000% </p></div></div><p _ngcontent-skx-c59="" class="separador"><strong _ngcontent-skx-c59="">+</strong></p><div _ngcontent-skx-c59="" class="apartado dis-flex flex-col"><div _ngcontent-skx-c59="" class="dis-flex w-100"><p _ngcontent-skx-c59="" class="subtitulo"> Candidaturas no registradas </p></div><div _ngcontent-skx-c59="" class="row dis-flex w-100 space-b"><p _ngcontent-skx-c59="" class="col-12 cantidad"><strong _ngcontent-skx-c59=""> 0 </strong></p><p _ngcontent-skx-c59="" class="col-12 porcentaje"> 0.0000% </p></div></div><p _ngcontent-skx-c59="" class="separador"><strong _ngcontent-skx-c59="">+</strong></p><div _ngcontent-skx-c59="" class="apartado dis-flex flex-col"><div _ngcontent-skx-c59="" class="dis-flex w-100"><p _ngcontent-skx-c59="" class="subtitulo"> Nulos </p></div><div _ngcontent-skx-c59="" class="row dis-flex w-100 space-b"><p _ngcontent-skx-c59="" class="col-12 cantidad"><strong _ngcontent-skx-c59=""> 0 </strong></p><p _ngcontent-skx-c59="" class="col-12 porcentaje"> 0.0000% </p></div></div><p _ngcontent-skx-c59="" class="d-none d-lg-block separador pr-3"><strong _ngcontent-skx-c59="">=</strong></p><div _ngcontent-skx-c59="" class="d-none d-lg-block apartado dis-flex flex-col"><div _ngcontent-skx-c59="" class="dis-flex w-100 justify-e"><p _ngcontent-skx-c59="" class="px20"><strong _ngcontent-skx-c59="">Total de votos</strong></p></div><div _ngcontent-skx-c59="" class="dis-flex w-100 space-b justify-e"><p _ngcontent-skx-c59="" class="total"><strong _ngcontent-skx-c59="" class="txRosaIne"> 0 </strong></p></div><div _ngcontent-skx-c59="" class="dis-flex w-100 space-b justify-e"><p _ngcontent-skx-c59=""><strong _ngcontent-skx-c59="" class="txRosaIne"> 100.0000% </strong></p></div></div></div><div _ngcontent-skx-c59="" class="container-fluid d-lg-none"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col-12 dis-flex flex-col mt-3"><div _ngcontent-skx-c59="" class="dis-flex w-100 justify-e"><p _ngcontent-skx-c59="" class="px20 mb-0"><strong _ngcontent-skx-c59="">Total de votos</strong></p></div><div _ngcontent-skx-c59="" class="dis-flex w-100 justify-e"><p _ngcontent-skx-c59="" class="total"><strong _ngcontent-skx-c59=""> = <span _ngcontent-skx-c59="" class="txRosaIne"> 0 </span></strong></p></div><div _ngcontent-skx-c59="" class="dis-flex w-100 justify-e"><p _ngcontent-skx-c59=""><strong _ngcontent-skx-c59=""><span _ngcontent-skx-c59="" class="txRosaIne">100.0000%</span></strong></p></div></div></div></div></div></div></div></div><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col-12 px-0 mt-4"><div _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="table-responsive tabla-seccion"><table _ngcontent-skx-c59="" class="table table-striped contenido table-bordered"><thead _ngcontent-skx-c59="" class="titulos"><tr _ngcontent-skx-c59=""><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><strong _ngcontent-skx-c59="" class="txGris dis-flex text-center"> Casilla </strong></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": ""
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><strong _ngcontent-skx-c59="" class="txGris dis-flex text-center"> Acta digitalizada </strong></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": ""
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "1"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PRI.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "2"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "3"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PVEM.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "4"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PT.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "5"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/MC.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "6"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PANAL.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "7"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "8"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PES.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "9"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/MC.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "1,3,6"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "1,3"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/MC.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "1,6"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/MC.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "3,6"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PT.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PES.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "5,8,9"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PT.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "5,8"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PT.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PES.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "5,9"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><div _ngcontent-skx-c59="" class="dis-flex"><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><div _ngcontent-skx-c59="" class="dis-flex"><img _ngcontent-skx-c59="" alt="" class="img-partido" src="./assets/img/logos-partidos/PES.png"></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": "8,9"
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><strong _ngcontent-skx-c59="" class="txGris dis-flex text-center"> Candidaturas no registradas </strong></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": ""
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><strong _ngcontent-skx-c59="" class="txGris dis-flex text-center"> Votos nulos </strong></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": ""
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><strong _ngcontent-skx-c59="" class="txGris dis-flex text-center"> Total </strong></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": ""
+                        }--></div></th><th _ngcontent-skx-c59=""><div _ngcontent-skx-c59="" class="inter-partido dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><div _ngcontent-skx-c59="" class="dis-flex"><strong _ngcontent-skx-c59="" class="txGris dis-flex text-center"> Observaciones en Acta </strong></div><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--></div><!--bindings={
+                          "ng-reflect-ng-for-of": ""
+                        }--></div></th><!--bindings={
+                          "ng-reflect-ng-for-of": "[object Object],[object Object"
+                        }--></tr></thead><tbody _ngcontent-skx-c59=""><tr _ngcontent-skx-c59="" class="filas text-center"><td _ngcontent-skx-c59=""> 375 Básica 1 </td><td _ngcontent-skx-c59=""><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><a _ngcontent-skx-c59="" target="_blank"><div _ngcontent-skx-c59="" class="txGris"><i _ngcontent-skx-c59="" class="far fa-file"></i><i _ngcontent-skx-c59="" class="far fa-hourglass"></i></div></a><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><!--bindings={
+                          "ng-reflect-ng-for-of": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+                        }--><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> - </td></tr><!--bindings={
+                          "ng-reflect-ng-for-of": "[object Object]"
+                        }--><!--ng-container--><tr _ngcontent-skx-c59="" class="filas text-center"><td _ngcontent-skx-c59=""> 375 Contigua 1 </td><td _ngcontent-skx-c59=""><!--bindings={
+                          "ng-reflect-ng-if": "false"
+                        }--><a _ngcontent-skx-c59="" target="_blank"><div _ngcontent-skx-c59="" class="txGris"><i _ngcontent-skx-c59="" class="far fa-file"></i><i _ngcontent-skx-c59="" class="far fa-hourglass"></i></div></a><!--bindings={
+                          "ng-reflect-ng-if": "true"
+                        }--></td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><!--bindings={
+                          "ng-reflect-ng-for-of": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+                        }--><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> 0 </td><td _ngcontent-skx-c59=""> - </td></tr><!--bindings={
+                          "ng-reflect-ng-for-of": "[object Object]"
+                        }--><!--ng-container--><!--bindings={
+                          "ng-reflect-ng-for-of": "[object Object],[object Object"
+                        }--></tbody></table></div></div></div></div></div></div></div><div _ngcontent-skx-c59="" class="container-fluid"><div _ngcontent-skx-c59="" class="row"></div></div><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col-md-12"><div _ngcontent-skx-c59="" class="estadistica-casilla card mt-3 p-3"><div _ngcontent-skx-c59="" class="container-fluid"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col"><h4 _ngcontent-skx-c59="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-skx-c59="">Estadística de Casilla</strong></h4></div></div></div><div _ngcontent-skx-c59="" class="container-fluid py-4"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col"><p _ngcontent-skx-c59="" class="subtitulo underline"><strong _ngcontent-skx-c59="">Participación ciudadana con base en la Lista Nominal de las Actas PREP Contabilizadas</strong></p></div></div></div><div _ngcontent-skx-c59="" class="container-fluid"><div _ngcontent-skx-c59="" class="row my-2"><div _ngcontent-skx-c59="" class="col-10"><div _ngcontent-skx-c59="" class="grafica dis-flex justify-s px-2"><div _ngcontent-skx-c59="" class="textos"><p _ngcontent-skx-c59="" class="casilla px10"> 375 Básica 1 </p><p _ngcontent-skx-c59="" class="porcentaje px12"><strong _ngcontent-skx-c59=""> 0.0000% </strong></p><div _ngcontent-skx-c59="" class="interno" ng-reflect-ng-style="[object Object]" style="width: 0%;"></div></div></div></div><div _ngcontent-skx-c59="" class="col-2 dis-flex flex-col align-e pr-5"><p _ngcontent-skx-c59="" class="lista-nominal px10"><strong _ngcontent-skx-c59=""> Total de la Lista Nominal </strong></p><p _ngcontent-skx-c59="" class="total-nominal px12"><strong _ngcontent-skx-c59=""> 514 </strong></p></div></div><div _ngcontent-skx-c59="" class="row my-2"><div _ngcontent-skx-c59="" class="col-10"><div _ngcontent-skx-c59="" class="grafica dis-flex justify-s px-2"><div _ngcontent-skx-c59="" class="textos"><p _ngcontent-skx-c59="" class="casilla px10"> 375 Contigua 1 </p><p _ngcontent-skx-c59="" class="porcentaje px12"><strong _ngcontent-skx-c59=""> 0.0000% </strong></p><div _ngcontent-skx-c59="" class="interno" ng-reflect-ng-style="[object Object]" style="width: 0%;"></div></div></div></div><div _ngcontent-skx-c59="" class="col-2 dis-flex flex-col align-e pr-5"><p _ngcontent-skx-c59="" class="lista-nominal px10"><strong _ngcontent-skx-c59=""> Total de la Lista Nominal </strong></p><p _ngcontent-skx-c59="" class="total-nominal px12"><strong _ngcontent-skx-c59=""> 513 </strong></p></div></div><!--bindings={
+                          "ng-reflect-ng-for-of": "[object Object],[object Object"
+                        }--></div><div _ngcontent-skx-c59="" class="container-fluid py-4"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col"><p _ngcontent-skx-c59="" class="px14"> El cálculo de Participación ciudadana puede rebasar el 100% si vota toda la ciudadanía de la Lista Nominal de una casilla; así como las Representaciones de Partidos Políticos y Candidaturas Independientes. </p></div></div></div></div></div></div><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col-md-12"><div _ngcontent-skx-c59="" class="estadistica-casilla observacionesActa card mt-3 p-3"><div _ngcontent-skx-c59="" class="container-fluid"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col"><h4 _ngcontent-skx-c59="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-skx-c59="">Observaciones en Acta</strong></h4></div></div></div><div _ngcontent-skx-c59="" class="container-fluid py-4"><div _ngcontent-skx-c59="" class="row justify-content-center"><div _ngcontent-skx-c59="" class="col-11"><div _ngcontent-skx-c59="" class="container-fluid"><div _ngcontent-skx-c59="" class="row"><div _ngcontent-skx-c59="" class="col-12 col-md-6"><h4 _ngcontent-skx-c59="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-skx-c59="" class="txRosa2">Contabilizadas</strong></h4><div _ngcontent-skx-c59="" class="grupo py-3"><p _ngcontent-skx-c59="" class="pb-2"><strong _ngcontent-skx-c59=""> Ilegible </strong></p><p _ngcontent-skx-c59=""> La cantidad de votos en algún campo del Acta PREP no puede leerse, tanto en letra como en número. </p></div><div _ngcontent-skx-c59="" class="grupo py-3"><p _ngcontent-skx-c59="" class="pb-2"><strong _ngcontent-skx-c59=""> Sin Dato </strong></p><p _ngcontent-skx-c59=""> La cantidad de votos no fue asentada en el Acta PREP ni en letra ni en número en algún campo del Acta PREP. </p></div><div _ngcontent-skx-c59="" class="grupo py-3 mb-2"><p _ngcontent-skx-c59="" class="pb-2"><strong _ngcontent-skx-c59=""> Identificación por Proceso Técnico Operativo </strong></p><p _ngcontent-skx-c59=""> Los datos del Acta PREP no se identificaron y sé solicitó verificarlos por algún procedimiento válido establecido en el Proceso Técnico Operativo. </p></div><h4 _ngcontent-skx-c59="" class="subtitulo-seccion pleca-izquierda pleca-morada mt-5"><strong _ngcontent-skx-c59=""><span _ngcontent-skx-c59="" class="txMorado">No identificadas -</span> Fuera del catálogo</strong></h4><div _ngcontent-skx-c59="" class="grupo py-3"><p _ngcontent-skx-c59=""> No es posible ubicar el Acta PREP dentro de la lista de Actas de casillas aprobadas por el INE, al presentar alguna omisión, ilegibilidad o error en sus datos de identificación. Para fines de publicación, el Acta se muestra al final del listado de Actas aprobadas en la Base de Datos. </p></div></div><div _ngcontent-skx-c59="" class="col-12 col-md-6"><h4 _ngcontent-skx-c59="" class="subtitulo-seccion pleca-izquierda pleca-aqua"><strong _ngcontent-skx-c59="" class="txAqua">No Contabilizadas</strong></h4><div _ngcontent-skx-c59="" class="grupo py-3"><p _ngcontent-skx-c59="" class="pb-2"><strong _ngcontent-skx-c59=""> Excede Lista Nominal </strong></p><p _ngcontent-skx-c59=""> La suma de todos los votos en el Acta PREP, excede el número de ciudadanas y ciudadanos en la Lista Nominal de Electores de la casilla, incluido el número de votos emitidos por los representantes de los Partidos Políticos y, en su caso Candidaturas Independientes. </p></div><div _ngcontent-skx-c59="" class="grupo py-3"><p _ngcontent-skx-c59="" class="pb-2"><strong _ngcontent-skx-c59=""> Sin Acta </strong></p><p _ngcontent-skx-c59="" class="pb-2"> El Acta PREP no llegó junto con el paquete electoral al Centro de Acopio y Transmisión de Datos (CATD), por algunas de las siguientes causas: </p><p _ngcontent-skx-c59=""> 1. Sin Acta por paquete no entregado. </p><p _ngcontent-skx-c59=""> 2. Sin Acta por casilla no instalada. </p><p _ngcontent-skx-c59=""> 3. Sin Acta por paquete entregado sin sobre. </p></div><div _ngcontent-skx-c59="" class="grupo py-3"><p _ngcontent-skx-c59="" class="pb-2"><strong _ngcontent-skx-c59=""> Todos los campos ilegibles </strong></p><p _ngcontent-skx-c59=""> Todos los campos del Acta PREP correspondientes al número de votos, son ilegibles tanto en letra como en número. </p></div><div _ngcontent-skx-c59="" class="grupo py-3"><p _ngcontent-skx-c59="" class="pb-2"><strong _ngcontent-skx-c59=""> Todos los campos vacíos </strong></p><p _ngcontent-skx-c59=""> Todos los campos del Acta PREP correspondientes al número de votos, se encuentran vacíos tanto en letra como en número. </p></div></div></div></div></div></div></div></div></div></div></div></app-seccion-resumen>
+
+                      
+                      
+                      <app-pre-pie-pagina _ngcontent-lnm-c90="" _nghost-lnm-c87="">
+                          <div _ngcontent-lnm-c87="" class="container-fluid bgGris py-1">
+                              <div _ngcontent-lnm-c87="" class="row justify-content-center">
+                                  <div _ngcontent-lnm-c87="" class="col-md-10 px12 text-center">
+                                      <p _ngcontent-lnm-c87="" class="m-0"> Los resultados presentados tienen un carácter informativo y no son definitivos, por tanto, no tienen efectos jurídicos. </p>
+                                      <p _ngcontent-lnm-c87="" class="m-0"> Con base en la Ley Federal del Derecho de Autor queda prohibida cualquier modificación al diseño de este sitio. </p
+                                      <p _ngcontent-lnm-c87="" class="m-0"> La modificación y/o destrucción de la información y/o contenido total o parcial de este sitio, es delito federal de acuerdo al Código Penal Federal. </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </app-pre-pie-pagina>
+              </div>
+          </div>
+          <div _ngcontent-lnm-c90="" class="row">
+              <div _ngcontent-lnm-c90="" class="col-md-12 px-0">
+                  <app-pie-pagina _ngcontent-lnm-c90="" _nghost-lnm-c88="">
+                      <footer _ngcontent-lnm-c88="" class="container-fluid bgMorado txBlanco pie-pagina">
+                          <div _ngcontent-lnm-c88="" class="row">
+                              <div _ngcontent-lnm-c88="" class="col-xl-10 offset-xl-2 dis-flex space-a px12 px-0 py-2">
+                                  <p _ngcontent-lnm-c88="" class="m-0"> Este sitio se visualiza mejor en las versiones más recientes de los navegadores web &nbsp;|&nbsp; Consejo Estatal Electoral y de Participación Ciudadana de S.L.P. &nbsp;|&nbsp; Servicios de Informática v.20201126 &nbsp;|&nbsp; Aviso de privacidad </p>
+                              </div>
+                          </div>
+                      </footer>
+                  </app-pie-pagina>
+              </div>
+          </div>
+      </div>
+      <div _ngcontent-lnm-c90="" id="modalParticipacion" tabindex="-1" role="dialog" aria-labelledby="ModalParticipacion" aria-hidden="true" class="modal fade modal-paritcipacion">
+          <div _ngcontent-lnm-c90="" role="document" class="modal-dialog">
+              <div _ngcontent-lnm-c90="" class="modal-content">
+                  <div _ngcontent-lnm-c90="" class="modal-header">
+                      <div _ngcontent-lnm-c90="" id="exampleModalLabel" class="modal-title font-medium px16"> Conoce cómo calcular el porcentaje de Participación ciudadana </div>
+                      <button _ngcontent-lnm-c90="" type="button" data-dismiss="modal" aria-label="Close" class="close">
+                          <i _ngcontent-lnm-c90="" class="fas fa-times-circle"></i>
+                      </button>
+                  </div>
+                  <div _ngcontent-lnm-c90="" class="modal-body px16 font-regular">
+                      <p _ngcontent-lnm-c90="" class="padding-b-15"> La Participación ciudadana es el porcentaje de ciudadanos que votaron, con base en la Lista Nominal de las Actas Contabilizadas. </p>
+                      <p _ngcontent-lnm-c90="" class="padding-b-15"> Por ejemplo, si en una casilla votan 500 electores y el número de personas inscritas en la Lista Nominal para esa casilla es de 750 ciudadanos, entonces: </p>
+                      <p _ngcontent-lnm-c90="" class="padding-b-15"> Multiplicamos 500 por 100 y el resultado lo dividimos entre 750. </p>
+                      <p _ngcontent-lnm-c90="" class="padding-b-15"> La votación emitida en las Casillas Especiales se tomará en cuenta para el cálculo de la Participación ciudadana, hasta el último corte de información que se publique en el PREP. </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div _ngcontent-lnm-c90="" id="modalCasilla" tabindex="-1" role="dialog" aria-labelledby="ModalCasilla" aria-hidden="true" class="modal fade modal-casilla">
+          <div _ngcontent-lnm-c90="" role="document" class="modal-dialog">
+              <div _ngcontent-lnm-c90="" class="modal-content">
+                  <div _ngcontent-lnm-c90="" class="modal-header">
+                      <div _ngcontent-lnm-c90="" id="exampleModalLabel" class="modal-title font-regular px16"> Identifica la <span _ngcontent-lnm-c90="" class="font-bold">Entidad</span>, <span _ngcontent-lnm-c90="" class="font-bold">Sección</span> y <span _ngcontent-lnm-c90="" class="font-bold">Primer apellido</span> de acuerdo con tu credencial. 
+                      </div>
+                      <button _ngcontent-lnm-c90="" type="button" data-dismiss="modal" aria-label="Close" class="close">
+                          <i _ngcontent-lnm-c90="" class="fas fa-times-circle"></i>
+                      </button>
+                  </div>
+                  <div _ngcontent-lnm-c90="" class="modal-body px16 font-regular">
+                      <div _ngcontent-lnm-c90="" class="row">
+                          <div _ngcontent-lnm-c90="" class="col-6">
+                              <img _ngcontent-lnm-c90="" src="./assets/img/resultadoscasilla/Credencial-A.svg" alt="" class="img-credencial">
+                          </div><div _ngcontent-lnm-c90="" class="col-6">
+                              <img _ngcontent-lnm-c90="" src="./assets/img/resultadoscasilla/Credencial-B.svg" alt="" class="img-credencial">
+                          </div></div><div _ngcontent-lnm-c90="" class="row">
+                              <div _ngcontent-lnm-c90="" class="col-6">
+                                  <img _ngcontent-lnm-c90="" src="./assets/img/resultadoscasilla/Credencial-C.svg" alt="" class="img-credencial">
+                              </div>
+                              <div _ngcontent-lnm-c90="" class="col-6">
+                                  <img _ngcontent-lnm-c90="" src="./assets/img/resultadoscasilla/Credencial-D.svg" alt="" class="img-credencial">
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <app-comparativa _ngcontent-lnm-c90="" _nghost-lnm-c89="">
+          <div _ngcontent-lnm-c89="" id="modalComparativa" tabindex="-1" role="dialog" aria-labelledby="ModalComparativa" aria-hidden="true" class="modal fade modalComparativa">
+              <div _ngcontent-lnm-c89="" role="document" class="modal-dialog modal-dialog-centered modal-lg"><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></app-comparativa></app-root>
+
+
+</body>
+</html>

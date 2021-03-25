@@ -1,0 +1,137 @@
+{
+    "votosActas": [
+        {
+            "nombre": "Maribel Guadalupe",
+            "apellidos": "Villaseñor Dávila",
+            "distritos": [
+                {
+                    "pe": "P1",
+                    "total": "11,174"
+                }
+            ],
+            "votos": "11,174",
+            "porcentaje": "06.6337%"
+        },
+        {
+            "nombre": "Josué",
+            "apellidos": "Lira Gil",
+            "distritos": [
+                {
+                    "pe": "P2",
+                    "total": "6,853"
+                }
+            ],
+            "votos": "6,853",
+            "porcentaje": "04.0684%"
+        },
+        {
+            "nombre": "Elia Nancy",
+            "apellidos": "Hernández Anaya",
+            "distritos": [
+                {
+                    "pe": "P3",
+                    "total": "3,281"
+                }
+            ],
+            "votos": "3,281",
+            "porcentaje": "01.9478%"
+        },
+        {
+            "nombre": "Laura Sandra",
+            "apellidos": "Morales Ruiz",
+            "distritos": [
+                {
+                    "pe": "P4",
+                    "total": "1,010"
+                }
+            ],
+            "votos": "40,142",
+            "porcentaje": "23.8314%"
+        },
+        {
+            "nombre": "Erika Vanessa",
+            "apellidos": "del Castillo Ibarra",
+            "distritos": [
+                {
+                    "pe": "P7",
+                    "total": "3,929"
+                }
+            ],
+            "votos": "100,861",
+            "porcentaje": "59.8791%"
+        }
+    ],
+    "resumenVotacion": { 
+        "acumulados":
+        {
+            "total": "1,434",
+            "porcentaje": "96.1114"
+        }, 
+        "noRegistradas":{
+            "total": "1",
+            "porcentaje": "00.1114"
+        }, 
+        "nulos":{
+            "total": "77",
+            "porcentaje": "03.9630"
+        }, 
+        "totalVotos": {
+            "total": "1,512"
+        }
+    },
+    "secciones": [
+        {
+            "seccion": "821",
+            "p1": "69",
+            "p2": "73",
+            "p3": "219",
+            "p4": "48",
+            "p5": "39",
+            "p6": "32",
+            "p7": "35",
+            "p8": "807",
+            "p9": "39",
+            "p10": "6",
+            "p11": "3",
+            "p12": "0",
+            "p13": "1",
+            "p14": "45",
+            "p15": "10",
+            "p16": "2",
+            "p17": "6",
+            "p18": "1",
+            "candidaturas": "1",
+            "votos": "77",
+            "total": "1512"
+        }
+    ],
+    "participacionCiudadana": {
+        "esperadas": {
+            "total": "526",
+            "porcentaje": "100.0000"
+        },
+        "capturadas": {
+            "total": "490",
+            "porcentaje": "93.1558"
+        },
+        "contabilizadas": {
+            "total": "422",
+            "porcentaje": "80.2281"
+        },
+        "participacionCiudadana": "67.1802",
+        "totalListaNominal": {
+            "total": "250,730",
+            "porcentaje": "100.0000"
+        },
+        "secciones": [
+            {
+                "seccion": "821",
+                "esperadas": "4",
+                "capturadas": "4",
+                "contabilizadas": "4",
+                "participacionCiudadana": "65.7391",
+                "totalListaNominal": "2,300"
+            }
+        ]
+    }
+}

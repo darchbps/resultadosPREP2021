@@ -1,0 +1,68 @@
+<div class="buscador card bgMorado txBlanco dis-flex space-a align-s pl-2 pr-2 h-100">
+    <div class="container-fluid bgPrototipo">
+        <div class="row">
+            <div class="col-12 px-0">
+                <p class="px16">Conoce los resultados de tu casilla</p>
+                <p class="px10 pl-1">
+                    <i aria-hidden="true" data-toggle="modal" data-target="#modalCasilla" class="fas fa-question-circle px14 cursor-hand"></i> Para conocer los resultados de tu casilla, ingresa los siguientes datos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <form novalidate="" class="ng-untouched ng-pristine ng-invalid">
+            <div class="row px-1">
+                <div class="col-md-5 px-1">
+                    <div class="form-group m-0">
+                        <label for="seccion" class="m-0 px14">Sección</label>
+                        <div class="input-group df-sw">
+                            <div class="dropdown w-100 bgBlanco">
+                                <input
+                                    type="text"
+                                    id="valueSeccion"
+                                    name="valueSeccion"
+                                    ngmodel=""
+                                    required=""
+                                    valueseccion=""
+                                    class="form-control ng-untouched ng-pristine ng-invalid"
+                                    ng-reflect-name="valueSeccion"
+                                    ng-reflect-required=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 px-1">
+                    <div class="form-group">
+                        <label for="primerApellido" class="m-0 px14">Primer apellido</label>
+                        <div class="input-group df-sw">
+                            <div class="dropdown w-100 bgBlanco">
+                                <input
+                                    type="text"
+                                    id="apellido"
+                                    name="apellido"
+                                    ngmodel=""
+                                    required=""
+                                    apellido=""
+                                    class="form-control ng-untouched ng-pristine ng-invalid"
+                                    ng-reflect-name="apellido"
+                                    ng-reflect-required=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-1">
+                <div class="col-md-5 px-1">
+                    <div class="form-group">
+                        <label for="submit" class="m-0 px14">&nbsp;</label>
+                        <div class="input-group df-sw">
+                            <button type="submit" class="btn btn-block px14 px-1 btn-rosa-buscador">Consulta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

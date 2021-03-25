@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>CEEPAC</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">      
+        
+        <!-- Custom styles for this template -->
+		<link href="css/INE.css" rel="stylesheet" type="text/css">
+        <link href="css/roboto-fontface.css" rel="stylesheet" type="text/css">
+        <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
+        <link href="assets/highcharts/css/highcharts.css" type="text/css">
+		
+
+    </head>
+    <body ng-app="PREPSLP"> 
+     <div style="display: none;"></div>  
+     <app-boton-compartir   _nghost-lnm-c82="">
+           <!-- /redes sociales -->
+           <div ng-include="'includes/compartir.html'"></div>
+     </app-boton-compartir>
+         <app-encabezado>
+        <!-- /Encabezado -->
+          <div ng-include="'includes/gubernatura/header.html'"></div>
+        </app-encabezado>
+      
+      
+      <div   class="cuerpo container-fluid">
+          <div   class="row">
+              <div   class="col-12 my-3 d-xl-none">
+                  <app-avance-nacional   >
+                      <!-- Avance entidad -->
+                    <div ng-include="'includes/gubernatura/avance-entidad.html'"></div>
+                  </app-avance-nacional>
+              </div>
+               <!-- Inicia barra lateral -->
+               <div class="px-0 bgMorado col-md-12 col-xl-2" id="MenuLateral">
+                <!-- barra lateral -->
+                <div ng-include="'includes/gubernatura/barraLateral-ppc.html'"></div>
+              </div>
+			  
+              <!-- CONTENIDOS -->
+              <div   class="bgGrisTenue px-0 my-3 my-xl-0 col-md-12 col-xl-10" ng-reflect-ng-class="col-md-12 col-xl-10">
+                  <div   class="container-fluid py-xl-3">
+                      <div   class="row">
+                          <div   class="col-xl-8 d-none d-xl-block altoAvance">
+							   
+                              <app-avance-nacional >
+                                   <!-- Avance entidad -->
+                                  <div class="h-100" ng-include="'includes/gubernatura/avance-entidad.html'"></div>
+                              </app-avance-nacional>
+                          </div>
+                          <div   class="col-xl-4 d-none d-xl-block altoAvance pl-0">
+                              <app-buscador   >
+                                <div class="h-100" ng-include="'includes/buscador.html'"></div>
+                                  
+                              </app-buscador>
+                          </div>
+                      </div>
+                  </div>
+                  <router-outlet _ngcontent-lnm-c90=""></router-outlet>
+                  <app-votos-distrito _nghost-lnm-c47="">
+                      <router-outlet _ngcontent-lnm-c47=""></router-outlet>
+                      <app-resumen-distrito-mapa _nghost-lnm-c58="">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                        
+                                    <div class="card p-3">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <h3 class="titulo-seccion"> Gubernatura - <span class="txRosaIne"><strong >Entidad - </strong> Votos por Partido Político y Candidatura Independiente</span></h3>
+                                                <h6><strong > San Luis Potosí  </strong>  </h6>
+                                                <div class="texto font-medium">
+                                                    <p> El total de votos calculado y porcentaje que se muestran, se refieren a los votos asentados en las Actas PREP hasta el momento. </p>
+                                                    <p> Por presentación, los decimales de los porcentajes muestran sólo cuatro dígitos. No obstante, al considerar todos los decimales, suman 100%. </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="px12 text-left"><strong>Visualiza como:</strong></p>
+                                                <div class="visualizar dis-flex flex-col text-center">
+                                                    <div class="selector dis-flex w-100 cursorPointer">
+                                                        <div class="activo izq dis-flex flex-col w-50 p-2"><img src="assets/img/iconos-visualiza/Grafica-B.svg" class="img-visualiza img-fluid">
+                                                            <p>Gráfica</p>
+                                                        </div>
+                                                        <div class="dis-flex der flex-col w-50 p-2" tabindex="0" ng-reflect-router-link="../tarjetas" onclick="window.location.href='./gubernatura_ppc_tarjeta.html'"><img src="assets/img/iconos-visualiza/Tarjetas-B.svg" class="img-visualiza img-fluid" style="opacity: 0.5;">
+                                                            <p>Tarjetas</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row padding-t-20 padding-b-10">
+                                            <div class="col-12 px-0">
+                                                <h4 class="subtitulo-seccion pleca-izquierda"><strong>Votos en Actas Contabilizadas</strong></h4>
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td class="fondoGrafica td-relative"></td>
+                                                                <td class="fondoGrafica td-relative"></td>
+                                                                <td class="fondoGrafica td-relative"></td>
+                                                                <td class="fondoGrafica td-relative"></td>
+                                                                <td class="fondoGrafica td-relative"></td>
+                                                                <td class="fondoGrafica td-relative"></td>
+                                                                <td class="fondoGrafica td-relative"></td>
+                                                                <td class="fondoGrafica td-relative"></td>
+                                                                <td class="fondoGrafica td-relative"></td>
+                                                                <td class="fondoGrafica td-relative"></td>
+                                                               
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="td-relative table-borderedHeader sinBorde">
+                                                                    <div class="linea-chart-nl line-chart-100 line-char-first">150000</div>
+                                                                    <div class="linea-chart-nl line-chart-80 line-char-first">100000</div>
+                                                                    <div class="linea-chart-nl line-chart-60 line-char-first">75000</div>
+                                                                    <div class="linea-chart-nl line-chart-40 line-char-first">50000</div>
+                                                                    <div class="linea-chart-nl line-chart-20 line-char-first">250000</div>
+                                                                    <div class="linea-chart-nl line-chart-0 line-char-first">0</div>
+                                                                    <div class="my-chart">
+                                                                        <div style="height: 0px;"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="fondoGrafica td-relative">
+                                                                    <div class="linea-chart line-chart-100"></div>
+                                                                    <div class="linea-chart line-chart-80"></div>
+                                                                    <div class="linea-chart line-chart-60"></div>
+                                                                    <div class="linea-chart line-chart-40"></div>
+                                                                    <div class="linea-chart line-chart-20"></div>
+                                                                    <div class="linea-chart-nl line-chart-0"></div>
+                                                                    <div class="progress-bar-vertical">
+                                                                        <div aria-valuemax="100" aria-valuemin="0" placement="top" role="progressbar" class="progress-bar progres-chart" ng-reflect-placement="top" ng-reflect-tooltip-value="<p>PAN</p><p>Total de votos: 0" ng-reflect-ng-style="[object Object]"
+                                                                            style="height: 5.6%; background-color: rgb(0, 87, 156);"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="fondoGrafica td-relative">
+                                                                    <div class="linea-chart line-chart-100"></div>
+                                                                    <div class="linea-chart line-chart-80"></div>
+                                                                    <div class="linea-chart line-chart-60"></div>
+                                                                    <div class="linea-chart line-chart-40"></div>
+                                                                    <div class="linea-chart line-chart-20"></div>
+                                                                    <div class="linea-chart-nl line-chart-0"></div>
+                                                                    <div class="progress-bar-vertical">
+                                                                        <div aria-valuemax="100" aria-valuemin="0" placement="top" role="progressbar" class="progress-bar progres-chart" ng-reflect-placement="top" ng-reflect-tooltip-value="<p>PRI</p><p>Total de votos: 0" ng-reflect-ng-style="[object Object]"
+                                                                            style="height: 14.15%; background-color: rgb(21, 161, 82);"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="fondoGrafica td-relative">
+                                                                    <div class="linea-chart line-chart-100"></div>
+                                                                    <div class="linea-chart line-chart-80"></div>
+                                                                    <div class="linea-chart line-chart-60"></div>
+                                                                    <div class="linea-chart line-chart-40"></div>
+                                                                    <div class="linea-chart line-chart-20"></div>
+                                                                    <div class="linea-chart-nl line-chart-0"></div>
+                                                                    <div class="progress-bar-vertical">
+                                                                        <div aria-valuemax="100" aria-valuemin="0" placement="top" role="progressbar" class="progress-bar progres-chart" ng-reflect-placement="top" ng-reflect-tooltip-value="<p>PRD</p><p>Total de votos: 0" ng-reflect-ng-style="[object Object]"
+                                                                            style="height: 1.13%; background-color: rgb(255, 222, 0);"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="fondoGrafica td-relative">
+                                                                    <div class="linea-chart line-chart-100"></div>
+                                                                    <div class="linea-chart line-chart-80"></div>
+                                                                    <div class="linea-chart line-chart-60"></div>
+                                                                    <div class="linea-chart line-chart-40"></div>
+                                                                    <div class="linea-chart line-chart-20"></div>
+                                                                    <div class="linea-chart-nl line-chart-0"></div>
+                                                                    <div class="progress-bar-vertical">
+                                                                        <div aria-valuemax="100" aria-valuemin="0" placement="top" role="progressbar" class="progress-bar progres-chart" ng-reflect-placement="top" ng-reflect-tooltip-value="<p>PVEM</p><p>Total de votos: " ng-reflect-ng-style="[object Object]"
+                                                                            style="height: 23.13%; background-color: rgb(135, 195, 68);"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="fondoGrafica td-relative">
+                                                                    <div class="linea-chart line-chart-100"></div>
+                                                                    <div class="linea-chart line-chart-80"></div>
+                                                                    <div class="linea-chart line-chart-60"></div>
+                                                                    <div class="linea-chart line-chart-40"></div>
+                                                                    <div class="linea-chart line-chart-20"></div>
+                                                                    <div class="linea-chart-nl line-chart-0"></div>
+                                                                    <div class="progress-bar-vertical">
+                                                                        <div aria-valuemax="100" aria-valuemin="0" placement="top" role="progressbar" class="progress-bar progres-chart" ng-reflect-placement="top" ng-reflect-tooltip-value="<p>PT</p><p>Total de votos: 0<" ng-reflect-ng-style="[object Object]"
+                                                                            style="height: 10.3%; background-color: rgb(238, 61, 68);"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="fondoGrafica td-relative">
+                                                                    <div class="linea-chart line-chart-100"></div>
+                                                                    <div class="linea-chart line-chart-80"></div>
+                                                                    <div class="linea-chart line-chart-60"></div>
+                                                                    <div class="linea-chart line-chart-40"></div>
+                                                                    <div class="linea-chart line-chart-20"></div>
+                                                                    <div class="linea-chart-nl line-chart-0"></div>
+                                                                    <div class="progress-bar-vertical">
+                                                                        <div aria-valuemax="100" aria-valuemin="0" placement="top" role="progressbar" class="progress-bar progres-chart" ng-reflect-placement="top" ng-reflect-tooltip-value="<p>MC</p><p>Total de votos: 0<" ng-reflect-ng-style="[object Object]"
+                                                                            style="height: 6.5%; background-color: rgb(253, 130, 4);"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="fondoGrafica td-relative">
+                                                                    <div class="linea-chart line-chart-100"></div>
+                                                                    <div class="linea-chart line-chart-80"></div>
+                                                                    <div class="linea-chart line-chart-60"></div>
+                                                                    <div class="linea-chart line-chart-40"></div>
+                                                                    <div class="linea-chart line-chart-20"></div>
+                                                                    <div class="linea-chart-nl line-chart-0"></div>
+                                                                    <div class="progress-bar-vertical">
+                                                                        <div aria-valuemax="100" aria-valuemin="0" placement="top" role="progressbar" class="progress-bar progres-chart" ng-reflect-placement="top" ng-reflect-tooltip-value="<p>PANAL</p><p>Total de votos:" ng-reflect-ng-style="[object Object]"
+                                                                            style="height: 5.2%; background-color: rgb(20, 180, 182);"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="fondoGrafica td-relative">
+                                                                    <div class="linea-chart line-chart-100"></div>
+                                                                    <div class="linea-chart line-chart-80"></div>
+                                                                    <div class="linea-chart line-chart-60"></div>
+                                                                    <div class="linea-chart line-chart-40"></div>
+                                                                    <div class="linea-chart line-chart-20"></div>
+                                                                    <div class="linea-chart-nl line-chart-0"></div>
+                                                                    <div class="progress-bar-vertical">
+                                                                        <div aria-valuemax="100" aria-valuemin="0" placement="top" role="progressbar" class="progress-bar progres-chart" ng-reflect-placement="top" ng-reflect-tooltip-value="<p>MORENA</p><p>Total de votos" ng-reflect-ng-style="[object Object]"
+                                                                            style="height: 0.8%; background-color: rgb(165, 52, 33);"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="fondoGrafica td-relative">
+                                                                    <div class="linea-chart line-chart-100"></div>
+                                                                    <div class="linea-chart line-chart-80"></div>
+                                                                    <div class="linea-chart line-chart-60"></div>
+                                                                    <div class="linea-chart line-chart-40"></div>
+                                                                    <div class="linea-chart line-chart-20"></div>
+                                                                    <div class="linea-chart-nl line-chart-0"></div>
+                                                                    <div class="progress-bar-vertical">
+                                                                        <div aria-valuemax="100" aria-valuemin="0" placement="top" role="progressbar" class="progress-bar progres-chart" ng-reflect-placement="top" ng-reflect-tooltip-value="<p>PES</p><p>Total de votos: 0" ng-reflect-ng-style="[object Object]"
+                                                                            style="height: 0.0007%; background-color: rgb(102, 38, 128);"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="fondoGrafica td-relative">
+                                                                    <div class="linea-chart line-chart-100"></div>
+                                                                    <div class="linea-chart line-chart-80"></div>
+                                                                    <div class="linea-chart line-chart-60"></div>
+                                                                    <div class="linea-chart line-chart-40"></div>
+                                                                    <div class="linea-chart line-chart-20"></div>
+                                                                    <div class="linea-chart-nl line-chart-0"></div>
+                                                                    <div class="progress-bar-vertical">
+                                                                        <div aria-valuemax="100" aria-valuemin="0" placement="top" role="progressbar" class="progress-bar progres-chart" ng-reflect-placement="top" ng-reflect-tooltip-value="<p>CI_01</p><p>Total de votos:" ng-reflect-ng-style="[object Object]"
+                                                                            style="height: 0.0002%; background-color: rgb(138, 168, 157);"></div>
+                                                                    </div>
+                                                                </td>
+                                                                <!--bindings={
+                                                                "ng-reflect-ng-for-of": "[object Object],[object Object"
+                                                              }-->
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><span class="px16 font-bold"> Votos </span><br><span class="px14 font-bold"> Total </span></td>
+                                                                <td class="text-center">
+                                                                    <div><img class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div>
+                                                                    <div><span class="14px font-bold"> 21,638 </span></div>
+                                                                    <!--ng-container-->
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div><img class="img-partido" src="./assets/img/logos-partidos/PRI.png"></div>
+                                                                    <div><span class="14px font-bold"> 55,059 </span></div>
+                                                                    <!--ng-container-->
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div><img class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div>
+                                                                    <div><span class="14px font-bold"> 4,525 </span></div>
+                                                                    <!--ng-container-->
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div><img class="img-partido" src="./assets/img/logos-partidos/PVEM.png"></div>
+                                                                    <div><span class="14px font-bold"> 90,000 </span></div>
+                                                                    <!--ng-container-->
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div><img class="img-partido" src="./assets/img/logos-partidos/PT.png"></div>
+                                                                    <div><span class="14px font-bold"> 25,000 </span></div>
+                                                                    <!--ng-container-->
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div><img class="img-partido" src="./assets/img/logos-partidos/MC.png"></div>
+                                                                    <div><span class="14px font-bold"> 20,000 </span></div>
+                                                                    <!--ng-container-->
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div><img class="img-partido" src="./assets/img/logos-partidos/PANAL.png"></div>
+                                                                    <div><span class="14px font-bold"> 3,100 </span></div>
+                                                                    <!--ng-container-->
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div><img class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></div>
+                                                                    <div><span class="14px font-bold"> 3 </span></div>
+                                                                    <!--ng-container-->
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div><img class="img-partido" src="./assets/img/logos-partidos/PES.png"></div>
+                                                                    <div><span class="14px font-bold"> 3 </span></div>
+                                                                    <!--ng-container-->
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div><img class="img-partido" src="./assets/img/logos-partidos/CI_01.png"></div>
+                                                                    <div><span class="14px font-bold"> 1 </span></div>
+                                                                    <!--ng-container-->
+                                                                </td>
+                                                                
+                                                            </tr>
+                                                            <tr class="border3-t-rosaINE">
+                                                                <td class="bg-gris-3"><span class="px14"> Porcentaje </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 5.5628% </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 14.1549% </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 1.1633% </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 23.1378% </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 10.2834% </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 6.4271% </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 5.1417% </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 0.7969% </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 0.0007% </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 0.0007% </span>
+                                                                </td>
+                                                                
+                                                            </tr>
+                                                            <tr class="border3-t-rosaINE">
+                                                                <td class="bg-gris-3"><span class="px14"> En la Entidad </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 136,351 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 111,514 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 24,023 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 89,000 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 39,200 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 24,957 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 20,000 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 3,100 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 3 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 3 </span>
+                                                                </td>
+                                                           
+                                                            </tr>
+                                                            <tr class="border3-t-rosaINE">
+                                                                <td class="bg-gris-3"><span class="px14"> En el Extranjero </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 0 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 65 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 0 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 1,000 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 800 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 43 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 0 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 0 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 0 </span></td>
+                                                                <td class="text-center bg-rosa2"><span class="px12"> 0 </span>
+                                                                </td>
+                                                                <!--bindings={"ng-reflect-ng-for-of": "[object Object],[object Object"}-->
+                                                            </tr>
+                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row padding-b-10">
+                                            <div class="col-10">
+                                                <div class="texto font-medium">
+                                                    <p> En esta tabla se considera la cantidad de votos asentadas en las Actas PREP de Casilla Especial de Representación Proporcional. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid resumen-votacion">
+                                            <!-- Votos extranjero -->
+                                            <div ng-include="'includes/gubernatura/resumen-votacion.html'"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                           <div class="card p-3 mt-3 mx-3">
+                                               <!-- Votos extranjero -->
+                                               <div ng-include="'includes/gubernatura/votos-extranjero.html'"></div>
+                                           </div>
+                                               
+                                           <app-estadistica-nacional>
+                                               <!-- Estadistica nacional-->
+                                                   <div ng-include="'includes/gubernatura/estadistica-nacional.html'"></div>
+                                           </app-estadistica-nacional>
+                                           </app-resumen-distrito-mapa>
+                                           </app-votos-distrito>
+                                           <app-pre-pie-pagina >
+                                           <!-- pie de pagina 1 -->
+                                                          <div ng-include="'includes/footer-01.html'"></div>
+                                                       </app-pre-pie-pagina>
+                                               </div>
+                                           <!-- termina contenidos --> 
+                                                     
+                                                 </div>
+                                                 <div   class="row">
+                                                     <div   class="col-md-12 px-0">
+                                                         <app-pie-pagina>
+                                           <!-- pie de pagina 2 -->
+                                                           <div ng-include="'includes/footer-02.html'"></div>
+                                                         </app-pie-pagina>
+                                                     </div>
+                                                 </div>
+                                             </div>
+		
+		
+		
+		
+		
+	  <!-- INICIAN VENTANAS MODALES -->			
+      <div   id="modalParticipacion" tabindex="-1" role="dialog" aria-labelledby="ModalParticipacion" aria-hidden="true" class="modal fade modal-paritcipacion">
+          <div   role="document" class="modal-dialog">
+              <div   class="modal-content">
+                  <div   class="modal-header">
+                      <div   id="exampleModalLabel" class="modal-title font-medium px16"> Conoce cómo calcular el porcentaje de Participación ciudadana </div>
+                      <button   type="button" data-dismiss="modal" aria-label="Close" class="close">
+                          <i   class="fas fa-times-circle"></i>
+                      </button>
+                  </div>
+                  <div   class="modal-body px16 font-regular">
+                      <p   class="padding-b-15"> La Participación ciudadana es el porcentaje de ciudadanos que votaron, con base en la Lista Nominal de las Actas Contabilizadas. </p>
+                      <p   class="padding-b-15"> Por ejemplo, si en una casilla votan 500 electores y el número de personas inscritas en la Lista Nominal para esa casilla es de 750 ciudadanos, entonces: </p>
+                      <p   class="padding-b-15"> Multiplicamos 500 por 100 y el resultado lo dividimos entre 750. </p>
+                      <p   class="padding-b-15"> La votación emitida en las Casillas Especiales se tomará en cuenta para el cálculo de la Participación ciudadana, hasta el último corte de información que se publique en el PREP. </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div   id="modalCasilla" tabindex="-1" role="dialog" aria-labelledby="ModalCasilla" aria-hidden="true" class="modal fade modal-casilla">
+          <div   role="document" class="modal-dialog">
+              <div   class="modal-content">
+                  <div   class="modal-header">
+                      <div   id="exampleModalLabel" class="modal-title font-regular px16"> Identifica la <span   class="font-bold">Entidad</span>, <span   class="font-bold">Sección</span> y <span   class="font-bold">Primer apellido</span> de acuerdo con tu credencial. 
+                      </div>
+                      <button   type="button" data-dismiss="modal" aria-label="Close" class="close">
+                          <i   class="fas fa-times-circle"></i>
+                      </button>
+                  </div>
+                  <div   class="modal-body px16 font-regular">
+                      <div   class="row">
+                          <div   class="col-6">
+                              <img   src="./assets/img/resultadoscasilla/Credencial-A.svg" alt="" class="img-credencial">
+                          </div><div   class="col-6">
+                              <img   src="./assets/img/resultadoscasilla/Credencial-B.svg" alt="" class="img-credencial">
+                          </div></div><div   class="row">
+                              <div   class="col-6">
+                                  <img   src="./assets/img/resultadoscasilla/Credencial-C.svg" alt="" class="img-credencial">
+                              </div>
+                              <div   class="col-6">
+                                  <img   src="./assets/img/resultadoscasilla/Credencial-D.svg" alt="" class="img-credencial">
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <app-comparativa>
+          <div _ngcontent-lnm-c89="" id="modalComparativa" tabindex="-1" role="dialog" aria-labelledby="ModalComparativa" aria-hidden="true" class="modal fade modalComparativa">
+              <div _ngcontent-lnm-c89="" role="document" class="modal-dialog modal-dialog-centered modal-lg">
+			  </div>
+		  </div>
+	 </app-comparativa>
+ 
+
+
+
+
+        <!-- /.container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        
+
+        <!-- Scripts angular -->
+        <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script-->
+        <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js"></script>
+        <script src="main.js"></script>	 	
+		 
+		<!--Inicialización de Tooltipo -->
+  			
+        <script>
+            $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+
+
+</body>
+</html>

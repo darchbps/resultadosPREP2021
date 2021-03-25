@@ -1,0 +1,23 @@
+@import url('generales.css');     
+@import url('colores.css');
+@import url('style.css');
+@import url('moleculas.css');
+@import url('fuentes.css');
+@import url('app.component.css');
+@import url('botones.css');
+@import url('flexbox.css');
+@import url('graficaBarras.css');
+@import url('medias.css');
+@import url('paddings.css');
+@import url('tamanos.css');
+@import url('transiciones.css');
+@import url('encabezado.component.css');
+@import url('avance-nacional.component.css');
+@import url('boton-compartir.component.css');
+@import url('buscador.component.css');
+@import url('estadistica-nacional.component.css');
+@import url('menu-lateral.component.css');
+@import url('resumen-distrito-mapa.component.css');
+@import url('votos-distrito.component.css');
+
+

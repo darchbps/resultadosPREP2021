@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>CEEPAC</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">      
+        
+        <!-- Custom styles for this template -->
+		<link href="css/INE.css" rel="stylesheet" type="text/css">
+        <link href="css/roboto-fontface.css" rel="stylesheet" type="text/css">
+        <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
+        <link href="assets/highcharts/css/highcharts.css" type="text/css">
+		
+
+    </head>
+    <body ng-app="PREPSLP"> 
+     <div style="display: none;"></div>  
+     <app-boton-compartir   _nghost-lnm-c82="">
+           <!-- /redes sociales -->
+           <div ng-include="'includes/compartir.html'"></div>
+     </app-boton-compartir>
+         <app-encabezado>
+        <!-- /Encabezado -->
+          <div ng-include="'includes/gubernatura/header.html'"></div>
+        </app-encabezado>
+      
+      
+      <div   class="cuerpo container-fluid">
+          <div   class="row">
+              <div   class="col-12 my-3 d-xl-none">
+                  <app-avance-nacional   >
+                      <!-- Avance entidad -->
+                    <div ng-include="'includes/gubernatura/avance-entidad.html'"></div>
+                  </app-avance-nacional>
+              </div>
+               <!-- Inicia barra lateral -->
+               <div class="px-0 bgMorado col-md-12 col-xl-2" id="MenuLateral">
+                <!-- barra lateral -->
+                <div ng-include="'includes/gubernatura/barraLateral-ppc.html'"></div>
+              </div>
+			  
+              <!-- CONTENIDOS -->
+              <div   class="bgGrisTenue px-0 my-3 my-xl-0 col-md-12 col-xl-10" ng-reflect-ng-class="col-md-12 col-xl-10">
+                  <div   class="container-fluid py-xl-3">
+                      <div   class="row">
+                          <div   class="col-xl-8 d-none d-xl-block altoAvance">
+							   
+                              <app-avance-nacional >
+                                   <!-- Avance entidad -->
+                                  <div class="h-100" ng-include="'includes/gubernatura/avance-entidad.html'"></div>
+                              </app-avance-nacional>
+                          </div>
+                          <div   class="col-xl-4 d-none d-xl-block altoAvance pl-0">
+                              <app-buscador   >
+                                <div class="h-100" ng-include="'includes/buscador.html'"></div>
+                                  
+                              </app-buscador>
+                          </div>
+                      </div>
+                  </div>
+                  <router-outlet _ngcontent-lnm-c90=""></router-outlet>
+                  <app-votos-distrito _nghost-lnm-c47="">
+                      <router-outlet _ngcontent-lnm-c47=""></router-outlet>
+                      <app-resumen-distrito-mapa _nghost-lnm-c58="">
+                          <div  class="container-fluid">
+                              <div  class="row">
+                                  <div  class="col-md-12">
+                                    
+                                      <div class="card p-3"><div class="row">
+										<div class="col-12 col-lg-10">
+											<h3 class="titulo-seccion"> Gubernatura - <span class="txRosaIne"><strong >Entidad - </strong> Votos por Partido Político y Candidatura Independiente</span></h3>
+											<h6><strong> San Luis Potosí  </strong> </h6>
+											<div class="texto font-medium">
+												<p>
+													El total de votos calculado y porcentaje que se muestran, se refieren a los votos asentados en las Actas PREP hasta el momento. </p>
+												<p> Por presentación, los decimales de los porcentajes muestran sólo cuatro dígitos. No obstante, al considerar todos los decimales, suman 100%. </p>
+											</div>
+										</div>
+										<div class="col-2 d-none d-lg-block">
+											<p class="px12 text-left"><strong>Visualiza como:</strong></p>
+											<div class="visualizar dis-flex flex-col text-center">
+												<div class="selector dis-flex w-100 cursorPointer" tabindex="0" ng-reflect-router-link="../grafica">
+													<div class="izq dis-flex flex-col w-50 p-2" onclick="window.location.href='./gubernatura_ppc.html'">
+														<img src="assets/img/iconos-visualiza/Grafica-A.svg" class="img-visualiza img-fluid" style="opacity: 0.5;">
+														<p>Gráfica</p>
+													</div>
+													<div class="activo der dis-flex flex-col w-50 p-2"><img src="assets/img/iconos-visualiza/Tarjetas-A.svg" class="img-visualiza img-fluid">
+														<p>Tarjetas</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										</div>
+										<div class="row pb-3 mt-2">
+											<div class="col">
+												<h4 class="subtitulo-seccion pleca-izquierda"><strong>Votos en Actas Contabilizadas</strong></h4>
+											</div>
+										</div>
+                                          
+                                          
+                                         <div class="container-fluid">
+								<div class="row justify-content-center">
+									<div class="col-8 col-sm-4 col-md-3 col-lg-2">
+										<div class="tarjeta card dis-flex flex-col mb-2">
+											
+											<div class="distritos w-100 dis-flex py-4 px-1">
+												<p class="pe dis-flex rsp"><img  class="img-partido" src="./assets/img/logos-partidos/PAN.png"></p>
+											</div>
+											<div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+												<div class="w-60">
+													<p class="px12 font-bold">Votos</p>
+													<p class="px12 font-bold">En la Entidad</p>
+													<p class="px12 font-bold">0</p>
+													
+												</div>
+												<div class="w-40 dis-flex flex-col align-e">
+													
+													<p class="px12 text-right mrt-2">0.0000%</p>
+												</div>
+												
+											</div>
+											
+												<div class="cuerpo bgGrisTenue dis-flex w-100 p-2 bt">
+												<div class="w-100">
+													
+													<p class="px12 font-bold">En el Extranjero</p>
+													<div class="row">
+														<div class="col-md-6"><p class="px12 font-bold text-right">0</p></div>
+														<div class="col-md-6"><p class="px12 text-right">0.0000%</p></div>
+													</div>
+													
+													
+												</div>
+											
+												
+											</div>
+											<div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p>Seleccionar</p></div>
+											
+											
+										</div>
+									</div>
+									
+										<div class="col-8 col-sm-4 col-md-3 col-lg-2">
+										<div class="tarjeta card dis-flex flex-col mb-2">
+											
+											<div class="distritos w-100 dis-flex py-4 px-1">
+												<p class="pe dis-flex pri"><img  class="img-partido" src="./assets/img/logos-partidos/PRI.png"></p>
+											</div>
+											<div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+												<div class="w-60">
+													<p class="px12 font-bold">Votos</p>
+													<p class="px12 font-bold">En la Entidad</p>
+													<p class="px12 font-bold">0</p>
+													
+												</div>
+												<div class="w-40 dis-flex flex-col align-e">
+													
+													<p class="px12 text-right mrt-2">0.0000%</p>
+												</div>
+												
+											</div>
+											
+												<div class="cuerpo bgGrisTenue dis-flex w-100 p-2 bt">
+												<div class="w-100">
+													
+													<p class="px12 font-bold">En el Extranjero</p>
+													<div class="row">
+														<div class="col-md-6"><p class="px12 font-bold text-right">0</p></div>
+														<div class="col-md-6"><p class="px12 text-right">0.0000%</p></div>
+													</div>
+													
+													
+												</div>
+											
+												
+											</div>
+											<div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p>Seleccionar</p></div>
+											
+											
+										</div>
+									</div>
+									
+										<div class="col-8 col-sm-4 col-md-3 col-lg-2">
+										<div class="tarjeta card dis-flex flex-col mb-2">
+											
+											<div class="distritos w-100 dis-flex py-4 px-1">
+												<p class="pe dis-flex pan"><img  class="img-partido" src="./assets/img/logos-partidos/PRD.png"></p>
+												<p class="pe dis-flex prd"><img  class="img-partido" src="./assets/img/logos-partidos/PRI.png"></p>
+												
+											</div>
+											<div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+												<div class="w-60">
+													<p class="px12 font-bold">Votos</p>
+													<p class="px12 font-bold">En la Entidad</p>
+													<p class="px12 font-bold">0</p>
+													
+												</div>
+												<div class="w-40 dis-flex flex-col align-e">
+													
+													<p class="px12 text-right mrt-2">0.0000%</p>
+												</div>
+												
+											</div>
+											
+												<div class="cuerpo bgGrisTenue dis-flex w-100 p-2 bt">
+												<div class="w-100">
+													
+													<p class="px12 font-bold">En el Extranjero</p>
+													<div class="row">
+														<div class="col-md-6"><p class="px12 font-bold text-right">0</p></div>
+														<div class="col-md-6"><p class="px12 text-right">0.0000%</p></div>
+													</div>
+													
+													
+												</div>
+											
+												
+											</div>
+											<div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p>Seleccionar</p></div>
+											
+											
+										</div>
+									</div>
+									
+										<div class="col-8 col-sm-4 col-md-3 col-lg-2">
+										<div class="tarjeta card dis-flex flex-col mb-2">
+											
+											<div class="distritos w-100 dis-flex py-4 px-1">
+												<p class="pe dis-flex verde"><img  class="img-partido" src="./assets/img/logos-partidos/PVEM.png"></p>
+											</div>
+											<div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+												<div class="w-60">
+													<p class="px12 font-bold">Votos</p>
+													<p class="px12 font-bold">En la Entidad</p>
+													<p class="px12 font-bold">0</p>
+													
+												</div>
+												<div class="w-40 dis-flex flex-col align-e">
+													
+													<p class="px12 text-right mrt-2">0.0000%</p>
+												</div>
+												
+											</div>
+											
+												<div class="cuerpo bgGrisTenue dis-flex w-100 p-2 bt">
+												<div class="w-100">
+													
+													<p class="px12 font-bold">En el Extranjero</p>
+													<div class="row">
+														<div class="col-md-6"><p class="px12 font-bold text-right">0</p></div>
+														<div class="col-md-6"><p class="px12 text-right">0.0000%</p></div>
+													</div>
+													
+													
+												</div>
+											
+												
+											</div>
+											<div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p>Seleccionar</p></div>
+											
+											
+										</div>
+									</div>
+									
+										<div class="col-8 col-sm-4 col-md-3 col-lg-2">
+										<div class="tarjeta card dis-flex flex-col mb-2">
+											
+											<div class="distritos w-100 dis-flex py-4 px-1">
+												<p class="pe dis-flex pt"><img  class="img-partido" src="./assets/img/logos-partidos/PT.png"></p>
+												<p class="pe dis-flex morena"><img  class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></p>
+												
+											</div>
+											<div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+												<div class="w-60">
+													<p class="px12 font-bold">Votos</p>
+													<p class="px12 font-bold">En la Entidad</p>
+													<p class="px12 font-bold">0</p>
+													
+												</div>
+												<div class="w-40 dis-flex flex-col align-e">
+													
+													<p class="px12 text-right mrt-2">0.0000%</p>
+												</div>
+												
+											</div>
+											
+												<div class="cuerpo bgGrisTenue dis-flex w-100 p-2 bt">
+												<div class="w-100">
+													
+													<p class="px12 font-bold">En el Extranjero</p>
+													<div class="row">
+														<div class="col-md-6"><p class="px12 font-bold text-right">0</p></div>
+														<div class="col-md-6"><p class="px12 text-right">0.0000%</p></div>
+													</div>
+													
+													
+												</div>
+											
+												
+											</div>
+											<div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p>Seleccionar</p></div>
+											
+											
+										</div>
+									</div>
+									
+										<div class="col-8 col-sm-4 col-md-3 col-lg-2">
+										<div class="tarjeta card dis-flex flex-col mb-2">
+											
+											<div class="distritos w-100 dis-flex py-4 px-1">
+												<p class="pe dis-flex panal"><img  class="img-partido" src="./assets/img/logos-partidos/PANAL.png"></p>
+											</div>
+											<div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+												<div class="w-60">
+													<p class="px12 font-bold">Votos</p>
+													<p class="px12 font-bold">En la Entidad</p>
+													<p class="px12 font-bold">0</p>
+													
+												</div>
+												<div class="w-40 dis-flex flex-col align-e">
+													
+													<p class="px12 text-right mrt-2">0.0000%</p>
+												</div>
+												
+											</div>
+											
+												<div class="cuerpo bgGrisTenue dis-flex w-100 p-2 bt">
+												<div class="w-100">
+													
+													<p class="px12 font-bold">En el Extranjero</p>
+													<div class="row">
+														<div class="col-md-6"><p class="px12 font-bold text-right">0</p></div>
+														<div class="col-md-6"><p class="px12 text-right">0.0000%</p></div>
+													</div>
+													
+													
+												</div>
+											
+												
+											</div>
+											<div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p>Seleccionar</p></div>
+											
+											
+										</div>
+									</div>
+									
+										<div class="col-8 col-sm-4 col-md-3 col-lg-2">
+										<div class="tarjeta card dis-flex flex-col mb-2">
+											
+											<div class="distritos w-100 dis-flex py-4 px-1">
+												<p class="pe dis-flex fuerza"><img  class="img-partido" src="./assets/img/logos-partidos/PES.png"></p>
+											</div>
+											<div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+												<div class="w-60">
+													<p class="px12 font-bold">Votos</p>
+													<p class="px12 font-bold">En la Entidad</p>
+													<p class="px12 font-bold">0</p>
+													
+												</div>
+												<div class="w-40 dis-flex flex-col align-e">
+													
+													<p class="px12 text-right mrt-2">0.0000%</p>
+												</div>
+												
+											</div>
+											
+												<div class="cuerpo bgGrisTenue dis-flex w-100 p-2 bt">
+												<div class="w-100">
+													
+													<p class="px12 font-bold">En el Extranjero</p>
+													<div class="row">
+														<div class="col-md-6"><p class="px12 font-bold text-right">0</p></div>
+														<div class="col-md-6"><p class="px12 text-right">0.0000%</p></div>
+													</div>
+													
+													
+												</div>
+											
+												
+											</div>
+											<div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p>Seleccionar</p></div>
+											
+											
+										</div>
+									</div>
+									
+									
+										<div class="col-8 col-sm-4 col-md-3 col-lg-2">
+										<div class="tarjeta card dis-flex flex-col mb-2">
+											
+											<div class="distritos w-100 dis-flex py-4 px-1">
+												<p class="pe dis-flex p1"><img  class="img-partido" src="./assets/img/logos-partidos/CI_01.png"></p>
+											</div>
+											<div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+												<div class="w-60">
+													<p class="px12 font-bold">Votos</p>
+													<p class="px12 font-bold">En la Entidad</p>
+													<p class="px12 font-bold">0</p>
+													
+												</div>
+												<div class="w-40 dis-flex flex-col align-e">
+													
+													<p class="px12 text-right mrt-2">0.0000%</p>
+												</div>
+												
+											</div>
+											
+												<div class="cuerpo bgGrisTenue dis-flex w-100 p-2 bt">
+												<div class="w-100">
+													
+													<p class="px12 font-bold">En el Extranjero</p>
+													<div class="row">
+														<div class="col-md-6"><p class="px12 font-bold text-right">0</p></div>
+														<div class="col-md-6"><p class="px12 text-right">0.0000%</p></div>
+													</div>
+													
+													
+												</div>
+											
+												
+											</div>
+											<div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p>Seleccionar</p></div>
+											
+											
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>   
+                                          
+                                          
+                                          
+                                          <div class="container-fluid"><div class="row dis-flex"><div class="col-md-12"><div class="row dis-flex justify-s"></div></div></div></div><div class="container-fluid py-1"><div class="row"><div class="col-md-12 dis-flex flex-col align-e"><div class="dis-flex"><i aria-hidden="true" class="fas fa-info-circle mr-2"></i><p class="texto"> Da clic en <strong>Seleccionar</strong> para visualizar el detalle de la votación. Puedes seleccionar hasta tres opciones. </p></div><button data-toggle="modal" data-target="#modalComparativa" class="boton-detalle btn bgMorado txBlanco btn-sm texto ml-2 px-4 cursorPointer" disabled=""> Ver detalle </button></div></div></div>
+                                          
+                                          <div class="container-fluid resumen-votacion">
+											<!-- Votos extranjero -->
+											<div ng-include="'includes/gubernatura/resumen-votacion.html'"></div>
+									   </div>
+								   </div>
+							   </div>
+						   </div>
+						   </div>
+						   <div class="card p-3 mt-3 mx-3">
+							   <!-- Votos extranjero -->
+							   <div ng-include="'includes/gubernatura/votos-extranjero.html'"></div>
+						   </div>
+							   
+						   <app-estadistica-nacional>
+							   <!-- Estadistica nacional-->
+								   <div ng-include="'includes/gubernatura/estadistica-nacional.html'"></div>
+						   </app-estadistica-nacional>
+						   </app-resumen-distrito-mapa>
+						   </app-votos-distrito>
+						   <app-pre-pie-pagina >
+						   <!-- pie de pagina 1 -->
+										  <div ng-include="'includes/footer-01.html'"></div>
+									   </app-pre-pie-pagina>
+							   </div>
+						   <!-- termina contenidos --> 
+									 
+								 </div>
+								 <div   class="row">
+									 <div   class="col-md-12 px-0">
+										 <app-pie-pagina>
+						   <!-- pie de pagina 2 -->
+										   <div ng-include="'includes/footer-02.html'"></div>
+										 </app-pie-pagina>
+									 </div>
+								 </div>
+							 </div>
+		
+		
+		
+		
+		
+	  <!-- INICIAN VENTANAS MODALES -->	
+      <div   id="modalParticipacion" tabindex="-1" role="dialog" aria-labelledby="ModalParticipacion" aria-hidden="true" class="modal fade modal-paritcipacion">
+          <div   role="document" class="modal-dialog">
+              <div   class="modal-content">
+                  <div   class="modal-header">
+                      <div   id="exampleModalLabel" class="modal-title font-medium px16"> Conoce cómo calcular el porcentaje de Participación ciudadana </div>
+                      <button   type="button" data-dismiss="modal" aria-label="Close" class="close">
+                          <i   class="fas fa-times-circle"></i>
+                      </button>
+                  </div>
+                  <div   class="modal-body px16 font-regular">
+                      <p   class="padding-b-15"> La Participación ciudadana es el porcentaje de ciudadanos que votaron, con base en la Lista Nominal de las Actas Contabilizadas. </p>
+                      <p   class="padding-b-15"> Por ejemplo, si en una casilla votan 500 electores y el número de personas inscritas en la Lista Nominal para esa casilla es de 750 ciudadanos, entonces: </p>
+                      <p   class="padding-b-15"> Multiplicamos 500 por 100 y el resultado lo dividimos entre 750. </p>
+                      <p   class="padding-b-15"> La votación emitida en las Casillas Especiales se tomará en cuenta para el cálculo de la Participación ciudadana, hasta el último corte de información que se publique en el PREP. </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div   id="modalCasilla" tabindex="-1" role="dialog" aria-labelledby="ModalCasilla" aria-hidden="true" class="modal fade modal-casilla">
+          <div   role="document" class="modal-dialog">
+              <div   class="modal-content">
+                  <div   class="modal-header">
+                      <div   id="exampleModalLabel" class="modal-title font-regular px16"> Identifica la <span   class="font-bold">Entidad</span>, <span   class="font-bold">Sección</span> y <span   class="font-bold">Primer apellido</span> de acuerdo con tu credencial. 
+                      </div>
+                      <button   type="button" data-dismiss="modal" aria-label="Close" class="close">
+                          <i   class="fas fa-times-circle"></i>
+                      </button>
+                  </div>
+                  <div   class="modal-body px16 font-regular">
+                      <div   class="row">
+                          <div   class="col-6">
+                              <img   src="./assets/img/resultadoscasilla/Credencial-A.svg" alt="" class="img-credencial">
+                          </div><div   class="col-6">
+                              <img   src="./assets/img/resultadoscasilla/Credencial-B.svg" alt="" class="img-credencial">
+                          </div></div><div   class="row">
+                              <div   class="col-6">
+                                  <img   src="./assets/img/resultadoscasilla/Credencial-C.svg" alt="" class="img-credencial">
+                              </div>
+                              <div   class="col-6">
+                                  <img   src="./assets/img/resultadoscasilla/Credencial-D.svg" alt="" class="img-credencial">
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <app-comparativa   _nghost-lnm-c89="">
+          <div _ngcontent-lnm-c89="" id="modalComparativa" tabindex="-1" role="dialog" aria-labelledby="ModalComparativa" aria-hidden="true" class="modal fade modalComparativa">
+              <div _ngcontent-lnm-c89="" role="document" class="modal-dialog modal-dialog-centered modal-lg"></div></div></app-comparativa></app-root>
+
+        <!-- /.container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        
+
+        <!-- Scripts angular -->
+        <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script-->
+        <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js"></script>
+        <script src="main.js"></script>	 	
+		 
+		<!--Inicialización de Tooltipo -->
+  			
+        <script>
+            $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+
+
+</body>
+</html>

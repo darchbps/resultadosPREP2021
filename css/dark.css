@@ -1,0 +1,33 @@
+.compartir {
+	 border-radius: 8px;
+}
+ .avance-nacional {
+	 padding: 12px;
+	 background-color: #1d1d1d;
+}
+ .avance-nacional .no-border {
+	 border: none;
+}
+ .cards-avance {
+	 background: #2c2c2c;
+	 box-shadow: 0px 3px 3px #0000F;
+	 border: 1px solid #2c2c2c;
+	 min-height: 85px;
+}
+ .titulo {
+	 font-size: 14px;
+	 color: #34344e;
+} 
+
+#MenuLateral{
+	background: #1d1d1d;
+} 
+
+#contenedorprincipal{
+	background: #1d1d1d;
+} 
+
+.cuerpo
+{background:#121212
+} 
+
