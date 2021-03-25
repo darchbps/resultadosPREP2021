@@ -456,9 +456,16 @@
 		<!--Inicialización de Tooltipo -->
   			
         <script>
-            $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-            })
+            /*$(function () {
+                console.log('onload ' + $("[data-toggle='tooltip']").length);
+                var myVar = setTimeout(function(){ 
+                    console.log($("[data-toggle='tooltip']").length);
+                    if ( $("[data-toggle='tooltip']").length > 0 ) {
+                        $("[data-toggle='tooltip']").tooltip();
+                        clearTimeout(myVar);
+                    }
+                }, 1000);
+            });*/
         </script>
 
 
