@@ -1,5 +1,5 @@
 <div class="bgPrototipo" data-toggle="collapse" data-target="#MenuLateral">
-    <div placement="right" show-delay="200" id="colapsador" class="colapsador dis-flex d-none d-xl-block" data-toggle="tooltip" data-placement="top" title="Ocultar Menú">
+    <div placement="right" show-delay="200" id="colapsador" class="colapsador dis-flex d-none d-xl-block" data-toggle="tooltip" data-placement="right" title="Ocultar Menú">
         <i aria-hidden="true" class="fas fa-chevron-left"></i>
     </div>
 
@@ -62,3 +62,9 @@
 </div>
 
  
+<script>
+    $(function () {
+    $("[data-toggle='tooltip']").tooltip();
+    console.log("Desde el include " + $("[data-toggle='tooltip']").length);
+    })
+</script>

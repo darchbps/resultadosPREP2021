@@ -18,13 +18,12 @@
 
     </head>
     <body ng-app="PREPSLP"> 
-  <div style="display: none;"></div>  
-  <app-root>
-      <app-boton-compartir>
-       <!-- /redes sociales -->
-            <div ng-include="'includes/globales/compartir.html'"></div>
-      </app-boton-compartir>
-      <app-encabezado>
+     <div style="display: none;"></div>  
+     <app-boton-compartir >
+           <!-- /redes sociales -->
+           <div ng-include="'includes/globales/compartir.html'"></div>
+     </app-boton-compartir>
+         <app-encabezado>
         <!-- /Encabezado -->
           <div ng-include="'includes/diputaciones/header.html'"></div>
         </app-encabezado>
@@ -35,7 +34,7 @@
               <div _ngcontent-lnm-c90="" class="col-12 my-3 d-xl-none">
                 <app-avance-nacional >
                     <!-- Avance entidad -->
-                  <div ng-include="'includes/ayuntamientos/avance-entidad.html'"></div>
+                  <div ng-include="'includes/diputaciones/avance-entidad.html'"></div>
                 </app-avance-nacional>
               </div>
               
@@ -110,69 +109,10 @@
                   <div _ngcontent-lnm-c90="" class="container-fluid py-xl-3">
                       <div _ngcontent-lnm-c90="" class="row">
                           <div _ngcontent-lnm-c90="" class="col-xl-8 d-none d-xl-block altoAvance">
-                              <app-avance-nacional _ngcontent-lnm-c90="" _nghost-lnm-c84="">
-                                  <div _ngcontent-lnm-c84="" class="card dis-flex flex-col space-a avance-nacional h-100">
-                                      <div _ngcontent-lnm-c84="" class="container-fluid bgPrototipo">
-                                          <div _ngcontent-lnm-c84="" class="row">
-                                              <div _ngcontent-lnm-c84="" class="dis-flex space-b col-9 pl-0">
-                                                  <h3 _ngcontent-lnm-c84="" class="txRosaIne px20">
-                                                      <strong _ngcontent-lnm-c84="">Avance Local</strong>
-                                                  </h3>
-                                              </div>
-                                              <div _ngcontent-lnm-c84="" class="col-3 dis-flex justify-e">
-                                                  <div _ngcontent-lnm-c84="" class="actualizar dis-flex flex-col bgRosaIne txBlanco px-4 py-1 px14 cursorPointer">
-                                                      <i _ngcontent-lnm-c84="" aria-hidden="true" class="fas fa-redo"></i> Actualizar 
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div _ngcontent-lnm-c84="" class="container-fluid px-0 py-2">
-                                          <div _ngcontent-lnm-c84="" class="row px-1">
-                                              <div _ngcontent-lnm-c84="" class="col-4 px-1">
-                                                  <div _ngcontent-lnm-c84="" class="card cards-avance h-12v p-1">
-                                                      <div _ngcontent-lnm-c84="" class="titulo">
-                                                          <p _ngcontent-lnm-c84=""><strong _ngcontent-lnm-c84=""> Actas capturadas </strong></p>
-                                                      </div>
-                                                      <div _ngcontent-lnm-c84="" class="contenido capturadas">
-                                                          <p _ngcontent-lnm-c84=""><strong _ngcontent-lnm-c84=""> 0 </strong> de 157,859 </p>
-                                                          <p _ngcontent-lnm-c84=""> (0.0000%) </p>
-                                                          <div _ngcontent-lnm-c84="" class="borde-barra w-100">
-                                                              <div _ngcontent-lnm-c84="" class="barra-avance" style="width: 0%;">
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div _ngcontent-lnm-c84="" class="col-4 px-1">
-                                                  <div _ngcontent-lnm-c84="" class="card cards-avance h-12v p-1">
-                                                      <div _ngcontent-lnm-c84="" class="titulo">
-                                                          <p _ngcontent-lnm-c84="" class="prueba"><strong _ngcontent-lnm-c84=""><i _ngcontent-lnm-c84="" data-toggle="modal" data-target="#modalParticipacion" class="fas fa-question-circle cursor-hand"></i> Participación ciudadana </strong></p>
-                                                      </div>
-                                                      <div _ngcontent-lnm-c84="" class="contenido dis-flex flex-col pt-3">
-                                                          <p _ngcontent-lnm-c84="" class="participacion"><strong _ngcontent-lnm-c84=""> 0.0000% </strong></p>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div _ngcontent-lnm-c84="" class="col-4 px-1">
-                                                  <div _ngcontent-lnm-c84="" class="card cards-avance h-12v p-1">
-                                                      <div _ngcontent-lnm-c84="" class="titulo">
-                                                          <p _ngcontent-lnm-c84=""><strong _ngcontent-lnm-c84=""> Último corte </strong></p>
-                                                      </div>
-                                                      <div _ngcontent-lnm-c84="" class="contenido dis-flex flex-col align-e pt-3">
-                                                          <div _ngcontent-lnm-c84="" class="dis-flex w-100">
-                                                              <p _ngcontent-lnm-c84="" class="fecha mr-1"> 24 noviembre 2020 </p>
-                                                              <div _ngcontent-lnm-c84="" class="dis-flex flex-col borde-tiempo">
-                                                                  <p _ngcontent-lnm-c84="" class="tiempo-centro"> Tiempo del Centro </p>
-                                                                  <p _ngcontent-lnm-c84="" class="utc"> 21:30 h UTC-5 </p>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </app-avance-nacional>
+                            <app-avance-nacional >
+                                <!-- Avance entidad -->
+                              <div ng-include="'includes/diputaciones/avance-entidad.html'"></div>
+                            </app-avance-nacional>
                           </div>
                           <div _ngcontent-lnm-c90="" class="col-xl-4 d-none d-xl-block altoAvance pl-0">
                               <app-buscador _ngcontent-lnm-c90="" _nghost-lnm-c86="">
@@ -274,30 +214,18 @@
                               "ng-reflect-ng-for-of": "[object Object],[object Object"
                             }--></div></div><div _ngcontent-rxc-c60="" class="boton-scroll dis-flex cursorPointer"><i _ngcontent-rxc-c60="" aria-hidden="true" class="fas fa-chevron-right"></i></div></div></div><div _ngcontent-rxc-c60="" class="container-fluid"><div _ngcontent-rxc-c60="" class="row dis-flex"><div _ngcontent-rxc-c60="" class="col-md-12"><div _ngcontent-rxc-c60="" class="row dis-flex justify-s"></div></div></div></div><div _ngcontent-rxc-c60="" class="container-fluid resumen-votacion"><div _ngcontent-rxc-c60="" class="row"><div _ngcontent-rxc-c60="" class="col-8 bgGris py-2 pxx"><p _ngcontent-rxc-c60="" class="titulo"><strong _ngcontent-rxc-c60="">Resumen de la votación</strong></p><div _ngcontent-rxc-c60="" class="container-fluid"><div _ngcontent-rxc-c60="" class="row dis-flex"><div _ngcontent-rxc-c60="" class="apartado dis-flex flex-col"><div _ngcontent-rxc-c60="" class="dis-flex w-100 align-s"><p _ngcontent-rxc-c60="" class="subtitulo"> Votos acumulados &nbsp; </p><span _ngcontent-rxc-c60="" tooltip="Es la sumatoria de los votos obtenidos por Partido Político, Coalición o Candidatura Independiente." placement="top" show-delay="200" ng-reflect-tooltip-value="Es la sumatoria de los votos o" ng-reflect-placement="top" ng-reflect-show-delay="200"><i _ngcontent-rxc-c60="" aria-hidden="true" class="fas fa-info-circle"></i></span></div><div _ngcontent-rxc-c60="" class="row dis-flex w-100 space-b"><p _ngcontent-rxc-c60="" class="col-12 cantidad"><strong _ngcontent-rxc-c60=""> 0 </strong></p><p _ngcontent-rxc-c60="" class="col-12 porcentaje"> 0.0000% </p></div></div><p _ngcontent-rxc-c60="" class="separador"><strong _ngcontent-rxc-c60="">+</strong></p><div _ngcontent-rxc-c60="" class="apartado dis-flex flex-col"><div _ngcontent-rxc-c60="" class="dis-flex w-100"><p _ngcontent-rxc-c60="" class="subtitulo"> Candidaturas no registradas </p></div><div _ngcontent-rxc-c60="" class="row dis-flex w-100 space-b"><p _ngcontent-rxc-c60="" class="col-12 cantidad"><strong _ngcontent-rxc-c60=""> 0 </strong></p><p _ngcontent-rxc-c60="" class="col-12 porcentaje"> 0.0000% </p></div></div><p _ngcontent-rxc-c60="" class="separador"><strong _ngcontent-rxc-c60="">+</strong></p><div _ngcontent-rxc-c60="" class="apartado dis-flex flex-col"><div _ngcontent-rxc-c60="" class="dis-flex w-100"><p _ngcontent-rxc-c60="" class="subtitulo"> Nulos </p></div><div _ngcontent-rxc-c60="" class="row dis-flex w-100 space-b"><p _ngcontent-rxc-c60="" class="col-12 cantidad"><strong _ngcontent-rxc-c60=""> 0 </strong></p><p _ngcontent-rxc-c60="" class="col-12 porcentaje"> 0.0000% </p></div></div><p _ngcontent-rxc-c60="" class="d-none d-lg-block separador pr-3"><strong _ngcontent-rxc-c60="">=</strong></p><div _ngcontent-rxc-c60="" class="d-none d-lg-block apartado dis-flex flex-col"><div _ngcontent-rxc-c60="" class="dis-flex w-100 justify-e"><p _ngcontent-rxc-c60="" class="px20"><strong _ngcontent-rxc-c60="">Total de votos</strong></p></div><div _ngcontent-rxc-c60="" class="dis-flex w-100 space-b justify-e"><p _ngcontent-rxc-c60="" class="total"><strong _ngcontent-rxc-c60="" class="txRosaIne"> 0 </strong></p></div><div _ngcontent-rxc-c60="" class="dis-flex w-100 space-b justify-e"><p _ngcontent-rxc-c60=""><strong _ngcontent-rxc-c60="" class="txRosaIne"> 100.0000% </strong></p></div></div></div><div _ngcontent-rxc-c60="" class="container-fluid d-lg-none"><div _ngcontent-rxc-c60="" class="row"><div _ngcontent-rxc-c60="" class="col-12 dis-flex flex-col mt-3"><div _ngcontent-rxc-c60="" class="dis-flex w-100 justify-e"><p _ngcontent-rxc-c60="" class="px20 mb-0"><strong _ngcontent-rxc-c60="">Total de votos</strong></p></div><div _ngcontent-rxc-c60="" class="dis-flex w-100 justify-e"><p _ngcontent-rxc-c60="" class="total"><strong _ngcontent-rxc-c60=""> = <span _ngcontent-rxc-c60="" class="txRosaIne">0</span></strong></p></div><div _ngcontent-rxc-c60="" class="dis-flex w-100 justify-e"><p _ngcontent-rxc-c60=""><strong _ngcontent-rxc-c60=""><span _ngcontent-rxc-c60="" class="txRosaIne">100.0000%</span></strong></p></div></div></div></div></div></div><div _ngcontent-rxc-c60="" class="col-3 mt-4 p-2 bgGris ml-2"><div _ngcontent-rxc-c60="" class="bgGris resumen-votacion p-2"><p _ngcontent-rxc-c60="" class="titulo"><strong _ngcontent-rxc-c60="">Observaciones en Acta</strong></p><p _ngcontent-rxc-c60=""> - </p></div></div></div></div></div></div></div><div _ngcontent-rxc-c60="" class="row"><div _ngcontent-rxc-c60="" class="col-md-12"><div _ngcontent-rxc-c60="" class="estadistica-casilla card mt-3 p-3"><div _ngcontent-rxc-c60="" class="container-fluid"><div _ngcontent-rxc-c60="" class="row"><div _ngcontent-rxc-c60="" class="col"><h4 _ngcontent-rxc-c60="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-rxc-c60="">Estadística de Casilla</strong></h4></div></div></div><div _ngcontent-rxc-c60="" class="container-fluid py-4"><div _ngcontent-rxc-c60="" class="row"><div _ngcontent-rxc-c60="" class="col"><p _ngcontent-rxc-c60="" class="subtitulo"><strong _ngcontent-rxc-c60="">Participación ciudadana conforme a las Actas Contabilizadas</strong></p></div></div></div><div _ngcontent-rxc-c60="" class="container-fluid"><div _ngcontent-rxc-c60="" class="row my-2"><div _ngcontent-rxc-c60="" class="col-10"><div _ngcontent-rxc-c60="" class="grafica dis-flex justify-s px-2"><div _ngcontent-rxc-c60="" class="textos"><p _ngcontent-rxc-c60="" class="casilla px10"> 375 Básica 1 </p><p _ngcontent-rxc-c60="" class="porcentaje px12"><strong _ngcontent-rxc-c60=""> 0.0000% </strong></p><div _ngcontent-rxc-c60="" class="interno" ng-reflect-ng-style="[object Object]" style="width: 0%;"></div></div></div></div><div _ngcontent-rxc-c60="" class="col-2 dis-flex flex-col align-e pr-5"><p _ngcontent-rxc-c60="" class="lista-nominal"><strong _ngcontent-rxc-c60=""> Total Lista nominal </strong></p><p _ngcontent-rxc-c60="" class="total-nominal"><strong _ngcontent-rxc-c60=""> 514 </strong></p></div></div></div></div></div></div><div _ngcontent-rxc-c60="" class="row"><div _ngcontent-rxc-c60="" class="col-md-12"><div _ngcontent-rxc-c60="" class="estadistica-casilla observacionesActa card mt-3 p-3"><div _ngcontent-rxc-c60="" class="container-fluid"><div _ngcontent-rxc-c60="" class="row"><div _ngcontent-rxc-c60="" class="col"><h4 _ngcontent-rxc-c60="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-rxc-c60="">Observaciones en Acta</strong></h4></div></div></div><div _ngcontent-rxc-c60="" class="container-fluid py-4"><div _ngcontent-rxc-c60="" class="row justify-content-center"><div _ngcontent-rxc-c60="" class="col-11"><div _ngcontent-rxc-c60="" class="container-fluid"><div _ngcontent-rxc-c60="" class="row"><div _ngcontent-rxc-c60="" class="col-12 col-md-6"><h4 _ngcontent-rxc-c60="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-rxc-c60="" class="txRosa2">Contabilizadas</strong></h4><div _ngcontent-rxc-c60="" class="grupo py-3"><p _ngcontent-rxc-c60="" class="pb-2"><strong _ngcontent-rxc-c60=""> Ilegible </strong></p><p _ngcontent-rxc-c60=""> La cantidad de votos en algún campo del Acta PREP no puede leerse, tanto en letra como en número. </p></div><div _ngcontent-rxc-c60="" class="grupo py-3"><p _ngcontent-rxc-c60="" class="pb-2"><strong _ngcontent-rxc-c60=""> Sin Dato </strong></p><p _ngcontent-rxc-c60=""> La cantidad de votos no fue asentada en el Acta PREP ni en letra ni en número en algún campo del Acta PREP. </p></div><div _ngcontent-rxc-c60="" class="grupo py-3 mb-2"><p _ngcontent-rxc-c60="" class="pb-2"><strong _ngcontent-rxc-c60=""> Identificación por Proceso Técnico Operativo </strong></p><p _ngcontent-rxc-c60=""> Los datos del Acta PREP no se identificaron y sé solicitó verificarlos por algún procedimiento válido establecido en el Proceso Técnico Operativo. </p></div><h4 _ngcontent-rxc-c60="" class="subtitulo-seccion pleca-izquierda pleca-morada mt-5"><strong _ngcontent-rxc-c60=""><span _ngcontent-rxc-c60="" class="txMorado">No identificadas -</span> Fuera del catálogo</strong></h4><div _ngcontent-rxc-c60="" class="grupo py-3"><p _ngcontent-rxc-c60=""> No es posible ubicar el Acta PREP dentro de la lista de Actas de casillas aprobadas por el INE, al presentar alguna omisión, ilegibilidad o error en sus datos de identificación. Para fines de publicación, el Acta se muestra al final del listado de Actas aprobadas en la Base de Datos. </p></div></div><div _ngcontent-rxc-c60="" class="col-12 col-md-6"><h4 _ngcontent-rxc-c60="" class="subtitulo-seccion pleca-izquierda pleca-aqua"><strong _ngcontent-rxc-c60="" class="txAqua">No Contabilizadas</strong></h4><div _ngcontent-rxc-c60="" class="grupo py-3"><p _ngcontent-rxc-c60="" class="pb-2"><strong _ngcontent-rxc-c60=""> Excede Lista Nominal </strong></p><p _ngcontent-rxc-c60=""> La suma de todos los votos en el Acta PREP, excede el número de ciudadanas y ciudadanos en la Lista Nominal de Electores de la casilla, incluido el número de votos emitidos por los representantes de los Partidos Políticos y, en su caso Candidaturas Independientes. </p></div><div _ngcontent-rxc-c60="" class="grupo py-3"><p _ngcontent-rxc-c60="" class="pb-2"><strong _ngcontent-rxc-c60=""> Sin Acta </strong></p><p _ngcontent-rxc-c60="" class="pb-2"> El Acta PREP no llegó junto con el paquete electoral al Centro de Acopio y Transmisión de Datos (CATD), por algunas de las siguientes causas: </p><p _ngcontent-rxc-c60=""> 1. Sin Acta por paquete no entregado. </p><p _ngcontent-rxc-c60=""> 2. Sin Acta por casilla no instalada. </p><p _ngcontent-rxc-c60=""> 3. Sin Acta por paquete entregado sin sobre. </p></div><div _ngcontent-rxc-c60="" class="grupo py-3"><p _ngcontent-rxc-c60="" class="pb-2"><strong _ngcontent-rxc-c60=""> Todos los campos ilegibles </strong></p><p _ngcontent-rxc-c60=""> Todos los campos del Acta PREP correspondientes al número de votos, son ilegibles tanto en letra como en número. </p></div><div _ngcontent-rxc-c60="" class="grupo py-3"><p _ngcontent-rxc-c60="" class="pb-2"><strong _ngcontent-rxc-c60=""> Todos los campos vacíos </strong></p><p _ngcontent-rxc-c60=""> Todos los campos del Acta PREP correspondientes al número de votos, se encuentran vacíos tanto en letra como en número. </p></div></div></div></div></div></div></div></div></div></div></div></app-casilla-resumen>
                       
-                      <app-pre-pie-pagina _ngcontent-lnm-c90="" _nghost-lnm-c87="">
-                          <div _ngcontent-lnm-c87="" class="container-fluid bgGris py-1">
-                              <div _ngcontent-lnm-c87="" class="row justify-content-center">
-                                  <div _ngcontent-lnm-c87="" class="col-md-10 px12 text-center">
-                                      <p _ngcontent-lnm-c87="" class="m-0"> Los resultados presentados tienen un carácter informativo y no son definitivos, por tanto, no tienen efectos jurídicos. </p>
-                                      <p _ngcontent-lnm-c87="" class="m-0"> Con base en la Ley Federal del Derecho de Autor queda prohibida cualquier modificación al diseño de este sitio. </p
-                                      <p _ngcontent-lnm-c87="" class="m-0"> La modificación y/o destrucción de la información y/o contenido total o parcial de este sitio, es delito federal de acuerdo al Código Penal Federal. </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </app-pre-pie-pagina>
+                            <app-pre-pie-pagina >
+                                <!-- pie de pagina 1 -->
+                                <div ng-include="'includes/footer-01.html'"></div>
+                             </app-pre-pie-pagina>
               </div>
           </div>
           <div _ngcontent-lnm-c90="" class="row">
               <div _ngcontent-lnm-c90="" class="col-md-12 px-0">
-                  <app-pie-pagina _ngcontent-lnm-c90="" _nghost-lnm-c88="">
-                      <footer _ngcontent-lnm-c88="" class="container-fluid bgMorado txBlanco pie-pagina">
-                          <div _ngcontent-lnm-c88="" class="row">
-                              <div _ngcontent-lnm-c88="" class="col-xl-10 offset-xl-2 dis-flex space-a px12 px-0 py-2">
-                                  <p _ngcontent-lnm-c88="" class="m-0"> Este sitio se visualiza mejor en las versiones más recientes de los navegadores web &nbsp;|&nbsp; Consejo Estatal Electoral y de Participación Ciudadana de S.L.P. &nbsp;|&nbsp; Servicios de Informática v.20201126 &nbsp;|&nbsp; Aviso de privacidad </p>
-                              </div>
-                          </div>
-                      </footer>
-                  </app-pie-pagina>
+                    <app-pie-pagina>
+                    <!-- pie de pagina 2 -->
+                     <div ng-include="'includes/footer-02.html'"></div>
+                   </app-pie-pagina>
               </div>
           </div>
       </div>
@@ -358,7 +286,7 @@
   "ng-reflect-ng-if": "false"
 }--><!--bindings={
   "ng-reflect-ng-if": "false"
-}--></div></div></app-comparativa></app-root>
+}--></div></div></app-comparativa> 
 
 
 

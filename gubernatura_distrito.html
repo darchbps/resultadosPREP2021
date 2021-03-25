@@ -1,229 +1,33 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8">
-  <title>Publicacion</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>CEEPAC</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">      
+        
+        <!-- Custom styles for this template -->
+		<link href="css/INE.css" rel="stylesheet" type="text/css">
+        <link href="css/roboto-fontface.css" rel="stylesheet" type="text/css">
+        <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
+        <link href="assets/highcharts/css/highcharts.css" type="text/css">
+		
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
-        <script src="./js/gubernatura.js"></script>
-   
-    <link rel="stylesheet" href="./fontawesome/css/all.css">   
-    <link rel="stylesheet" href="./css/style.css">   
-     <link rel="stylesheet" href="./css/moleculas.css">
-    <link rel="stylesheet" href="./css/roboto-fontface.css">   
-    <link rel="stylesheet" href="./css/fuentes.css">
-    <link rel="stylesheet" href="./css/app.component.css">
-    <link rel="stylesheet" href="./css/botones.css">
-    <link rel="stylesheet" href="./css/colores.css">
-    <link rel="stylesheet" href="./css/flexbox.css">
-    <link rel="stylesheet" href="./css/generales.css">
-    <link rel="stylesheet" href="./css/graficaBarras.css">
-    <link rel="stylesheet" href="./css/medias.css">
-   
-    <link rel="stylesheet" href="./css/paddings.css">
-    <link rel="stylesheet" href="./css/tamanos.css">
-    <link rel="stylesheet" href="./css/transiciones.css">
-    
-    
-    <link rel="stylesheet" href="./css/encabezado.component.css">
-    <link rel="stylesheet" href="./css/avance-nacional.component.css">
-    <link rel="stylesheet" href="./css/boton-compartir.component.css">
-    <link rel="stylesheet" href="./css/buscador.component.css">
-    <link rel="stylesheet" href="./css/estadistica-nacional.component.css">
-    <link rel="stylesheet" href="./css/menu-lateral.component.css">
-    <link rel="stylesheet" href="./css/buscador.component.css">
-    <link rel="stylesheet" href="./css/resumen-distrito-mapa.component.css">
-    <link rel="stylesheet" href="./css/votos-distrito.component.css">
-
-
-  
-    
-    
-    
-</head>
-<body>
+    </head>
+    <body ng-app="PREPSLP"> 
   <div style="display: none;"></div>  
   <app-root _nghost-lnm-c90="" ng-version="9.0.7">
-      <app-boton-compartir _ngcontent-lnm-c90="" _nghost-lnm-c82="">
-          <div _ngcontent-lnm-c82="" class="boton-compartir dis-flex flex-col">
-              <div _ngcontent-lnm-c82="" class="fondo dis-flex flex-col pt-1">
-                  <div _ngcontent-lnm-c82="" class="redes">
-                      <div _ngcontent-lnm-c82="" class="boton whatsapp dis-flex">
-                          <i _ngcontent-lnm-c82="" aria-hidden="true" class="fas fa-phone-alt"></i>
-                      </div>
-                      <div _ngcontent-lnm-c82="" class="boton facebook dis-flex">
-                          <i _ngcontent-lnm-c82="" aria-hidden="true" class="fab fa-facebook-f"></i>
-                      </div>
-                      <div _ngcontent-lnm-c82="" class="boton twitter dis-flex">
-                          <i _ngcontent-lnm-c82="" aria-hidden="true" class="fab fa-twitter"></i>
-                      </div>
-                  </div>
-                  <div _ngcontent-lnm-c82="" class="principal dis-flex">
-                      <i _ngcontent-lnm-c82="" aria-hidden="true" class="fas fa-share-alt"></i>
-                  </div>
-              </div>
-              <p _ngcontent-lnm-c82="" class="text-center"> Compartir </p>
-          </div>
-      </app-boton-compartir>
-      <app-encabezado _ngcontent-lnm-c90="" _nghost-lnm-c83="">
-          <header _ngcontent-lnm-c83="" class="total-encabezado sombra w-100">
-              <div _ngcontent-lnm-c83="">
-                  <div _ngcontent-lnm-c83="" class="container-fluid bgMorado txBlanco d-none d-xl-block">
-                      <div _ngcontent-lnm-c83="" class="row">
-                          <div _ngcontent-lnm-c83="" class="col-md-9 offset-md-3">
-                              <ul _ngcontent-lnm-c83="" class="dis-flex justify-e m-0 p-1">
-                                  <li _ngcontent-lnm-c83="" routerlink="/preguntas-frecuentes" class="pl-3 pr-3 cursorPointer" tabindex="0" ng-reflect-router-link="/preguntas-frecuentes"><i _ngcontent-lnm-c83="" aria-hidden="true" class="fas fa-question-circle"></i> Preguntas frecuentes</li>
-                                  <li _ngcontent-lnm-c83="" class="pl-3 pr-3 borde-izq-solido"><i _ngcontent-lnm-c83="" aria-hidden="true" class="fas fa-info-circle"></i> Centro de Ayuda </li><li _ngcontent-lnm-c83="" class="pl-3 pr-3 tamanio-fuente borde-izq-solido dis-flex"><span _ngcontent-lnm-c83="" class="minimo">A</span><input _ngcontent-lnm-c83="" type="range" id="customRange1" class="input-rango"><span _ngcontent-lnm-c83="" class="maximo"><strong _ngcontent-lnm-c83="">A</strong></span></li>
-                                  <li _ngcontent-lnm-c83="" class="pl-3 pr-3 modo-dark borde-izq-solido dis-flex"><span _ngcontent-lnm-c83="" class="claro">Claro</span><label _ngcontent-lnm-c83="" for="modo_dia_y_noche" class="switch margin-r-40 margin-b-0"><input _ngcontent-lnm-c83="" type="checkbox" id="modo_dia_y_noche" value="Modo día o noche" aria-label="Modo día o noche"><span _ngcontent-lnm-c83="" class="slider round"></span></label><span _ngcontent-lnm-c83="" class="obscuro">Oscuro</span></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-                  <div _ngcontent-lnm-c83="" class="container-fluid bgGrisTenue encabezado py-2">
-                      <div _ngcontent-lnm-c83="" class="row">
-                          <div _ngcontent-lnm-c83="" class="col-3 col-md-2 dis-flex d-none d-md-flex">
-                              <img _ngcontent-lnm-c83="" src="assets/img/generales/ceepac_logo.png" alt="Logo PREP" class="max-logo img-fluid">
-                          </div>
-                          <div _ngcontent-lnm-c83="" class="col-3 col-md-2 pl-2 pr-0 d-block d-md-none">
-                              <div _ngcontent-lnm-c83="" class="dis-flex w-100 h-100">
-                                  <img _ngcontent-lnm-c83="" src="assets/img/generales/slp.png" alt="Logo PREP" class="img-fluid">
-                              </div>
-                          </div>
-                          <div _ngcontent-lnm-c83="" class="col-7 col-md-8 dis-flex flex-col">
-                              <h1 _ngcontent-lnm-c83="">Programa de Resultados <span _ngcontent-lnm-c83="" class="txRosaIne">E</span>lectorales Preliminares 2021</h1>
-                              <p _ngcontent-lnm-c83="" class="subtitulo d-none d-md-block">Elecciones Estatales de <span _ngcontent-lnm-c83="" class="txRosaIne">San Luis Potosí</span></p>
-                          </div>
-                          <div _ngcontent-lnm-c83="" class="col-2 col-md-2 dis-flex d-none d-md-flex">
-                              <img _ngcontent-lnm-c83="" src="assets/img/generales/slp.png" alt="Logo PREP" class="max-logo img-fluid">
-                          </div>
-                      </div>
-                  </div>
-                  <div _ngcontent-lnm-c83="" class="container-fluid menu d-none d-xl-block">
-                      <div _ngcontent-lnm-c83="" class="row">
-                          <div _ngcontent-lnm-c83="" class="w-5 dis-flex flex-col cursorPointer boton-home" onclick="window.location.href='./gubernatura.html'">
-                              <i _ngcontent-lnm-c83="" aria-hidden="true" class="ine ine-home px24"></i>
-                              <p _ngcontent-lnm-c83="" class="px14">Inicio</p>
-                          </div>
-                          <div _ngcontent-lnm-c83="" class="w-95">
-                              <div _ngcontent-lnm-c83="" class="container-fluid">
-                                  <div _ngcontent-lnm-c83="" class="row">
-                                      <div _ngcontent-lnm-c83="" class="col-md-2 dis-flex bgRosaIne txBlanco py-3" onclick="window.location.href='./gubernatura.html'">
-                                          <p _ngcontent-lnm-c83="" class="titulo-diputaciones">
-                                              <strong _ngcontent-lnm-c83="">Gubernatura</strong>
-                                          </p>
-                                      </div>
-                                      
-                                      <div _ngcontent-lnm-c83="" class="col-md-2 dis-flex bgGrafica3  txBlanco py-3" onclick="window.location.href='./diputaciones.html'">
-                                          <p _ngcontent-lnm-c83="" class="titulo-diputaciones">
-                                              <strong _ngcontent-lnm-c83="">Diputaciones</strong>
-                                          </p>
-                                      </div>
-                                      
-                                      <div _ngcontent-lnm-c83="" class="col-md-2 dis-flex bgGrafica3 txBlanco py-3" onclick="window.location.href='./ayuntamientos.html'">
-                                          <p _ngcontent-lnm-c83="" class="titulo-diputaciones">
-                                              <strong _ngcontent-lnm-c83="">Ayuntamientos</strong>
-                                          </p>
-                                      </div>
-                                      
-                                      <div _ngcontent-lnm-c83="" class="col-md-6 dis-flex">
-                                          <ul _ngcontent-lnm-c83="" class="w-100 dis-flex space-b justify-e m-0">
-                                              <li _ngcontent-lnm-c83="" routerlinkactive="router-link-active" class="pr-4 base-datos cursorPointer font-medium dis-flex" tabindex="0" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="/base-de-datos">
-                                                  <i _ngcontent-lnm-c83="" aria-hidden="true" class="ine ine-base-datos mr-2 px24"></i>
-                                                  <p _ngcontent-lnm-c83="">Base de Datos</p>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div _ngcontent-lnm-c83="" class="hidebar" ng-reflect-ng-class="[object Object]">
-                      <div _ngcontent-lnm-c83="" class="row size-avance padding-t-10 padding-b-10">
-                          <div _ngcontent-lnm-c83="" class="col-2">
-                              <div _ngcontent-lnm-c83="" class="center-vertical">
-                                  <span _ngcontent-lnm-c83="" class="align-middle">
-                                      <strong _ngcontent-lnm-c83="" class="txRosaIne"> Avance Local</strong>
-                                  </span>
-                              </div>
-                          </div>
-                          <div _ngcontent-lnm-c83="" class="col-3">
-                              <div _ngcontent-lnm-c83="" class="card cards-avance p-1">
-                                  <div _ngcontent-lnm-c83="" class="titulo">
-                                      <div _ngcontent-lnm-c83="" class="row">
-                                          <div _ngcontent-lnm-c83="" class="col-6">
-                                              <strong _ngcontent-lnm-c83=""> Actas capturadas </strong>
-                                          </div>
-                                          <div _ngcontent-lnm-c83="" class="col-6 text-right"> (0.0000%) </div>
-                                              
-                                      </div>
-                                      <div _ngcontent-lnm-c83="" class="row">
-                                          <div _ngcontent-lnm-c83="" class="col-6">
-                                              <strong _ngcontent-lnm-c83=""> 0 </strong> de 157,859 
-                                          </div>
-                                          <div _ngcontent-lnm-c83="" class="col-6">
-                                              <div _ngcontent-lnm-c83="" class="center-vertical">
-                                                  <div _ngcontent-lnm-c83="" class="borde-barra w-100">
-                                                      <div _ngcontent-lnm-c83="" class="barra-avance" style="width: 0%;">
-                                                      </div>
-                                                  </div>                                                      
-                                              </div>
-                                          </div>
-                                      </div>                                          
-                                  </div>
-                              </div>                                  
-                          </div>
-                          <div _ngcontent-lnm-c83="" class="col-3">
-                              <div _ngcontent-lnm-c83="" class="card cards-avance p-1">
-                                  <div _ngcontent-lnm-c83="" class="titulo">
-                                      <p _ngcontent-lnm-c83="" class="prueba text-center">
-                                          <strong _ngcontent-lnm-c83="">
-                                              <i _ngcontent-lnm-c83="" data-toggle="modal" data-target="#modalParticipacion" class="fas fa-question-circle cursor-hand"></i> Participación ciudadana 
-                                          </strong>
-                                      </p>
-                                  </div>
-                                  <div _ngcontent-lnm-c83="" class="contenido dis-flex flex-col">
-                                      <p _ngcontent-lnm-c83="" class="participacion">
-                                          <strong _ngcontent-lnm-c83=""> 0.0000% </strong>
-                                      </p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div _ngcontent-lnm-c83="" class="col-3">
-                              <div _ngcontent-lnm-c83="" class="card cards-avance p-1">
-                                  <div _ngcontent-lnm-c83="" class="titulo">
-                                      <p _ngcontent-lnm-c83="" class="prueba">
-                                          <strong _ngcontent-lnm-c83=""> Último corte </strong>
-                                      </p>
-                                  </div>
-                                  <div _ngcontent-lnm-c83="" class="contenido dis-flex flex-col">
-                                      <div _ngcontent-lnm-c83="" class="dis-flex w-100">
-                                          <p _ngcontent-lnm-c83="" class="fecha mr-1"> 24 noviembre 2020 </p>
-                                          <div _ngcontent-lnm-c83="" class="dis-flex flex-col borde-tiempo">
-                                              <p _ngcontent-lnm-c83="" class="tiempo-centro"> Tiempo del Centro </p>
-                                              <p _ngcontent-lnm-c83="" class="utc"> 21:30 h UTC-5 </p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div _ngcontent-lnm-c83="" class="col-1">
-                              <div _ngcontent-lnm-c83="" class="center-vertical">
-                                  <div _ngcontent-lnm-c83="" class="actualizar dis-flex flex-col bgRosaIne txBlanco px-4 py-1 px14 cursorPointer">
-                                      <i _ngcontent-lnm-c83="" aria-hidden="true" class="fas fa-redo"></i> Actualizar 
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </header>
-      </app-encabezado>
+    <app-boton-compartir   _nghost-lnm-c82="">
+        <!-- /redes sociales -->
+        <div ng-include="'includes/compartir.html'"></div>
+  </app-boton-compartir>
+      <app-encabezado>
+     <!-- /Encabezado -->
+       <div ng-include="'includes/gubernatura/header.html'"></div>
+     </app-encabezado>
       
       
       <div _ngcontent-lnm-c90="" class="cuerpo container-fluid">
@@ -719,7 +523,23 @@
   "ng-reflect-ng-if": "false"
 }--></div></div></app-comparativa></app-root>
 
-<script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="scripts.js" defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
+        <!-- /.container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        
+
+        <!-- Scripts angular -->
+        <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script-->
+        <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js"></script>
+        <script src="main.js"></script>	 	
+		 
+ 
 
 </body>
 </html>
