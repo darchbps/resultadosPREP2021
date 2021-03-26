@@ -48,120 +48,15 @@
                   <div   class="container-fluid py-xl-3">
                       <div   class="row">
                           <div   class="col-xl-8 d-none d-xl-block altoAvance">
-                              <app-avance-nacional   _nghost-lnm-c84="">
-                                  <div class="card dis-flex flex-col space-a avance-nacional h-100">
-                                      <div class="container-fluid bgPrototipo">
-                                          <div class="row">
-                                              <div class="dis-flex space-b col-9 pl-0">
-                                                  <h3 class="txRosaIne px20">
-                                                      <strong >Avance Local</strong>
-                                                  </h3>
-                                              </div>
-                                              <div class="col-3 dis-flex justify-e">
-                                                  <div class="actualizar dis-flex flex-col bgRosaIne txBlanco px-4 py-1 px14 cursorPointer">
-                                                      <i aria-hidden="true" class="fas fa-redo"></i> Actualizar 
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="container-fluid px-0 py-2">
-                                          <div class="row px-1">
-                                              <div class="col-4 px-1">
-                                                  <div class="card cards-avance h-12v p-1">
-                                                      <div class="titulo">
-                                                          <p ><strong > Actas capturadas </strong></p>
-                                                      </div>
-                                                      <div class="contenido capturadas">
-                                                          <p ><strong > 0 </strong> de 157,859 </p>
-                                                          <p > (0.0000%) </p>
-                                                          <div class="borde-barra w-100">
-                                                              <div class="barra-avance" style="width: 0%;">
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="col-4 px-1">
-                                                  <div class="card cards-avance h-12v p-1">
-                                                      <div class="titulo">
-                                                          <p class="prueba"><strong ><i data-toggle="modal" data-target="#modalParticipacion" class="fas fa-question-circle cursor-hand"></i> Participación ciudadana </strong></p>
-                                                      </div>
-                                                      <div class="contenido dis-flex flex-col pt-3">
-                                                          <p class="participacion"><strong > 0.0000% </strong></p>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="col-4 px-1">
-                                                  <div class="card cards-avance h-12v p-1">
-                                                      <div class="titulo">
-                                                          <p ><strong > Último corte </strong></p>
-                                                      </div>
-                                                      <div class="contenido dis-flex flex-col align-e pt-3">
-                                                          <div class="dis-flex w-100">
-                                                              <p class="fecha mr-1"> 24 noviembre 2020 </p>
-                                                              <div class="dis-flex flex-col borde-tiempo">
-                                                                  <p class="tiempo-centro"> Tiempo del Centro </p>
-                                                                  <p class="utc"> 21:30 h UTC-5 </p>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </app-avance-nacional>
+                            <app-avance-nacional >
+                                <!-- Avance entidad -->
+                              <div ng-include="'includes/diputaciones/avance-entidad.html'"></div>
+                            </app-avance-nacional>
                           </div>
                           <div   class="col-xl-4 d-none d-xl-block altoAvance pl-0">
-                              <app-buscador   >
-                                  <div  class="buscador card bgMorado txBlanco dis-flex space-a align-s pl-2 pr-2 h-100">
-                                      <div  class="container-fluid bgPrototipo">
-                                          <div  class="row">
-                                              <div  class="col-12 px-0">
-                                                  <p  class="px16"> Conoce los resultados de tu casilla </p>
-                                                  <p  class="px10 pl-1">
-                                                      <i  aria-hidden="true" data-toggle="modal" data-target="#modalCasilla" class="fas fa-question-circle px14 cursor-hand"></i> Para conocer los resultados de tu casilla, ingresa los siguientes datos. 
-                                                  </p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div  class="container-fluid">
-                                          <form  novalidate="" class="ng-untouched ng-pristine ng-invalid">
-                                              <div  class="row px-1">
-                                                  <div  class="col-md-5 px-1">
-                                                      <div  class="form-group m-0">
-                                                          <label  for="seccion" class="m-0 px14">Sección</label>
-                                                          <div  class="input-group df-sw">
-                                                              <div  class="dropdown w-100 bgBlanco">
-                                                                  <input  type="text" id="valueSeccion" name="valueSeccion" ngmodel="" required="" valueseccion="" class="form-control ng-untouched ng-pristine ng-invalid" ng-reflect-name="valueSeccion"  ng-reflect-required="">
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                                  <div  class="col-md-7 px-1">
-                                                      <div  class="form-group">
-                                                          <label  for="primerApellido" class="m-0 px14">Primer apellido</label>
-                                                          <div  class="input-group df-sw">
-                                                              <div  class="dropdown w-100 bgBlanco">
-                                                                  <input  type="text" id="apellido" name="apellido" ngmodel="" required="" apellido="" class="form-control ng-untouched ng-pristine ng-invalid" ng-reflect-name="apellido"  ng-reflect-required="">
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div  class="row px-1">
-                                                  <div  class="col-md-5 px-1">
-                                                      <div  class="form-group">
-                                                          <label  for="submit" class="m-0 px14">&nbsp;</label>
-                                                          <div  class="input-group df-sw">
-                                                              <button  type="submit" class="btn btn-block px14 px-1 btn-rosa-buscador"> Consulta </button>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </form>
-                                      </div>
-                                  </div>
+                            <app-buscador>
+                                <!-- /Encabezado -->
+                                  <div ng-include="'includes/globales/buscador.html'"></div>  
                               </app-buscador>
                           </div>
                       </div>
@@ -387,30 +282,18 @@
     </div>
 </app-estadistica-nacional>
                       </app-resumen-distrito-mapa><!--container--></app-votos-distrito><!--container-->
-                      <app-pre-pie-pagina   _nghost-lnm-c87="">
-                          <div  class="container-fluid bgGris py-1">
-                              <div  class="row justify-content-center">
-                                  <div  class="col-md-10 px12 text-center">
-                                      <p  class="m-0"> Los resultados presentados tienen un carácter informativo y no son definitivos, por tanto, no tienen efectos jurídicos. </p>
-                                      <p  class="m-0"> Con base en la Ley Federal del Derecho de Autor queda prohibida cualquier modificación al diseño de este sitio. </p
-                                      <p  class="m-0"> La modificación y/o destrucción de la información y/o contenido total o parcial de este sitio, es delito federal de acuerdo al Código Penal Federal. </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </app-pre-pie-pagina>
+                      <app-pre-pie-pagina >
+                                <!-- pie de pagina 1 -->
+                                <div ng-include="'includes/footer-01.html'"></div>
+                             </app-pre-pie-pagina>
               </div>
           </div>
           <div   class="row">
               <div   class="col-md-12 px-0">
-                  <app-pie-pagina   _nghost-lnm-c88="">
-                      <footer class="container-fluid bgMorado txBlanco pie-pagina">
-                          <div class="row">
-                              <div class="col-xl-10 offset-xl-2 dis-flex space-a px12 px-0 py-2">
-                                  <p class="m-0"> Este sitio se visualiza mejor en las versiones más recientes de los navegadores web &nbsp;|&nbsp; Consejo Estatal Electoral y de Participación Ciudadana de S.L.P. &nbsp;|&nbsp; Servicios de Informática v.20201126 &nbsp;|&nbsp; Aviso de privacidad </p>
-                              </div>
-                          </div>
-                      </footer>
-                  </app-pie-pagina>
+                    <app-pie-pagina>
+                    <!-- pie de pagina 2 -->
+                     <div ng-include="'includes/footer-02.html'"></div>
+                   </app-pie-pagina>
               </div>
           </div>
       </div>
@@ -489,14 +372,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js"></script>
         <script src="main.js"></script>	 	
 		 
-		<!--Inicialización de Tooltipo -->
-  			
-        <script>
-            $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-            })
-        </script>
-
+ 
 
 </body>
 </html>
