@@ -1,3 +1,6 @@
+$('[data-toggle="popover"]').popover();
+
+
 /**
  * AngularJS Tutorial 1
  * @author Nick Kaye <nick.c.kaye@gmail.com>
@@ -44,7 +47,5 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
  
 
   // Activates Tooltips for Social Links
-  $('.tooltip-social').tooltip({
-    selector: "a[data-toggle=tooltip]"
-  })
+  $('.tooltip-social').tooltip({ selector: "a[data-toggle=tooltip]"});
 });
