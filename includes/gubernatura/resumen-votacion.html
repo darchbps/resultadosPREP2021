@@ -24,7 +24,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="mb-6"><span data-toggle="tooltip" title="Es la sumatoria de los votos obtenidos por Partido Político, Coalición o Candidatura Independiente."><i class="fas fa-info-circle"></i></span></div>
+                <div class="mb-6">
+                    <span data-toggle="tooltip" title="Es la sumatoria de los votos obtenidos por Partido Político, Coalición o Candidatura Independiente.">
+                        <i class="fas fa-info-circle"></i></span>
+                </div>
                 <p class="separador"><strong>+</strong></p>
                 <div class="apartado dis-flex flex-col">
                     <div class="dis-flex w-100">
@@ -61,3 +64,10 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(function () {
+    $("[data-toggle='tooltip']").tooltip();
+    console.log("Desde el include " + $("[data-toggle='tooltip']").length);
+    })
+</script>
