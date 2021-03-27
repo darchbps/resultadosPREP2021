@@ -128,122 +128,476 @@
                       <router-outlet _ngcontent-lnm-c47=""></router-outlet>
                       
 
-                        <app-distrito-distrito _nghost-nmq-c56="">
-                            <div _ngcontent-nmq-c56="" class="container-fluid"><div _ngcontent-nmq-c56="" class="row"><div _ngcontent-nmq-c56="" class="col-md-12"><div _ngcontent-nmq-c56="" class="card p-3"><div _ngcontent-nmq-c56="" class="row"><div _ngcontent-nmq-c56="" class="col-12 col-lg-10"><h3 _ngcontent-nmq-c56="" class="titulo-seccion"> Diputaciones - <span _ngcontent-nmq-c56="" class="txRosaIne"><strong _ngcontent-nmq-c56="">Detalle del Distrito - </strong>Votos por Distritos</span></h3><h4 _ngcontent-nmq-c56=""> <a _ngcontent-nmq-c56="" routerlinkactive="router-link-active" class="linkAzul" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="/circunscripcion2/slp" href="./diputaciones.html">San Luis Potosí</a> / Distrito 1. Jesus Maria </h4><div _ngcontent-nmq-c56="" class="texto font-medium"><p _ngcontent-nmq-c56=""> El total de votos calculado y porcentaje que se muestran, se refieren a los votos asentados en las Actas PREP hasta el momento. </p><p _ngcontent-nmq-c56=""> Por presentación, los decimales de los porcentajes muestran sólo cuatro dígitos. No obstante, al considerar todos los decimales, suman 100%. </p></div></div><div _ngcontent-nmq-c56="" class="col-2 d-none d-lg-block"></div></div><div _ngcontent-nmq-c56="" class="row pb-4"><div _ngcontent-nmq-c56="" class="col"><h4 _ngcontent-nmq-c56="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-nmq-c56="">Votos en Actas Contabilizadas</strong></h4></div></div><div _ngcontent-nmq-c56="" class="container-fluid"><div _ngcontent-nmq-c56="" class="row justify-content-center"><div _ngcontent-nmq-c56="" class="col-8 col-sm-4 col-md-3 col-lg-2"><div _ngcontent-nmq-c56="" class="tarjeta card dis-flex flex-col mb-2" ng-reflect-ng-class="[object Object]"><img _ngcontent-nmq-c56="" src="assets/res/avatar-persona.svg"><p _ngcontent-nmq-c56="" class="nombre text-center px-1"> NORMA ESPARZA HERRERA </p><div _ngcontent-nmq-c56="" class="distritos w-100 dis-flex py-4 px-1"><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PRI.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                        <app-distrito-distrito >
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card p-3">
+                <div class="row">
+                    <div class="col-12 col-lg-10">
+                        <h3 class="titulo-seccion"> Diputaciones - <span class="txRosaIne"><strong >Detalle del Distrito - </strong>Votos por Distritos</span></h3>
+                        <h4> <a routerlinkactive="router-link-active" class="linkAzul" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="/circunscripcion2/slp" href="./diputaciones.html">San Luis Potosí</a> / Distrito 1. Jesus Maria
+                            </h4>
+                        <div class="texto font-medium">
+                            <p> El total de votos calculado y porcentaje que se muestran, se refieren a los votos asentados en las Actas PREP hasta el momento. </p>
+                            <p> Por presentación, los decimales de los porcentajes muestran sólo cuatro dígitos. No obstante, al considerar todos los decimales, suman 100%. </p>
+                        </div>
+                    </div>
+                    <div class="col-2 d-none d-lg-block"></div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col">
+                        <h4 class="subtitulo-seccion pleca-izquierda"><strong>Votos en Actas Contabilizadas</strong></h4>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-8 col-sm-4 col-md-3 col-lg-2">
+                            <div class="tarjeta card dis-flex flex-col mb-2" ng-reflect-ng-class="[object Object]"><img class="p-4" src="assets/res/avatar-persona.svg">
+                                <p class="nombre text-center px-1"> NORMA ESPARZA HERRERA </p>
+                                <div class="distritos w-100 dis-flex py-4 px-1">
+                                    <p class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PRI.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object]"
-                        }--></div><div _ngcontent-nmq-c56="" class="cuerpo bgGrisTenue dis-flex w-100 p-2"><div _ngcontent-nmq-c56="" class="w-50"><p _ngcontent-nmq-c56="">Votos</p><p _ngcontent-nmq-c56="" class="votos"><strong _ngcontent-nmq-c56=""> 0 </strong></p></div><div _ngcontent-nmq-c56="" class="w-50 dis-flex flex-col align-e"><p _ngcontent-nmq-c56="">Porcentaje</p><p _ngcontent-nmq-c56=""> 0.0000% </p></div></div><div _ngcontent-nmq-c56="" class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p _ngcontent-nmq-c56="">Seleccionar</p></div><!--bindings={
+                        }-->
+                                </div>
+                                <div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+                                    <div class="w-50">
+                                        <p>Votos</p>
+                                        <p class="votos"><strong> 0 </strong></p>
+                                    </div>
+                                    <div class="w-50 dis-flex flex-col align-e">
+                                        <p>Porcentaje</p>
+                                        <p> 0.0000% </p>
+                                    </div>
+                                </div>
+                                <div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
+                                    <p>Seleccionar</p>
+                                </div>
+                                <!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
+                        }-->
+                                <!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></div></div><div _ngcontent-nmq-c56="" class="col-8 col-sm-4 col-md-3 col-lg-2"><div _ngcontent-nmq-c56="" class="tarjeta card dis-flex flex-col mb-2" ng-reflect-ng-class="[object Object]"><img _ngcontent-nmq-c56="" src="assets/res/avatar-persona.svg"><p _ngcontent-nmq-c56="" class="nombre text-center px-1"> SAMANTHA WENDOLYN REYES MARTÍNEZ </p><div _ngcontent-nmq-c56="" class="distritos w-100 dis-flex py-4 px-1"><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PVEM.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                        }-->
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-4 col-md-3 col-lg-2">
+                            <div class="tarjeta card dis-flex flex-col mb-2" ng-reflect-ng-class="[object Object]"><img class="p-4" src="assets/res/avatar-persona.svg">
+                                <p class="nombre text-center px-1"> SAMANTHA WENDOLYN REYES MARTÍNEZ </p>
+                                <div class="distritos w-100 dis-flex py-4 px-1">
+                                    <p class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PVEM.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object]"
-                        }--></div><div _ngcontent-nmq-c56="" class="cuerpo bgGrisTenue dis-flex w-100 p-2"><div _ngcontent-nmq-c56="" class="w-50"><p _ngcontent-nmq-c56="">Votos</p><p _ngcontent-nmq-c56="" class="votos"><strong _ngcontent-nmq-c56=""> 0 </strong></p></div><div _ngcontent-nmq-c56="" class="w-50 dis-flex flex-col align-e"><p _ngcontent-nmq-c56="">Porcentaje</p><p _ngcontent-nmq-c56=""> 0.0000% </p></div></div><div _ngcontent-nmq-c56="" class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p _ngcontent-nmq-c56="">Seleccionar</p></div><!--bindings={
+                        }-->
+                                </div>
+                                <div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+                                    <div class="w-50">
+                                        <p>Votos</p>
+                                        <p class="votos"><strong> 0 </strong></p>
+                                    </div>
+                                    <div class="w-50 dis-flex flex-col align-e">
+                                        <p>Porcentaje</p>
+                                        <p> 0.0000% </p>
+                                    </div>
+                                </div>
+                                <div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
+                                    <p>Seleccionar</p>
+                                </div>
+                                <!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
+                        }-->
+                                <!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></div></div><div _ngcontent-nmq-c56="" class="col-8 col-sm-4 col-md-3 col-lg-2"><div _ngcontent-nmq-c56="" class="tarjeta card dis-flex flex-col mb-2" ng-reflect-ng-class="[object Object]"><img _ngcontent-nmq-c56="" src="assets/res/avatar-persona.svg"><p _ngcontent-nmq-c56="" class="nombre text-center px-1"> ARTURO ZAPATA RANGEL </p><div _ngcontent-nmq-c56="" class="distritos w-100 dis-flex py-4 px-1"><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PANAL.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                        }-->
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-4 col-md-3 col-lg-2">
+                            <div class="tarjeta card dis-flex flex-col mb-2" ng-reflect-ng-class="[object Object]"><img class="p-4" src="assets/res/avatar-persona.svg">
+                                <p class="nombre text-center px-1"> ARTURO ZAPATA RANGEL </p>
+                                <div class="distritos w-100 dis-flex py-4 px-1">
+                                    <p class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PANAL.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object]"
-                        }--></div><div _ngcontent-nmq-c56="" class="cuerpo bgGrisTenue dis-flex w-100 p-2"><div _ngcontent-nmq-c56="" class="w-50"><p _ngcontent-nmq-c56="">Votos</p><p _ngcontent-nmq-c56="" class="votos"><strong _ngcontent-nmq-c56=""> 0 </strong></p></div><div _ngcontent-nmq-c56="" class="w-50 dis-flex flex-col align-e"><p _ngcontent-nmq-c56="">Porcentaje</p><p _ngcontent-nmq-c56=""> 0.0000% </p></div></div><div _ngcontent-nmq-c56="" class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p _ngcontent-nmq-c56="">Seleccionar</p></div><!--bindings={
+                        }-->
+                                </div>
+                                <div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+                                    <div class="w-50">
+                                        <p>Votos</p>
+                                        <p class="votos"><strong> 0 </strong></p>
+                                    </div>
+                                    <div class="w-50 dis-flex flex-col align-e">
+                                        <p>Porcentaje</p>
+                                        <p> 0.0000% </p>
+                                    </div>
+                                </div>
+                                <div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
+                                    <p>Seleccionar</p>
+                                </div>
+                                <!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
+                        }-->
+                                <!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></div></div><div _ngcontent-nmq-c56="" class="col-8 col-sm-4 col-md-3 col-lg-2"><div _ngcontent-nmq-c56="" class="tarjeta card dis-flex flex-col mb-2" ng-reflect-ng-class="[object Object]"><img _ngcontent-nmq-c56="" src="assets/res/avatar-persona.svg"><p _ngcontent-nmq-c56="" class="nombre text-center px-1"> FRANCISCO JAVIER LUEVANO NUÑEZ </p><div _ngcontent-nmq-c56="" class="distritos w-100 dis-flex py-4 px-1"><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PAN.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PAN-PRD-MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PAN-PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PAN-MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PRD-MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                        }-->
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-4 col-md-3 col-lg-2">
+                            <div class="tarjeta card dis-flex flex-col mb-2" ng-reflect-ng-class="[object Object]"><img class="p-4" src="assets/res/avatar-persona.svg">
+                                <p class="nombre text-center px-1"> FRANCISCO JAVIER LUEVANO NUÑEZ </p>
+                                <div class="distritos w-100 dis-flex py-4 px-1">
+                                    <p class="pe dis-flex"  style="background-image: url(&quot;./assets/img/logos-partidos/PAN.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex"  style="background-image: url(&quot;./assets/img/logos-partidos/PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex"  style="background-image: url(&quot;./assets/img/logos-partidos/MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex"  style="background-image: url(&quot;./assets/img/logos-partidos/PAN-PRD-MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex"  style="background-image: url(&quot;./assets/img/logos-partidos/PAN-PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex"  style="background-image: url(&quot;./assets/img/logos-partidos/PAN-MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex"  style="background-image: url(&quot;./assets/img/logos-partidos/PRD-MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object],[object Object"
-                        }--></div><div _ngcontent-nmq-c56="" class="cuerpo bgGrisTenue dis-flex w-100 p-2"><div _ngcontent-nmq-c56="" class="w-50"><p _ngcontent-nmq-c56="">Votos</p><p _ngcontent-nmq-c56="" class="votos"><strong _ngcontent-nmq-c56=""> 0 </strong></p></div><div _ngcontent-nmq-c56="" class="w-50 dis-flex flex-col align-e"><p _ngcontent-nmq-c56="">Porcentaje</p><p _ngcontent-nmq-c56=""> 0.0000% </p></div></div><div _ngcontent-nmq-c56="" class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p _ngcontent-nmq-c56="">Seleccionar</p></div><!--bindings={
+                        }-->
+                                </div>
+                                <div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+                                    <div class="w-50">
+                                        <p>Votos</p>
+                                        <p class="votos"><strong> 0 </strong></p>
+                                    </div>
+                                    <div class="w-50 dis-flex flex-col align-e">
+                                        <p>Porcentaje</p>
+                                        <p> 0.0000% </p>
+                                    </div>
+                                </div>
+                                <div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
+                                    <p>Seleccionar</p>
+                                </div>
+                                <!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
+                        }-->
+                                <!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></div></div><div _ngcontent-nmq-c56="" class="col-8 col-sm-4 col-md-3 col-lg-2"><div _ngcontent-nmq-c56="" class="tarjeta card dis-flex flex-col mb-2" ng-reflect-ng-class="[object Object]"><img _ngcontent-nmq-c56="" src="assets/res/avatar-persona.svg"><p _ngcontent-nmq-c56="" class="nombre text-center px-1"> RAFAEL CALDERON ZAMARRIPA </p><div _ngcontent-nmq-c56="" class="distritos w-100 dis-flex py-4 px-1"><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PT.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PT-MORENA-PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PT-MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/PT-PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><p _ngcontent-nmq-c56="" class="pe dis-flex" ng-reflect-ng-style="[object Object]" style="background-image: url(&quot;./assets/img/logos-partidos/MORENA-PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p><!--bindings={
+                        }-->
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-4 col-md-3 col-lg-2">
+                            <div class="tarjeta card dis-flex flex-col mb-2" ng-reflect-ng-class="[object Object]"><img class="p-4" src="assets/res/avatar-persona.svg">
+                                <p class="nombre text-center px-1"> RAFAEL CALDERON ZAMARRIPA </p>
+                                <div class="distritos w-100 dis-flex py-4 px-1">
+                                    <p class="pe dis-flex" style="background-image: url(&quot;./assets/img/logos-partidos/PT.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex" style="background-image: url(&quot;./assets/img/logos-partidos/MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex" style="background-image: url(&quot;./assets/img/logos-partidos/PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex" style="background-image: url(&quot;./assets/img/logos-partidos/PT-MORENA-PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex" style="background-image: url(&quot;./assets/img/logos-partidos/PT-MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex" style="background-image: url(&quot;./assets/img/logos-partidos/PT-PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <p class="pe dis-flex" style="background-image: url(&quot;./assets/img/logos-partidos/MORENA-PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;"></p>
+                                    <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object],[object Object"
-                        }--></div><div _ngcontent-nmq-c56="" class="cuerpo bgGrisTenue dis-flex w-100 p-2"><div _ngcontent-nmq-c56="" class="w-50"><p _ngcontent-nmq-c56="">Votos</p><p _ngcontent-nmq-c56="" class="votos"><strong _ngcontent-nmq-c56=""> 0 </strong></p></div><div _ngcontent-nmq-c56="" class="w-50 dis-flex flex-col align-e"><p _ngcontent-nmq-c56="">Porcentaje</p><p _ngcontent-nmq-c56=""> 0.0000% </p></div></div><div _ngcontent-nmq-c56="" class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer"><p _ngcontent-nmq-c56="">Seleccionar</p></div><!--bindings={
+                        }-->
+                                </div>
+                                <div class="cuerpo bgGrisTenue dis-flex w-100 p-2">
+                                    <div class="w-50">
+                                        <p>Votos</p>
+                                        <p class="votos"><strong> 0 </strong></p>
+                                    </div>
+                                    <div class="w-50 dis-flex flex-col align-e">
+                                        <p>Porcentaje</p>
+                                        <p> 0.0000% </p>
+                                    </div>
+                                </div>
+                                <div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
+                                    <p>Seleccionar</p>
+                                </div>
+                                <!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
+                        }-->
+                                <!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></div></div><!--bindings={
+                        }-->
+                            </div>
+                        </div>
+                        <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object],[object Object"
-                        }--></div></div><div _ngcontent-nmq-c56="" class="container-fluid"><div _ngcontent-nmq-c56="" class="row dis-flex"><div _ngcontent-nmq-c56="" class="col-md-12"><div _ngcontent-nmq-c56="" class="row dis-flex justify-s"></div></div></div></div><div _ngcontent-nmq-c56="" class="container-fluid py-4"><div _ngcontent-nmq-c56="" class="row"><div _ngcontent-nmq-c56="" class="col-md-12 dis-flex justify-e"><i _ngcontent-nmq-c56="" aria-hidden="true" class="fas fa-info-circle mr-2"></i><p _ngcontent-nmq-c56="" class="texto"> Da clic en <strong _ngcontent-nmq-c56="">Seleccionar</strong> para visualizar el detalle de la votación. Puedes seleccionar hasta tres opciones. </p><button _ngcontent-nmq-c56="" data-toggle="modal" data-target="#modalComparativa" class="boton-detalle btn bgMorado txBlanco btn-sm texto ml-2 px-4 cursorPointer" disabled=""> Ver detalle </button></div></div></div><div _ngcontent-nmq-c56="" class="container-fluid resumen-votacion"><div _ngcontent-nmq-c56="" class="row"><div _ngcontent-nmq-c56="" class="col-12 col-lg-8 col-xl-11 bgGris py-2 pxx"><p _ngcontent-nmq-c56="" class="titulo"><strong _ngcontent-nmq-c56="">Resumen de la votación</strong></p><div _ngcontent-nmq-c56="" class="container-fluid"><div _ngcontent-nmq-c56="" class="row dis-flex"><div _ngcontent-nmq-c56="" class="apartado dis-flex flex-col"><div _ngcontent-nmq-c56="" class="dis-flex w-100"><p _ngcontent-nmq-c56="" class="subtitulo"> Votos acumulados &nbsp; </p><span _ngcontent-nmq-c56="" tooltip="Es la sumatoria de los votos obtenidos por Partido Político, Coalición o Candidatura Independiente." placement="top" show-delay="200" ng-reflect-tooltip-value="Es la sumatoria de los votos o" ng-reflect-placement="top" ng-reflect-show-delay="200"><i _ngcontent-nmq-c56="" aria-hidden="true" class="fas fa-info-circle"></i></span></div><div _ngcontent-nmq-c56="" class="row dis-flex w-100 space-b"><p _ngcontent-nmq-c56="" class="col-12 cantidad"><strong _ngcontent-nmq-c56=""> 0 </strong></p><p _ngcontent-nmq-c56="" class="col-12 porcentaje"> 0.0000% </p></div></div><p _ngcontent-nmq-c56="" class="separador"><strong _ngcontent-nmq-c56="">+</strong></p><div _ngcontent-nmq-c56="" class="apartado dis-flex flex-col pt-1"><div _ngcontent-nmq-c56="" class="dis-flex w-100"><p _ngcontent-nmq-c56="" class="subtitulo pb-1"> Candidaturas no registradas </p></div><div _ngcontent-nmq-c56="" class="row dis-flex w-100 space-b"><p _ngcontent-nmq-c56="" class="col-12 cantidad"><strong _ngcontent-nmq-c56=""> 0 </strong></p><p _ngcontent-nmq-c56="" class="col-12 porcentaje"> 0.0000% </p></div></div><p _ngcontent-nmq-c56="" class="separador"><strong _ngcontent-nmq-c56="">+</strong></p><div _ngcontent-nmq-c56="" class="apartado dis-flex flex-col pt-1"><div _ngcontent-nmq-c56="" class="dis-flex w-100"><p _ngcontent-nmq-c56="" class="subtitulo pb-1"> Nulos </p></div><div _ngcontent-nmq-c56="" class="row dis-flex w-100 space-b"><p _ngcontent-nmq-c56="" class="col-12 cantidad"><strong _ngcontent-nmq-c56=""> 0 </strong></p><p _ngcontent-nmq-c56="" class="col-12 porcentaje"> 0.0000% </p></div></div><p _ngcontent-nmq-c56="" class="d-none d-lg-block separador pr-3"><strong _ngcontent-nmq-c56="">=</strong></p><div _ngcontent-nmq-c56="" class="d-none d-lg-block apartado dis-flex flex-col"><div _ngcontent-nmq-c56="" class="dis-flex w-100 justify-e"><p _ngcontent-nmq-c56="" class="px20"><strong _ngcontent-nmq-c56="">Total de votos</strong></p></div><div _ngcontent-nmq-c56="" class="dis-flex w-100 space-b justify-e"><p _ngcontent-nmq-c56="" class="total"><strong _ngcontent-nmq-c56="" class="txRosaIne"> 0 </strong></p></div><div _ngcontent-nmq-c56="" class="dis-flex w-100 justify-e"><p _ngcontent-nmq-c56=""><strong _ngcontent-nmq-c56=""><span _ngcontent-nmq-c56="" class="txRosaIne">100.0000%</span></strong></p></div></div></div><div _ngcontent-nmq-c56="" class="container-fluid d-lg-none"><div _ngcontent-nmq-c56="" class="row"><div _ngcontent-nmq-c56="" class="col-12 dis-flex flex-col mt-3"><div _ngcontent-nmq-c56="" class="dis-flex w-100 justify-e"><p _ngcontent-nmq-c56="" class="px20 mb-0"><strong _ngcontent-nmq-c56="">Total de votos</strong></p></div><div _ngcontent-nmq-c56="" class="dis-flex w-100 justify-e"><p _ngcontent-nmq-c56="" class="total"><strong _ngcontent-nmq-c56=""> = <span _ngcontent-nmq-c56="" class="txRosaIne">0</span></strong></p></div><div _ngcontent-nmq-c56="" class="dis-flex w-100 justify-e"><p _ngcontent-nmq-c56=""><strong _ngcontent-nmq-c56=""><span _ngcontent-nmq-c56="" class="txRosaIne">100.0000%</span></strong></p></div></div></div></div></div></div></div></div></div></div></div></div><app-distribucion-votos _ngcontent-nmq-c56="" _nghost-nmq-c55=""><div  class="distribucion-votos container-fluid pt-3"><div  class="row"><div  class="col-12"><div  class="card p-2"><div  class="container-fluid"><div  class="row"><div  class="col-12"><p  class="titulo pb-2"><strong > Distribución de votos por Candidatura a nivel Distrito </strong></p><p  class="px14"> La tabla muestra el desglose de votos que cada Candidatura presenta en el Distrito, indicando los votos recibidos de manera individual y, en su caso, los votos recibidos vía Coalición. </p><p  class="px14 underline"> Conoce cómo se suman los votos para Candidaturas de Coalición de acuerdo con la legislación vigente. </p></div></div><div  class="tabla pt-3"><div  class="titulos row borde-abajo"><div  class="col-4 col-lg-3 borde-derecha"><p ><strong > Candidaturas </strong></p></div><div  class="col-5 col-lg-7 borde-derecha text-center"><p ><strong > Distribución de votos por Candidatura </strong></p></div><div  class="col-3 col-lg-2 text-center"><p ><strong > Total de votos por Candidatura </strong></p></div></div><div  class="row datos"><div  class="col-4 col-lg-3 borde-derecha py-3"><p ><strong > NORMA ESPARZA HERRERA </strong></p><img  src="assets/res/avatar-persona.svg"></div><div  class="col-5 col-lg-7 borde-derecha text-right padding-t-15"><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PRI.png"><!--ng-container--><!--bindings={
+                        }-->
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row dis-flex">
+                        <div class="col-md-12">
+                            <div class="row dis-flex justify-s"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid py-4">
+                    <div class="row">
+                        <div class="col-md-12 dis-flex justify-e"><i aria-hidden="true" class="fas fa-info-circle mr-2"></i>
+                            <p class="texto"> Da clic en <strong>Seleccionar</strong> para visualizar el detalle de la votación. Puedes seleccionar hasta tres opciones. </p><button data-toggle="modal" data-target="#modalComparativa" class="boton-detalle btn bgMorado txBlanco btn-sm texto ml-2 px-4 cursorPointer"
+                                disabled=""> Ver detalle </button></div>
+                    </div>
+                </div>
+                <div class="container-fluid resumen-votacion">
+                    <div class="row">
+
+                        <div class="col-12 col-lg-8 col-xl-11 bgGris py-2 pxx">
+                            <p class="titulo"><strong>Resumen de la votación</strong></p>
+                            <div class="container-fluid">
+                                <div class="row dis-flex">
+                                    <div class="apartado dis-flex flex-col">
+                                        <div class="dis-flex w-100">
+                                            <p class="subtitulo"> Votos acumulados &nbsp; </p><span tooltip="Es la sumatoria de los votos obtenidos por Partido Político, Coalición o Candidatura Independiente." placement="top" show-delay="200" ng-reflect-tooltip-value="Es la sumatoria de los votos o"
+                                                ng-reflect-placement="top" ng-reflect-show-delay="200"><i  aria-hidden="true" class="fas fa-info-circle"></i></span></div>
+                                        <div class="row dis-flex w-100 space-b">
+                                            <p class="col-12 cantidad"><strong> 0 </strong></p>
+                                            <p class="col-12 porcentaje"> 0.0000% </p>
+                                        </div>
+                                    </div>
+                                    <p class="separador"><strong>+</strong></p>
+                                    <div class="apartado dis-flex flex-col pt-1">
+                                        <div class="dis-flex w-100">
+                                            <p class="subtitulo pb-1"> Candidaturas no registradas </p>
+                                        </div>
+                                        <div class="row dis-flex w-100 space-b">
+                                            <p class="col-12 cantidad"><strong> 0 </strong></p>
+                                            <p class="col-12 porcentaje"> 0.0000% </p>
+                                        </div>
+                                    </div>
+                                    <p class="separador"><strong>+</strong></p>
+                                    <div class="apartado dis-flex flex-col pt-1">
+                                        <div class="dis-flex w-100">
+                                            <p class="subtitulo pb-1"> Nulos </p>
+                                        </div>
+                                        <div class="row dis-flex w-100 space-b">
+                                            <p class="col-12 cantidad"><strong> 0 </strong></p>
+                                            <p class="col-12 porcentaje"> 0.0000% </p>
+                                        </div>
+                                    </div>
+                                    <p class="d-none d-lg-block separador pr-3"><strong>=</strong></p>
+                                    <div class="d-none d-lg-block apartado dis-flex flex-col">
+                                        <div class="dis-flex w-100 justify-e">
+                                            <p class="px20"><strong>Total de votos</strong></p>
+                                        </div>
+                                        <div class="dis-flex w-100 space-b justify-e">
+                                            <p class="total"><strong class="txRosaIne"> 0 </strong></p>
+                                        </div>
+                                        <div class="dis-flex w-100 justify-e">
+                                            <p><strong><span  class="txRosaIne">100.0000%</span></strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-fluid d-lg-none">
+                                    <div class="row">
+                                        <div class="col-12 dis-flex flex-col mt-3">
+                                            <div class="dis-flex w-100 justify-e">
+                                                <p class="px20 mb-0"><strong>Total de votos</strong></p>
+                                            </div>
+                                            <div class="dis-flex w-100 justify-e">
+                                                <p class="total"><strong> = <span  class="txRosaIne">0</span></strong></p>
+                                            </div>
+                                            <div class="dis-flex w-100 justify-e">
+                                                <p><strong><span  class="txRosaIne">100.0000%</span></strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-distribucion-votos _nghost-nmq-c55="">
+    <div class="distribucion-votos container-fluid pt-3">
+        <div class="row">
+            <div class="col-12">
+                <div class="card p-2">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="titulo pb-2"><strong> Distribución de votos por Candidatura a nivel Distrito </strong></p>
+                                <p class="px14"> La tabla muestra el desglose de votos que cada Candidatura presenta en el Distrito, indicando los votos recibidos de manera individual y, en su caso, los votos recibidos vía Coalición. </p>
+                                <p class="px14 underline"> Conoce cómo se suman los votos para Candidaturas de Coalición de acuerdo con la legislación vigente. </p>
+                            </div>
+                        </div>
+                        <div class="tabla pt-3">
+                            <div class="titulos row borde-abajo">
+                                <div class="col-4 col-lg-3 borde-derecha">
+                                    <p><strong> Candidaturas </strong></p>
+                                </div>
+                                <div class="col-5 col-lg-7 borde-derecha text-center">
+                                    <p><strong> Distribución de votos por Candidatura </strong></p>
+                                </div>
+                                <div class="col-3 col-lg-2 text-center">
+                                    <p><strong> Total de votos por Candidatura </strong></p>
+                                </div>
+                            </div>
+                            <div class="row datos">
+                                <div class="col-4 col-lg-3 borde-derecha py-3">
+                                    <p><strong> Norma Esparza Herrera </strong></p><img src="assets/res/avatar-persona.svg"></div>
+                                <div class="col-5 col-lg-7 borde-derecha text-right padding-t-15"><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PRI.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "2"
                         }--><strong > &nbsp;0 </strong><!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></span><!--bindings={
+                        }--></span>
+                                    <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object]"
-                        }--></div><div  class="col-3 col-lg-2 dis-flex flex-col text-center"><div  class="conteo dis-flex justify-s w-100"><div  class="igual dis-flex mx-sm-3"><i  aria-hidden="true" class="fas fa-equals"></i></div><p  class="total"><strong > 0 </strong></p></div><p  class="texto"> Total de votos por Candidatura </p></div></div><div  class="row datos"><div  class="col-4 col-lg-3 borde-derecha py-3"><p ><strong > SAMANTHA WENDOLYN REYES MARTÍNEZ </strong></p><img  src="assets/res/avatar-persona.svg"></div><div  class="col-5 col-lg-7 borde-derecha text-right padding-t-15"><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PVEM.png"><!--ng-container--><!--bindings={
+                        }-->
+                                </div>
+                                <div class="col-3 col-lg-2 dis-flex flex-col text-center">
+                                    <div class="conteo dis-flex justify-s w-100">
+                                        <div class="igual dis-flex mx-sm-3"><i aria-hidden="true" class="fas fa-equals"></i></div>
+                                        <p class="total"><strong> 0 </strong></p>
+                                    </div>
+                                    <p class="texto"> Total de votos por Candidatura </p>
+                                </div>
+
+                            </div>
+                            <div class="row datos">
+                                <div class="col-4 col-lg-3 borde-derecha py-3">
+                                    <p><strong> SAMANTHA REYES MARTÍNEZ </strong></p><img src="assets/res/avatar-persona.svg"></div>
+                                <div class="col-5 col-lg-7 borde-derecha text-right padding-t-15"><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PVEM.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "4"
                         }--><strong > &nbsp;0 </strong><!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></span><!--bindings={
+                        }--></span>
+                                    <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object]"
-                        }--></div><div  class="col-3 col-lg-2 dis-flex flex-col text-center"><div  class="conteo dis-flex justify-s w-100"><div  class="igual dis-flex mx-sm-3"><i  aria-hidden="true" class="fas fa-equals"></i></div><p  class="total"><strong > 0 </strong></p></div><p  class="texto"> Total de votos por Candidatura </p></div></div><div  class="row datos"><div  class="col-4 col-lg-3 borde-derecha py-3"><p ><strong > ARTURO ZAPATA RANGEL </strong></p><img  src="assets/res/avatar-persona.svg"></div><div  class="col-5 col-lg-7 borde-derecha text-right padding-t-15"><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PANAL.png"><!--ng-container--><!--bindings={
+                        }-->
+                                </div>
+                                <div class="col-3 col-lg-2 dis-flex flex-col text-center">
+                                    <div class="conteo dis-flex justify-s w-100">
+                                        <div class="igual dis-flex mx-sm-3"><i aria-hidden="true" class="fas fa-equals"></i></div>
+                                        <p class="total"><strong> 0 </strong></p>
+                                    </div>
+                                    <p class="texto"> Total de votos por Candidatura </p>
+                                </div>
+                            </div>
+                            <div class="row datos">
+                                <div class="col-4 col-lg-3 borde-derecha py-3">
+                                    <p><strong> ARTURO ZAPATA RANGEL </strong></p><img src="assets/res/avatar-persona.svg"></div>
+                                <div class="col-5 col-lg-7 borde-derecha text-right padding-t-15"><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PANAL.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "7"
                         }--><strong > &nbsp;0 </strong><!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></span><!--bindings={
+                        }--></span>
+                                    <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object]"
-                        }--></div><div  class="col-3 col-lg-2 dis-flex flex-col text-center"><div  class="conteo dis-flex justify-s w-100"><div  class="igual dis-flex mx-sm-3"><i  aria-hidden="true" class="fas fa-equals"></i></div><p  class="total"><strong > 0 </strong></p></div><p  class="texto"> Total de votos por Candidatura </p></div></div><div  class="row datos"><div  class="col-4 col-lg-3 borde-derecha py-3"><p ><strong > FRANCISCO JAVIER LUEVANO NUÑEZ </strong></p><img  src="assets/res/avatar-persona.svg"></div><div  class="col-5 col-lg-7 borde-derecha text-right padding-t-15"><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PAN.png"><!--ng-container--><!--bindings={
+                        }-->
+                                </div>
+                                <div class="col-3 col-lg-2 dis-flex flex-col text-center">
+                                    <div class="conteo dis-flex justify-s w-100">
+                                        <div class="igual dis-flex mx-sm-3"><i aria-hidden="true" class="fas fa-equals"></i></div>
+                                        <p class="total"><strong> 0 </strong></p>
+                                    </div>
+                                    <p class="texto"> Total de votos por Candidatura </p>
+                                </div>
+                            </div>
+                            <div class="row datos">
+                                <div class="col-4 col-lg-3 borde-derecha py-3">
+                                    <p><strong> FRANCISCO JAVIER LUEVANO NUÑEZ </strong></p><img src="assets/res/avatar-persona.svg"></div>
+                                <div class="col-5 col-lg-7 borde-derecha text-right padding-t-15"><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PAN.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "1"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PRD.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PRD.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "3"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/MC.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/MC.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "6"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PAN.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/PRD.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/MC.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PAN.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/PRD.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/MC.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "1,3,6"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PAN.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/PRD.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PAN.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/PRD.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "1,3"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PAN.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/MC.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PAN.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/MC.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "1,6"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PRD.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/MC.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PRD.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/MC.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "3,6"
                         }--><strong > &nbsp;0 </strong><!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></span><!--bindings={
+                        }--></span>
+                                    <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object],[object Object"
-                        }--></div><div  class="col-3 col-lg-2 dis-flex flex-col text-center"><div  class="conteo dis-flex justify-s w-100"><div  class="igual dis-flex mx-sm-3"><i  aria-hidden="true" class="fas fa-equals"></i></div><p  class="total"><strong > 0 </strong></p></div><p  class="texto"> Total de votos por Candidatura </p></div></div><div  class="row datos"><div  class="col-4 col-lg-3 borde-derecha py-3"><p ><strong > RAFAEL CALDERON ZAMARRIPA </strong></p><img  src="assets/res/avatar-persona.svg"></div><div  class="col-5 col-lg-7 borde-derecha text-right padding-t-15"><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PT.png"><!--ng-container--><!--bindings={
+                        }-->
+                                </div>
+                                <div class="col-3 col-lg-2 dis-flex flex-col text-center">
+                                    <div class="conteo dis-flex justify-s w-100">
+                                        <div class="igual dis-flex mx-sm-3"><i aria-hidden="true" class="fas fa-equals"></i></div>
+                                        <p class="total"><strong> 0 </strong></p>
+                                    </div>
+                                    <p class="texto"> Total de votos por Candidatura </p>
+                                </div>
+                            </div>
+                            <div class="row datos">
+                                <div class="col-4 col-lg-3 borde-derecha py-3">
+                                    <p><strong> RAFAEL CALDERON ZAMARRIPA </strong></p><img src="assets/res/avatar-persona.svg"></div>
+                                <div class="col-5 col-lg-7 borde-derecha text-right padding-t-15"><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PT.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "5"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/MORENA.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/MORENA.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "8"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PES.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PES.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "9"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PT.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/MORENA.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/PES.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PT.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/MORENA.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/PES.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "5,8,9"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PT.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/MORENA.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PT.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/MORENA.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "5,8"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/PT.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/PES.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/PT.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/PES.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "5,9"
                         }--><strong > &nbsp;0 </strong> &nbsp;<i  class="fas fa-plus-circle"></i>&nbsp; <!--ng-container--><!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--></span><span ><img  style="width: 30px;" src="./assets/img/logos-partidos/MORENA.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/PES.png"><!--ng-container--><!--bindings={
+                        }--></span><span><img  style="width: 30px;" src="./assets/img/logos-partidos/MORENA.png"><!--ng-container--><img  style="width: 30px;" src="./assets/img/logos-partidos/PES.png"><!--ng-container--><!--bindings={
                           "ng-reflect-ng-for-of": "8,9"
                         }--><strong > &nbsp;0 </strong><!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></span><!--bindings={
+                        }--></span>
+                                    <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object],[object Object"
-                        }--></div><div  class="col-3 col-lg-2 dis-flex flex-col text-center"><div  class="conteo dis-flex justify-s w-100"><div  class="igual dis-flex mx-sm-3"><i  aria-hidden="true" class="fas fa-equals"></i></div><p  class="total"><strong > 0 </strong></p></div><p  class="texto"> Total de votos por Candidatura </p></div></div><!--bindings={
+                        }-->
+                                </div>
+                                <div class="col-3 col-lg-2 dis-flex flex-col text-center">
+                                    <div class="conteo dis-flex justify-s w-100">
+                                        <div class="igual dis-flex mx-sm-3"><i aria-hidden="true" class="fas fa-equals"></i></div>
+                                        <p class="total"><strong> 0 </strong></p>
+                                    </div>
+                                    <p class="texto"> Total de votos por Candidatura </p>
+                                </div>
+                            </div>
+                            <!--bindings={
                           "ng-reflect-ng-for-of": "[object Object],[object Object"
-                        }--></div></div></div></div></div></div></app-distribucion-votos>
-                            
-                            <app-estadistica-nacional _ngcontent-nmq-c56="" _nghost-nmq-c51=""><div _ngcontent-nmq-c51="" class="container-fluid estadisticaNacional py-3"><div _ngcontent-nmq-c51="" class="row"><div _ngcontent-nmq-c51="" class="col-md-12"><div _ngcontent-nmq-c51="" class="card p-3"><div _ngcontent-nmq-c51="" class="bgPrototipo"><div _ngcontent-nmq-c51="" class="padding-b-30"><h4 _ngcontent-nmq-c51="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-nmq-c51="">Estadística <!--bindings={
+                        }-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-distribucion-votos>
+
+<app-estadistica-nacional _nghost-nmq-c51="">
+    <div _ngcontent-nmq-c51="" class="container-fluid estadisticaNacional py-3">
+        <div _ngcontent-nmq-c51="" class="row">
+            <div _ngcontent-nmq-c51="" class="col-md-12">
+                <div _ngcontent-nmq-c51="" class="card p-3">
+                    <div _ngcontent-nmq-c51="" class="bgPrototipo">
+                        <div _ngcontent-nmq-c51="" class="padding-b-30">
+                            <h4 _ngcontent-nmq-c51="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-nmq-c51="">Estadística <!--bindings={
                           "ng-reflect-ng-if": "false"
                         }--><!--bindings={
                           "ng-reflect-ng-if": "false"
@@ -253,21 +607,89 @@
                           "ng-reflect-ng-if": "true"
                         }--><!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></strong></h4></div><div _ngcontent-nmq-c51="" class="row dis-flex space-a align-s"><div _ngcontent-nmq-c51="" class="col-11 col-sm-6 col-xl-3 pb-sm-5"><div _ngcontent-nmq-c51="" class="titulo-actas dis-flex justify-s"><p _ngcontent-nmq-c51="" class="titulo pb-3" style="text-decoration: underline;"><strong _ngcontent-nmq-c51="">Actas</strong></p></div><div _ngcontent-nmq-c51="" class="row dis-flex space-a"><div _ngcontent-nmq-c51="" class="col-3 col-lg-2 col-xl-4 dis-flex flex-col"><div _ngcontent-nmq-c51="" class="grafica"><div _ngcontent-nmq-c51="" class="progreso bgGrafica1" ng-reflect-ng-style="[object Object]" style="height: 100%;"></div></div><p _ngcontent-nmq-c51="" class="px16 pt-1"><strong _ngcontent-nmq-c51=""> 488 </strong></p><p _ngcontent-nmq-c51="" class="px14"> 100.0000% </p><p _ngcontent-nmq-c51="" class="px12">Esperadas</p></div><div _ngcontent-nmq-c51="" class="col-3 col-lg-2 col-xl-4 dis-flex flex-col"><div _ngcontent-nmq-c51="" class="grafica"><div _ngcontent-nmq-c51="" class="progreso bgGrafica2" ng-reflect-ng-style="[object Object]"></div></div><p _ngcontent-nmq-c51="" class="px16 pt-1"><strong _ngcontent-nmq-c51=""> 0 </strong></p><p _ngcontent-nmq-c51="" class="px14"> 0.0000% </p><p _ngcontent-nmq-c51="" class="px12">Capturadas</p></div><div _ngcontent-nmq-c51="" class="col-3 col-lg-2 col-xl-4 dis-flex flex-col"><div _ngcontent-nmq-c51="" class="grafica"><div _ngcontent-nmq-c51="" class="progreso bgGrafica3" ng-reflect-ng-style="[object Object]"></div></div><p _ngcontent-nmq-c51="" class="px16 pt-1"><strong _ngcontent-nmq-c51=""> 0 </strong></p><p _ngcontent-nmq-c51="" class="px14"> 0.0000% </p><p _ngcontent-nmq-c51="" class="px12">Contabilizadas</p></div></div><!--bindings={
+                        }--></strong></h4>
+                        </div>
+                        <div _ngcontent-nmq-c51="" class="row dis-flex space-a align-s">
+                            <div _ngcontent-nmq-c51="" class="col-11 col-sm-6 col-xl-3 pb-sm-5">
+                                <div _ngcontent-nmq-c51="" class="titulo-actas dis-flex justify-s">
+                                    <p _ngcontent-nmq-c51="" class="titulo pb-3" style="text-decoration: underline;"><strong _ngcontent-nmq-c51="">Actas</strong></p>
+                                </div>
+                                <div _ngcontent-nmq-c51="" class="row dis-flex space-a">
+                                    <div _ngcontent-nmq-c51="" class="col-3 col-lg-2 col-xl-4 dis-flex flex-col">
+                                        <div _ngcontent-nmq-c51="" class="grafica">
+                                            <div _ngcontent-nmq-c51="" class="progreso bgGrafica1" ng-reflect-ng-style="[object Object]" style="height: 100%;"></div>
+                                        </div>
+                                        <p _ngcontent-nmq-c51="" class="px16 pt-1"><strong _ngcontent-nmq-c51=""> 488 </strong></p>
+                                        <p _ngcontent-nmq-c51="" class="px14"> 100.0000% </p>
+                                        <p _ngcontent-nmq-c51="" class="px12">Esperadas</p>
+                                    </div>
+                                    <div _ngcontent-nmq-c51="" class="col-3 col-lg-2 col-xl-4 dis-flex flex-col">
+                                        <div _ngcontent-nmq-c51="" class="grafica">
+                                            <div _ngcontent-nmq-c51="" class="progreso bgGrafica2" ng-reflect-ng-style="[object Object]"></div>
+                                        </div>
+                                        <p _ngcontent-nmq-c51="" class="px16 pt-1"><strong _ngcontent-nmq-c51=""> 0 </strong></p>
+                                        <p _ngcontent-nmq-c51="" class="px14"> 0.0000% </p>
+                                        <p _ngcontent-nmq-c51="" class="px12">Capturadas</p>
+                                    </div>
+                                    <div _ngcontent-nmq-c51="" class="col-3 col-lg-2 col-xl-4 dis-flex flex-col">
+                                        <div _ngcontent-nmq-c51="" class="grafica">
+                                            <div _ngcontent-nmq-c51="" class="progreso bgGrafica3" ng-reflect-ng-style="[object Object]"></div>
+                                        </div>
+                                        <p _ngcontent-nmq-c51="" class="px16 pt-1"><strong _ngcontent-nmq-c51=""> 0 </strong></p>
+                                        <p _ngcontent-nmq-c51="" class="px14"> 0.0000% </p>
+                                        <p _ngcontent-nmq-c51="" class="px12">Contabilizadas</p>
+                                    </div>
+                                </div>
+                                <!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></div><div _ngcontent-nmq-c51="" class="w-100 d-xl-none"></div><div _ngcontent-nmq-c51="" class="col-9 col-sm-6 col-xl-4 py-5 py-sm-0"><p _ngcontent-nmq-c51="" class="titulo pb-3"><strong _ngcontent-nmq-c51="">Lista Nominal</strong></p><!--bindings={
+                        }-->
+                            </div>
+                            <div _ngcontent-nmq-c51="" class="w-100 d-xl-none"></div>
+                            <div _ngcontent-nmq-c51="" class="col-9 col-sm-6 col-xl-4 py-5 py-sm-0">
+                                <p _ngcontent-nmq-c51="" class="titulo pb-3"><strong _ngcontent-nmq-c51="">Lista Nominal</strong></p>
+                                <!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--> <highcharts-chart _ngcontent-nmq-c51="" style="width: 100%; height: 300px; display: block; overflow: hidden;" ng-reflect--highcharts="[object Object]" ng-reflect-options="[object Object]" data-highcharts-chart="4"><div id="highcharts-72ky3em-18" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 425px; height: 300px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none;"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="425" height="300" viewBox="0 0 425 300"><desc>Created with Highcharts 8.2.0</desc><defs><clipPath id="highcharts-72ky3em-20-"><rect x="0" y="0" width="405" height="220" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="425" height="300" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="65" width="405" height="220"></rect><g class="highcharts-pane-group" data-z-index="0"><path fill="#E3E3E3" d="M 73.35 251.99999999999997 A 139.15 139.15 0 0 1 351.6499304250058 251.86085002319172 L 315.3499485750043 251.8971500171417 A 102.85 102.85 0 0 0 109.65 252 Z" class="highcharts-pane " stroke="#cccccc" stroke-width="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="10" y="65" width="405" height="220"></rect><g class="highcharts-data-labels highcharts-series-0 highcharts-solidgauge-series highcharts-tracker" data-z-index="2" opacity="1" transform="translate(10,65) scale(1 1)"><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 highcharts-tracker" data-z-index="1" transform="translate(198,192)"></g></g><g class="highcharts-series-group" data-z-index="3"><g class="highcharts-series highcharts-series-0 highcharts-solidgauge-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,65) scale(1 1)" clip-path="url(http://localhost:8888/diputaciones/nacional/circunscripcion2/aguascalientes/distrito1-jesus-maria/votos-candidatura#highcharts-72ky3em-20-)"><path fill="#D1308A" d="M 69.4 186.99999999999997 A 133.1 133.1 0 0 1 69.40006654999445 187.13309997781664 L 93.60005444999545 187.10889998185 A 108.9 108.9 0 0 0 93.6 187 Z" sweep-flag="0" stroke-linecap="round" stroke-linejoin="round" class="highcharts-point highcharts-color-0"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-solidgauge-series" data-z-index="0.1" opacity="1" transform="translate(10,65) scale(1 1)" clip-path="none"></g></g><text x="213" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#707070;font-size:13px;font-weight:bold;font-family:Roboto,sans-serif!important;fill:#707070;" y="210"><tspan>Lista Nominal oficial:</tspan></text><text x="10" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color:#666666;fill:#666666;" y="297"></text><text x="213" text-anchor="middle" class="highcharts-title" data-z-index="4" style="color:#D2127E;font-size:21px;font-weight:bold;font-family:Roboto,sans-serif!important;fill:#D2127E;" y="245"><tspan>306,488</tspan></text><g class="highcharts-legend" data-z-index="7"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="8" height="8" visibility="hidden"></rect><g data-z-index="1"><g></g></g></g></svg><div class="highcharts-data-labels highcharts-series-0 highcharts-solidgauge-series highcharts-tracker" style="position: absolute; left: 10px; top: 65px; opacity: 1; visibility: inherit;"><div class="highcharts-label highcharts-data-label highcharts-data-label-color-0 highcharts-tracker" style="position: absolute; left: 198px; top: 192px; opacity: 1;"><span data-z-index="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 11px; white-space: nowrap; color: rgb(0, 0, 0); font-weight: bold; margin-left: 0px; margin-top: 0px; left: 5px; top: 5px;"><div style="text-align:right; position:absolute; top: -230px;left: 32px"><span class="font-bold px12">Lista Nominal de <br>Actas Contabilizadas</span><br> <span class="font-medium px18" style="color:#D1308A">0</span></div></span></div></div></div></highcharts-chart> <!--bindings={
+                        }-->
+                                <highcharts-chart _ngcontent-nmq-c51="" style="width: 100%; height: 300px; display: block; overflow: hidden;" ng-reflect--highcharts="[object Object]" ng-reflect-options="[object Object]" data-highcharts-chart="4">
+                                    <div id="highcharts-72ky3em-18" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 425px; height: 300px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none;"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="425"
+                                            height="300" viewBox="0 0 425 300"><desc>Created with Highcharts 8.2.0</desc><defs><clipPath id="highcharts-72ky3em-20-"><rect x="0" y="0" width="405" height="220" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="425" height="300" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="65" width="405" height="220"></rect><g class="highcharts-pane-group" data-z-index="0"><path fill="#E3E3E3" d="M 73.35 251.99999999999997 A 139.15 139.15 0 0 1 351.6499304250058 251.86085002319172 L 315.3499485750043 251.8971500171417 A 102.85 102.85 0 0 0 109.65 252 Z" class="highcharts-pane " stroke="#cccccc" stroke-width="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="10" y="65" width="405" height="220"></rect><g class="highcharts-data-labels highcharts-series-0 highcharts-solidgauge-series highcharts-tracker" data-z-index="2" opacity="1" transform="translate(10,65) scale(1 1)"><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 highcharts-tracker" data-z-index="1" transform="translate(198,192)"></g></g><g class="highcharts-series-group" data-z-index="3"><g class="highcharts-series highcharts-series-0 highcharts-solidgauge-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,65) scale(1 1)" clip-path="url(http://localhost:8888/diputaciones/nacional/circunscripcion2/aguascalientes/distrito1-jesus-maria/votos-candidatura#highcharts-72ky3em-20-)"><path fill="#D1308A" d="M 69.4 186.99999999999997 A 133.1 133.1 0 0 1 69.40006654999445 187.13309997781664 L 93.60005444999545 187.10889998185 A 108.9 108.9 0 0 0 93.6 187 Z" sweep-flag="0" stroke-linecap="round" stroke-linejoin="round" class="highcharts-point highcharts-color-0"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-solidgauge-series" data-z-index="0.1" opacity="1" transform="translate(10,65) scale(1 1)" clip-path="none"></g></g><text x="213" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#707070;font-size:13px;font-weight:bold;font-family:Roboto,sans-serif!important;fill:#707070;" y="210"><tspan>Lista Nominal oficial:</tspan></text><text x="10" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color:#666666;fill:#666666;" y="297"></text><text x="213" text-anchor="middle" class="highcharts-title" data-z-index="4" style="color:#D2127E;font-size:21px;font-weight:bold;font-family:Roboto,sans-serif!important;fill:#D2127E;" y="245"><tspan>306,488</tspan></text><g class="highcharts-legend" data-z-index="7"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="8" height="8" visibility="hidden"></rect><g data-z-index="1"><g></g></g></g></svg>
+                                        <div
+                                            class="highcharts-data-labels highcharts-series-0 highcharts-solidgauge-series highcharts-tracker" style="position: absolute; left: 10px; top: 65px; opacity: 1; visibility: inherit;">
+                                            <div class="highcharts-label highcharts-data-label highcharts-data-label-color-0 highcharts-tracker" style="position: absolute; left: 198px; top: 192px; opacity: 1;"><span data-z-index="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 11px; white-space: nowrap; color: rgb(0, 0, 0); font-weight: bold; margin-left: 0px; margin-top: 0px; left: 5px; top: 5px;"><div style="text-align:right; position:absolute; top: -230px;left: 32px"><span class="font-bold px12">Lista Nominal de <br>Actas Contabilizadas</span><br>                                                <span class="font-medium px18" style="color:#D1308A">0</span></div>
+                                            </span>
+                                    </div>
+                            </div>
+                        </div>
+                        </highcharts-chart>
+                        <!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--><!--bindings={
+                        }-->
+                        <!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></div><div _ngcontent-nmq-c51="" class="w-100 d-xl-none"></div><div _ngcontent-nmq-c51="" class="col-9 col-xl-4"><p _ngcontent-nmq-c51="" class="titulo pb-3"><strong _ngcontent-nmq-c51="">Participación ciudadana con base en la Lista Nominal de las Actas PREP Contabilizadas</strong></p><p _ngcontent-nmq-c51="" class="px38 font-medium txRosaIne text-center"> 71.1666% </p><p _ngcontent-nmq-c51="" class="texto text-center font-medium"> Porcentaje calculado <strong _ngcontent-nmq-c51="">considerando</strong> la votación en <strong _ngcontent-nmq-c51="">Casillas Especiales.</strong></p><p _ngcontent-nmq-c51="" class="texto text-center"> Total de votos / Lista Nominal de Actas Contabilizadas = % de participación. </p><!--ng-container--><!--bindings={
+                        }-->
+                    </div>
+                    <div _ngcontent-nmq-c51="" class="w-100 d-xl-none"></div>
+                    <div _ngcontent-nmq-c51="" class="col-9 col-xl-4">
+                        <p _ngcontent-nmq-c51="" class="titulo pb-3"><strong _ngcontent-nmq-c51="">Participación ciudadana con base en la Lista Nominal de las Actas PREP Contabilizadas</strong></p>
+                        <p _ngcontent-nmq-c51="" class="px38 font-medium txRosaIne text-center"> 71.1666% </p>
+                        <p _ngcontent-nmq-c51="" class="texto text-center font-medium"> Porcentaje calculado <strong _ngcontent-nmq-c51="">considerando</strong> la votación en <strong _ngcontent-nmq-c51="">Casillas Especiales.</strong></p>
+                        <p _ngcontent-nmq-c51="" class="texto text-center"> Total de votos / Lista Nominal de Actas Contabilizadas = % de participación. </p>
+                        <!--ng-container-->
+                        <!--bindings={
                           "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
+                        }-->
+                        <!--bindings={
                           "ng-reflect-ng-if": "false"
-                        }--></div></div></div></div></div></div></div>
-                        </app-estadistica-nacional>
-                        </app-distrito-distrito>                      
+                        }-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</app-estadistica-nacional>
+</app-distrito-distrito>                   
 
                       
                       
