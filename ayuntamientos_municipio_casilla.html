@@ -55,7 +55,7 @@
                         <div class="col-xl-4 d-none d-xl-block altoAvance pl-0">
                             <app-buscador>
                               <!-- /Encabezado -->
-                                <div ng-include="'includes/globales/buscador.html'"></div>  
+                                <div ng-include="'includes/ayuntamientos/ayuntamientos-buscador.html'"></div> 
                             </app-buscador>
                         </div>
                     </div>
@@ -74,8 +74,8 @@
                                                 <h3    class="titulo-seccion"> Ayuntamientos - <span    class="txRosaIne"><strong   >Sección - Casilla</strong></span></h3>
                                                 <h4   ><a    routerlinkactive="router-link-active" class="linkAzul router-link-active" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="/circunscripcion1/baja-califor" href="/diputaciones/nacional/circunscripcion1/baja-california">San Luis Potosí</a>                                / <a    routerlinkactive="router-link-active" class="linkAzul" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="basicacircunscripcion1/entidad" href="ayuntamientos_municipio.html">Municipio 1. Jesus Maria</a>                                / <a    routerlinkactive="router-link-active" class="linkAzul" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="basicacircunscripcion1/entidad" href="ayuntamientos_municipio_seccion.html">Seccion 375 </a>                                / Casilla Basica1 </h4>
                                                 <div    class="texto font-medium">
-                                                    <p   > El total de votos calculado y porcentaje que se muestran, se refieren a los votos asentados en las Actas PREP hasta el momento. </p>
-                                                    <p   > Por presentación, los decimales de los porcentajes muestran sólo cuatro dígitos. No obstante, al considerar todos los decimales, suman 100%. </p>
+                                                    <p   > Cantidad de votos en cada una de las casillas de esta Sección, conforme a la información de las Actas de Escrutinio y Cómputo. </p>
+                                                    <p   >&nbsp;  </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -559,77 +559,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div    class="container-fluid resumen-votacion">
-                                            <div    class="row">
-                                                <div    class="col-8 bgGris py-2 pxx">
-                                                    <p    class="titulo"><strong   >Resumen de la votación</strong></p>
-                                                    <div    class="container-fluid">
-                                                        <div    class="row dis-flex">
-                                                            <div    class="apartado dis-flex flex-col">
-                                                                <div    class="dis-flex w-100 align-s">
-                                                                    <p    class="subtitulo"> Votos acumulados &nbsp; </p><span    tooltip="Es la sumatoria de los votos obtenidos por Partido Político, Coalición o Candidatura Independiente." placement="top" show-delay="200" ng-reflect-tooltip-value="Es la sumatoria de los votos o"
-                                                                        ng-reflect-placement="top" ng-reflect-show-delay="200"><i    aria-hidden="true" class="fas fa-info-circle"></i></span></div>
-                                                                <div    class="row dis-flex w-100 space-b">
-                                                                    <p    class="col-12 cantidad"><strong   > 365 </strong></p>
-                                                                    <p    class="col-12 porcentaje"> 96.0000% </p>
-                                                                </div>
-                                                            </div>
-                                                            <p    class="separador"><strong   >+</strong></p>
-                                                            <div    class="apartado dis-flex flex-col">
-                                                                <div    class="dis-flex w-100">
-                                                                    <p    class="subtitulo"> Candidaturas no registradas </p>
-                                                                </div>
-                                                                <div    class="row dis-flex w-100 space-b">
-                                                                    <p    class="col-12 cantidad"><strong   > 0 </strong></p>
-                                                                    <p    class="col-12 porcentaje"> 0.0000% </p>
-                                                                </div>
-                                                            </div>
-                                                            <p    class="separador"><strong   >+</strong></p>
-                                                            <div    class="apartado dis-flex flex-col">
-                                                                <div    class="dis-flex w-100">
-                                                                    <p    class="subtitulo"> Nulos </p>
-                                                                </div>
-                                                                <div    class="row dis-flex w-100 space-b">
-                                                                    <p    class="col-12 cantidad"><strong   > 15 </strong></p>
-                                                                    <p    class="col-12 porcentaje"> 4.0000% </p>
-                                                                </div>
-                                                            </div>
-                                                            <p    class="d-none d-lg-block separador pr-3"><strong   >=</strong></p>
-                                                            <div    class="d-none d-lg-block apartado dis-flex flex-col">
-                                                                <div    class="dis-flex w-100 justify-e">
-                                                                    <p    class="px20"><strong   >Total de votos</strong></p>
-                                                                </div>
-                                                                <div    class="dis-flex w-100 space-b justify-e">
-                                                                    <p    class="total"><strong    class="txRosaIne"> 380 </strong></p>
-                                                                </div>
-                                                                <div    class="dis-flex w-100 space-b justify-e">
-                                                                    <p   ><strong    class="txRosaIne"> 100.0000% </strong></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div    class="container-fluid d-lg-none">
-                                                            <div    class="row">
-                                                                <div    class="col-12 dis-flex flex-col mt-3">
-                                                                    <div    class="dis-flex w-100 justify-e">
-                                                                        <p    class="px20 mb-0"><strong   >Total de votos</strong></p>
-                                                                    </div>
-                                                                    <div    class="dis-flex w-100 justify-e">
-                                                                        <p    class="total"><strong   > = <span    class="txRosaIne">0</span></strong></p>
-                                                                    </div>
-                                                                    <div    class="dis-flex w-100 justify-e">
-                                                                        <p   ><strong   ><span    class="txRosaIne">100.0000%</span></strong></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div    class="col-3 mt-4 p-2 bgGris ml-2">
-                                                    <div    class="bgGris resumen-votacion p-2">
-                                                        <p    class="titulo"><strong   >Observaciones en Acta</strong></p>
-                                                        <p   > - </p><br></div>
-                                                </div>
-                                            </div>
+                                        <div    class="container-fluid resumen-votacion">                                             
+											 <div ng-include="'includes/ayuntamientos/resumen-votacion-casilla.html'"></div> 
                                         </div>
                                     </div>
                                 </div>
@@ -640,7 +571,7 @@
                                         <div    class="container-fluid">
                                             <div    class="row">
                                                 <div    class="col">
-                                                    <h4    class="subtitulo-seccion pleca-izquierda"><strong   >Estadística de Casilla</strong></h4>
+                                                    <h4    class="subtitulo-seccion pleca-izquierda"><strong>Estadística de Casilla</strong></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -659,6 +590,7 @@
                                                             <p    class="casilla px10"> 375 Básica 1 </p>
                                                             <p    class="porcentaje px12"><strong   > 6.0000% </strong></p>
                                                             <div    class="interno" ng-reflect-ng-style="[object Object]" style="width: 10%;"></div>
+															
                                                         </div>
                                                     </div>
                                                 </div>
@@ -674,95 +606,24 @@
                             <div    class="row">
                                 <div    class="col-md-12">
                                     <div    class="estadistica-casilla observacionesActa card mt-3 p-3">
-                                        <div    class="container-fluid">
-                                            <div    class="row">
-                                                <div    class="col">
-                                                    <h4    class="subtitulo-seccion pleca-izquierda"><strong   >Observaciones en Acta</strong></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div    class="container-fluid py-4">
-                                            <div    class="row justify-content-center">
-                                                <div    class="col-11">
-                                                    <div    class="container-fluid">
-                                                        <div    class="row">
-                                                            <div    class="col-12 col-md-6">
-                                                                <h4    class="subtitulo-seccion pleca-izquierda"><strong    class="txRosa2">Contabilizadas</strong></h4>
-                                                                <div    class="grupo py-3">
-                                                                    <p    class="pb-2"><strong   > Ilegible </strong></p>
-                                                                    <p   > La cantidad de votos en algún campo del Acta PREP no puede leerse, tanto en letra como en número. </p>
-                                                                </div>
-                                                                <div    class="grupo py-3">
-                                                                    <p    class="pb-2"><strong   > Sin Dato </strong></p>
-                                                                    <p   > La cantidad de votos no fue asentada en el Acta PREP ni en letra ni en número en algún campo del Acta PREP. </p>
-                                                                </div>
-                                                                <div    class="grupo py-3 mb-2">
-                                                                    <p    class="pb-2"><strong   > Identificación por Proceso Técnico Operativo </strong></p>
-                                                                    <p   > Los datos del Acta PREP no se identificaron y sé solicitó verificarlos por algún procedimiento válido establecido en el Proceso Técnico Operativo. </p>
-                                                                </div>
-                                                                <h4    class="subtitulo-seccion pleca-izquierda pleca-morada mt-5"><strong   ><span    class="txMorado">No identificadas -</span> Fuera del catálogo</strong></h4>
-                                                                <div    class="grupo py-3">
-                                                                    <p   > No es posible ubicar el Acta PREP dentro de la lista de Actas de casillas aprobadas por el INE, al presentar alguna omisión, ilegibilidad o error en sus datos de identificación. Para fines de publicación,
-                                                                        el Acta se muestra al final del listado de Actas aprobadas en la Base de Datos. </p>
-                                                                </div>
-                                                            </div>
-                                                            <div    class="col-12 col-md-6">
-                                                                <h4    class="subtitulo-seccion pleca-izquierda pleca-aqua"><strong    class="txAqua">No Contabilizadas</strong></h4>
-                                                                <div    class="grupo py-3">
-                                                                    <p    class="pb-2"><strong   > Excede Lista Nominal </strong></p>
-                                                                    <p   > La suma de todos los votos en el Acta PREP, excede el número de ciudadanas y ciudadanos en la Lista Nominal de Electores de la casilla, incluido el número de votos emitidos por los representantes de los
-                                                                        Partidos Políticos y, en su caso Candidaturas Independientes. </p>
-                                                                </div>
-                                                                <div    class="grupo py-3">
-                                                                    <p    class="pb-2"><strong   > Sin Acta </strong></p>
-                                                                    <p    class="pb-2"> El Acta PREP no llegó junto con el paquete electoral al Centro de Acopio y Transmisión de Datos (CATD), por algunas de las siguientes causas: </p>
-                                                                    <p   > 1. Sin Acta por paquete no entregado. </p>
-                                                                    <p   > 2. Sin Acta por casilla no instalada. </p>
-                                                                    <p   > 3. Sin Acta por paquete entregado sin sobre. </p>
-                                                                </div>
-                                                                <div    class="grupo py-3">
-                                                                    <p    class="pb-2"><strong   > Todos los campos ilegibles </strong></p>
-                                                                    <p   > Todos los campos del Acta PREP correspondientes al número de votos, son ilegibles tanto en letra como en número. </p>
-                                                                </div>
-                                                                <div    class="grupo py-3">
-                                                                    <p    class="pb-2"><strong   > Todos los campos vacíos </strong></p>
-                                                                    <p   > Todos los campos del Acta PREP correspondientes al número de votos, se encuentran vacíos tanto en letra como en número. </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div ng-include="'includes/ayuntamientos/estadistica-observaciones-acta.html'"></div> 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </app-casilla-resumen>
                       
-                      <app-pre-pie-pagina  _nghost-lnm-c87="">
-                          <div  class="container-fluid bgGris py-1">
-                              <div  class="row justify-content-center">
-                                  <div  class="col-md-10 px12 text-center">
-                                      <p  class="m-0"> Los resultados presentados tienen un carácter informativo y no son definitivos, por tanto, no tienen efectos jurídicos. </p>
-                                      <p  class="m-0"> Con base en la Ley Federal del Derecho de Autor queda prohibida cualquier modificación al diseño de este sitio. </p>
-                                      <p  class="m-0"> La modificación y/o destrucción de la información y/o contenido total o parcial de este sitio, es delito federal de acuerdo al Código Penal Federal. </p>
-                                  </div>
-                              </div>
-                          </div>
-                      </app-pre-pie-pagina>
+                      <app-pre-pie-pagina >
+                                <!-- pie de pagina 1 -->
+                                <div ng-include="'includes/footer-01.html'"></div>
+                             </app-pre-pie-pagina>
               </div>
           </div>
           <div  class="row">
               <div  class="col-md-12 px-0">
-                  <app-pie-pagina  _nghost-lnm-c88="">
-                      <footer _ngcontent-lnm-c88="" class="container-fluid bgMorado txBlanco pie-pagina">
-                          <div _ngcontent-lnm-c88="" class="row">
-                              <div _ngcontent-lnm-c88="" class="col-xl-10 offset-xl-2 dis-flex space-a px12 px-0 py-2">
-                                  <p _ngcontent-lnm-c88="" class="m-0"> Este sitio se visualiza mejor en las versiones más recientes de los navegadores web &nbsp;|&nbsp; Consejo Estatal Electoral y de Participación Ciudadana de S.L.P. &nbsp;|&nbsp; Servicios de Informática v.20201126 &nbsp;|&nbsp; Aviso de privacidad </p>
-                              </div>
-                          </div>
-                      </footer>
+                   <app-pie-pagina>
+                      <!-- pie de pagina 2 -->
+                    <div ng-include="'includes/footer-02.html'"></div>
                   </app-pie-pagina>
               </div>
           </div>
@@ -801,8 +662,11 @@
       <app-comparativa  _nghost-lnm-c89="">
           <div _ngcontent-lnm-c89="" id="modalComparativa" tabindex="-1" role="dialog" aria-labelledby="ModalComparativa" aria-hidden="true" class="modal fade modalComparativa">
               <div _ngcontent-lnm-c89="" role="document" class="modal-dialog modal-dialog-centered modal-lg">
-                   </div></div></app-comparativa></app-root>
-
+                   </div></div></app-comparativa>
+		
+		
+		
+		 
 
 
 
