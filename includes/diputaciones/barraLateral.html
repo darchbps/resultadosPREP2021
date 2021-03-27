@@ -68,18 +68,21 @@
         console.log("Desde el include " + $("[data-toggle='tooltip']").length);
 
         $("#colapsador").click(function(){
+            var $elem = $(this);
             var open = $('i', this).hasClass('fa-chevron-left');
             if ( open ) {
 
                 $('i', this).removeClass('fa-chevron-left').addClass('fa-chevron-right');
                 $("#MenuLateral").removeClass('col-md-12 col-xl-2').addClass("w-5");
                 $("#CenterContent").removeClass('col-md-12 col-xl-10').addClass("w-95");
+                $elem.removeClass('abierto').addClass("cerrado");
 
             } else {
 
                 $('i', this).removeClass('fa-chevron-right').addClass('fa-chevron-left');
                 $("#MenuLateral").removeClass("w-5").addClass('col-md-12 col-xl-2');
                 $("#CenterContent").removeClass("w-95").addClass('col-md-12 col-xl-10');
+                $elem.removeClass("cerrado").addClass('abierto');
             }
         });
     });
