@@ -44,10 +44,15 @@
 	 height: 10px;
 }
 
-
+ .barra-avance-big {
+	 background-color: #34344e;
+	 height: 10px;
+	 width: 97%;
+}
  .barra-avance-big {
 	 background-color: #34344e;
 	 height: 25px;
+	 
 }
  .fecha {
 	 font-size: 15px;
