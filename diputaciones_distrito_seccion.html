@@ -604,266 +604,130 @@
                                                 <div class="boton-scroll dis-flex cursorPointer"><i aria-hidden="true" class="fas fa-chevron-right"></i></div>
                                             </div>
                                         </div>
-                                        <div class="container-fluid resumen-votacion">
-                                            <div class="row">
-                                                <div class="col-12 col-lg-8 col-xl-8 bgGris py-2 pxx">
-                                                    <p class="titulo"><strong>Resumen de la votación</strong></p>
-                                                    <div class="container-fluid">
-                                                        <div class="row dis-flex">
-                                                            <div class="apartado dis-flex flex-col">
-                                                                <div class="dis-flex w-100 align-s">
-                                                                    <p class="subtitulo"> Votos acumulados &nbsp; </p><span tooltip="Es la sumatoria de los votos obtenidos por Partido Político, Coalición o Candidatura Independiente." placement="top" show-delay="200" ng-reflect-tooltip-value="Es la sumatoria de los votos o"
-                                                                        ng-reflect-placement="top" ng-reflect-show-delay="200"><i    aria-hidden="true" class="fas fa-info-circle"></i></span></div>
-                                                                <div class="row dis-flex w-100 space-b">
-                                                                    <p class="col-12 cantidad"><strong> 0 </strong></p>
-                                                                    <p class="col-12 porcentaje"> 0.0000% </p>
-                                                                </div>
-                                                            </div>
-                                                            <p class="separador"><strong>+</strong></p>
-                                                            <div class="apartado dis-flex flex-col">
-                                                                <div class="dis-flex w-100">
-                                                                    <p class="subtitulo"> Candidaturas no registradas </p>
-                                                                </div>
-                                                                <div class="row dis-flex w-100 space-b">
-                                                                    <p class="col-12 cantidad"><strong> 0 </strong></p>
-                                                                    <p class="col-12 porcentaje"> 0.0000% </p>
-                                                                </div>
-                                                            </div>
-                                                            <p class="separador"><strong>+</strong></p>
-                                                            <div class="apartado dis-flex flex-col">
-                                                                <div class="dis-flex w-100">
-                                                                    <p class="subtitulo"> Nulos </p>
-                                                                </div>
-                                                                <div class="row dis-flex w-100 space-b">
-                                                                    <p class="col-12 cantidad"><strong> 0 </strong></p>
-                                                                    <p class="col-12 porcentaje"> 0.0000% </p>
-                                                                </div>
-                                                            </div>
-                                                            <p class="d-none d-lg-block separador pr-3"><strong>=</strong></p>
-                                                            <div class="d-none d-lg-block apartado dis-flex flex-col">
-                                                                <div class="dis-flex w-100 justify-e">
-                                                                    <p class="px20"><strong>Total de votos</strong></p>
-                                                                </div>
-                                                                <div class="dis-flex w-100 space-b justify-e">
-                                                                    <p class="total"><strong class="txRosaIne"> 0 </strong></p>
-                                                                </div>
-                                                                <div class="dis-flex w-100 space-b justify-e">
-                                                                    <p><strong class="txRosaIne"> 100.0000% </strong></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="container-fluid d-lg-none">
-                                                            <div class="row">
-                                                                <div class="col-12 dis-flex flex-col mt-3">
-                                                                    <div class="dis-flex w-100 justify-e">
-                                                                        <p class="px20 mb-0"><strong>Total de votos</strong></p>
-                                                                    </div>
-                                                                    <div class="dis-flex w-100 justify-e">
-                                                                        <p class="total"><strong> = <span    class="txRosaIne"> 0 </span></strong></p>
-                                                                    </div>
-                                                                    <div class="dis-flex w-100 justify-e">
-                                                                        <p><strong><span    class="txRosaIne">100.0000%</span></strong></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                         <div  class="container-fluid resumen-votacion">
+                                            <div ng-include="'includes/diputaciones/resumen-votacion.html'"></div>
+                                          </div>
                                         <div class="row">
                                             <div class="col-12 px-0 mt-4">
                                                 <div>
                                                     <div class="table-responsive tabla-seccion">
                                                         <table class="table table-striped contenido table-bordered">
-                                                            <thead class="titulos">
+                                                            <thead class="table-header">
                                                                 <tr>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
                                                                                 <div class="dis-flex"><strong class="txGris dis-flex text-center"> Casilla </strong></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                                
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": ""
-                                            }-->
+                                                                            
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
                                                                                 <div class="dis-flex"><strong class="txGris dis-flex text-center"> Acta digitalizada </strong></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                              
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": ""
-                                            }-->
+                                                                           
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                                 
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                                 
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": "1"
-                                            }-->
+                                                                             
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                              
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/PRI.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                                
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": "2"
-                                            }-->
+                                                                            
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                               
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                               
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": "3"
-                                            }-->
+                                                                             
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                                
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/PVEM.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                                 
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": "4"
-                                            }-->
+                                                                             
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                                
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/PT.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                                 
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": "5"
-                                            }-->
+                                                                             
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                               
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/MC.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                                
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": "6"
-                                            }-->
+                                                                            
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                                
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/PANAL.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                                
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": "7"
-                                            }-->
+                                                                             
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                               
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                                
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": "8"
-                                            }-->
+                                                                            
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                               
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/PES.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                                
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": "9"
-                                            }-->
+                                                                            
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                               
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                              
                                                                             </div>
                                                                             <div class="dis-flex">
                                                                                 <!--bindings={
@@ -941,26 +805,16 @@
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                                 
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                                 
                                                                             </div>
                                                                             <div class="dis-flex">
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                                
                                                                                 <div class="dis-flex"><img alt="" class="img-partido" src="./assets/img/logos-partidos/MC.png"></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
+                                                                                 
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": "3,6"
-                                            }-->
+                                                                            
                                                                         </div>
                                                                     </th>
                                                                     <th>
@@ -1042,48 +896,27 @@
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
                                                                                 <div class="dis-flex"><strong class="txGris dis-flex text-center"> Votos nulos </strong></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                                
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": ""
-                                            }-->
+                                                                            
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
                                                                                 <div class="dis-flex"><strong class="txGris dis-flex text-center"> Total </strong></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                                
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": ""
-                                            }-->
+                                                                            
                                                                         </div>
                                                                     </th>
                                                                     <th>
                                                                         <div class="inter-partido dis-flex">
                                                                             <div class="dis-flex">
                                                                                 <div class="dis-flex"><strong class="txGris dis-flex text-center"> Observaciones en Acta </strong></div>
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "true"
-                                            }-->
-                                                                                <!--bindings={
-                                              "ng-reflect-ng-if": "false"
-                                            }-->
+                                                                                 
                                                                             </div>
-                                                                            <!--bindings={
-                                              "ng-reflect-ng-for-of": ""
-                                            }-->
+                                                                           
                                                                         </div>
                                                                     </th>
                                                                     
@@ -1149,22 +982,13 @@
                                                                     <td> 0 </td>
                                                                     <td> 0 </td>
                                                                     <td> 0 </td>
-                                                                    <td> 0 </td>
-                                                                    <!--bindings={
-                                              "ng-reflect-ng-for-of": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-                                            }-->
+                                                                    <td> 0 </td>                                                                    
                                                                     <td> 0 </td>
                                                                     <td> 0 </td>
                                                                     <td> 0 </td>
                                                                     <td> - </td>
                                                                 </tr>
-                                                                <!--bindings={
-                                              "ng-reflect-ng-for-of": "[object Object]"
-                                            }-->
-                                                                <!--ng-container-->
-                                                                <!--bindings={
-                                              "ng-reflect-ng-for-of": "[object Object],[object Object"
-                                            }-->
+                                                                 
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -1239,68 +1063,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="estadistica-casilla observacionesActa card mt-3 p-3">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h4 class="subtitulo-seccion pleca-izquierda"><strong>Observaciones en Acta</strong></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="container-fluid py-4">
-                                            <div class="row justify-content-center">
-                                                <div class="col-11">
-                                                    <div class="container-fluid">
-                                                        <div class="row">
-                                                            <div class="col-12 col-md-6">
-                                                                <h4 class="subtitulo-seccion pleca-izquierda"><strong class="txRosa2">Contabilizadas</strong></h4>
-                                                                <div class="grupo py-3">
-                                                                    <p class="pb-2"><strong> Ilegible </strong></p>
-                                                                    <p> La cantidad de votos en algún campo del Acta PREP no puede leerse, tanto en letra como en número. </p>
-                                                                </div>
-                                                                <div class="grupo py-3">
-                                                                    <p class="pb-2"><strong> Sin Dato </strong></p>
-                                                                    <p> La cantidad de votos no fue asentada en el Acta PREP ni en letra ni en número en algún campo del Acta PREP. </p>
-                                                                </div>
-                                                                <div class="grupo py-3 mb-2">
-                                                                    <p class="pb-2"><strong> Identificación por Proceso Técnico Operativo </strong></p>
-                                                                    <p> Los datos del Acta PREP no se identificaron y sé solicitó verificarlos por algún procedimiento válido establecido en el Proceso Técnico Operativo. </p>
-                                                                </div>
-                                                                <h4 class="subtitulo-seccion pleca-izquierda pleca-morada mt-5"><strong><span    class="txMorado">No identificadas -</span> Fuera del catálogo</strong></h4>
-                                                                <div class="grupo py-3">
-                                                                    <p> No es posible ubicar el Acta PREP dentro de la lista de Actas de casillas aprobadas por el INE, al presentar alguna omisión, ilegibilidad o error en sus datos de identificación. Para fines de publicación,
-                                                                        el Acta se muestra al final del listado de Actas aprobadas en la Base de Datos. </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12 col-md-6">
-                                                                <h4 class="subtitulo-seccion pleca-izquierda pleca-aqua"><strong class="txAqua">No Contabilizadas</strong></h4>
-                                                                <div class="grupo py-3">
-                                                                    <p class="pb-2"><strong> Excede Lista Nominal </strong></p>
-                                                                    <p> La suma de todos los votos en el Acta PREP, excede el número de ciudadanas y ciudadanos en la Lista Nominal de Electores de la casilla, incluido el número de votos emitidos por los representantes de los
-                                                                        Partidos Políticos y, en su caso Candidaturas Independientes. </p>
-                                                                </div>
-                                                                <div class="grupo py-3">
-                                                                    <p class="pb-2"><strong> Sin Acta </strong></p>
-                                                                    <p class="pb-2"> El Acta PREP no llegó junto con el paquete electoral al Centro de Acopio y Transmisión de Datos (CATD), por algunas de las siguientes causas: </p>
-                                                                    <p> 1. Sin Acta por paquete no entregado. </p>
-                                                                    <p> 2. Sin Acta por casilla no instalada. </p>
-                                                                    <p> 3. Sin Acta por paquete entregado sin sobre. </p>
-                                                                </div>
-                                                                <div class="grupo py-3">
-                                                                    <p class="pb-2"><strong> Todos los campos ilegibles </strong></p>
-                                                                    <p> Todos los campos del Acta PREP correspondientes al número de votos, son ilegibles tanto en letra como en número. </p>
-                                                                </div>
-                                                                <div class="grupo py-3">
-                                                                    <p class="pb-2"><strong> Todos los campos vacíos </strong></p>
-                                                                    <p> Todos los campos del Acta PREP correspondientes al número de votos, se encuentran vacíos tanto en letra como en número. </p>
-                                                                </div>
-                    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    	<div class="estadistica-casilla observacionesActa card mt-3 p-3">
+                                        <div ng-include="'includes/ayuntamientos/estadistica-observaciones-acta.html'"></div> 
                                     </div>
                                 </div>
                             </div>
