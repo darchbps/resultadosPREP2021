@@ -1,138 +1,41 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8">
-  <title>Publicacion</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>CEEPAC</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">      
+        
+        <!-- Custom styles for this template -->
+		<link href="css/INE.css" rel="stylesheet" type="text/css">
+        <link href="css/roboto-fontface.css" rel="stylesheet" type="text/css">
+        <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
+        <link href="assets/highcharts/css/highcharts.css" type="text/css">
+		
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
-     <script src="./js/gubernatura.js"></script>
-   
-    <link rel="stylesheet" href="./fontawesome/css/all.css">   
-   <link rel="stylesheet" href="./css/flexbox.css">
-    <link rel="stylesheet" href="./css/style.css">    
-    <link rel="stylesheet" href="./css/moleculas.css">
-    <link rel="stylesheet" href="./css/roboto-fontface.css">   
-    <link rel="stylesheet" href="./css/fuentes.css">
-    <link rel="stylesheet" href="./css/app.component.css">
-    <link rel="stylesheet" href="./css/botones.css">
-    <link rel="stylesheet" href="./css/colores.css">
-    <link rel="stylesheet" href="./css/generales.css">
-    <link rel="stylesheet" href="./css/graficaBarras.css">
-    <link rel="stylesheet" href="./css/medias.css">
-   
-    <link rel="stylesheet" href="./css/paddings.css">
-    <link rel="stylesheet" href="./css/tamanos.css">
-    <link rel="stylesheet" href="./css/transiciones.css">
-    
-    
-    <link rel="stylesheet" href="./css/encabezado.component.css">
-    <link rel="stylesheet" href="./css/avance-nacional.component.css">
-    <link rel="stylesheet" href="./css/boton-compartir.component.css">
-    <link rel="stylesheet" href="./css/buscador.component.css">
-    <link rel="stylesheet" href="./css/estadistica-nacional.component.css">
-    <link rel="stylesheet" href="./css/menu-lateral.component.css">
-    <link rel="stylesheet" href="./css/buscador.component.css">
-    <link rel="stylesheet" href="./css/resumen-distrito-mapa.component.css">
-    <link rel="stylesheet" href="./css/votos-distrito.component.css">
-
-
-  
-    
-    
-    
-</head>
-<body>
+    </head>
+    <body ng-app="PREPSLP"> 
   <div style="display: none;"></div>  
-  <app-root _nghost-lnm-c90="" ng-version="9.0.7">
-    <app-boton-compartir   _nghost-lnm-c82="">
-      <!-- /redes sociales -->
-      <div ng-include="'includes/compartir.html'"></div>
-</app-boton-compartir>
-    <app-encabezado>
-   <!-- /Encabezado -->
-     <div ng-include="'includes/gubernatura/header.html'"></div>
-   </app-encabezado>
+   <div style="display: none;"></div>  
+     <app-boton-compartir >
+           <!-- /redes sociales -->
+           <div ng-include="'includes/globales/compartir.html'"></div>
+     </app-boton-compartir>
+         <app-encabezado>
+        <!-- /Encabezado -->
+          <div ng-include="'includes/diputaciones/header.html'"></div>
+        </app-encabezado>
       
       <div  class="cuerpo container-fluid">
           <div  class="row">
               <div  class="col-12 my-3 d-xl-none">
-                  <app-avance-nacional  _nghost-lnm-c84="">
-                      <div class="card dis-flex flex-col space-a avance-nacional h-100">
-                          <div class="container-fluid bgPrototipo">
-                              <div class="row">
-                                  <div class="dis-flex space-b col-9 pl-0">
-                                      <h3 class="txRosaIne px20">
-                                          <strong>Avance Local</strong>
-                                      </h3>
-                                  </div>
-                                  <div class="col-3 dis-flex justify-e">
-                                      <div class="actualizar dis-flex flex-col bgRosaIne txBlanco px-4 py-1 px14 cursorPointer">
-                                          <i aria-hidden="true" class="fas fa-redo"></i> Actualizar 
-                                      </div>
-                                  </div>
-                              </div></div><div class="container-fluid px-0 py-2">
-                                  <div class="row px-1">
-                                      <div class="col-4 px-1">
-                                          <div class="card cards-avance h-12v p-1">
-                                              <div class="titulo">
-                                                  <p><strong> Actas capturadas </strong></p>
-                                              </div>
-                                              <div class="contenido capturadas">
-                                                  <p><strong> 0 </strong> de 157,859 </p>
-                                                  <p> (0.0000%) </p>
-                                                  <div class="borde-barra w-100">
-                                                      <div class="barra-avance" style="width: 0%;">
-                                                          
-                                                      </div>
-                                                          
-                                                  </div>
-                                                      
-                                              </div>
-                                                  
-                                          </div>
-                                              
-                                      </div>
-                                      <div class="col-4 px-1">
-                                          <div class="card cards-avance h-12v p-1">
-                                              <div class="titulo">
-                                                  <p class="prueba">
-                                                      <strong>
-                                                          <i data-toggle="modal" data-target="#modalParticipacion" class="fas fa-question-circle cursor-hand"></i> Participación ciudadana 
-                                                      </strong>
-                                                  </p>
-                                              </div>
-                                              <div class="contenido dis-flex flex-col pt-3">
-                                                  <p class="participacion">
-                                                      <strong> 0.0000% </strong>
-                                                  </p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="col-4 px-1"><div class="card cards-avance h-12v p-1">
-                                              <div class="titulo">
-                                                  <p><strong> Último corte </strong></p>
-                                              </div>
-                                              <div class="contenido dis-flex flex-col align-e pt-3">
-                                                  <div class="dis-flex w-100">
-                                                      <p class="fecha mr-1"> 24 noviembre 2020 </p>
-                                                      <div class="dis-flex flex-col borde-tiempo">
-                                                          <p class="tiempo-centro"> Tiempo del Centro </p>
-                                                          <p class="utc"> 21:30 h UTC-5 </p>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                      </div>
-                  </app-avance-nacional>
+                <app-avance-nacional >
+                    <!-- Avance entidad -->
+                  <div ng-include="'includes/diputaciones/avance-entidad.html'"></div>
+                </app-avance-nacional>
               </div>
               
               <div  class="px-0 bgMorado col-md-12 col-xl-2" ng-reflect-ng-class="col-md-12 col-xl-2">
@@ -206,121 +109,16 @@
                   <div  class="container-fluid py-xl-3">
                       <div  class="row">
                           <div  class="col-xl-8 d-none d-xl-block altoAvance">
-                              <app-avance-nacional  _nghost-lnm-c84="">
-                                  <div class="card dis-flex flex-col space-a avance-nacional h-100">
-                                      <div class="container-fluid bgPrototipo">
-                                          <div class="row">
-                                              <div class="dis-flex space-b col-9 pl-0">
-                                                  <h3 class="txRosaIne px20">
-                                                      <strong>Avance Local</strong>
-                                                  </h3>
-                                              </div>
-                                              <div class="col-3 dis-flex justify-e">
-                                                  <div class="actualizar dis-flex flex-col bgRosaIne txBlanco px-4 py-1 px14 cursorPointer">
-                                                      <i aria-hidden="true" class="fas fa-redo"></i> Actualizar 
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="container-fluid px-0 py-2">
-                                          <div class="row px-1">
-                                              <div class="col-4 px-1">
-                                                  <div class="card cards-avance h-12v p-1">
-                                                      <div class="titulo">
-                                                          <p><strong> Actas capturadas </strong></p>
-                                                      </div>
-                                                      <div class="contenido capturadas">
-                                                          <p><strong> 0 </strong> de 157,859 </p>
-                                                          <p> (0.0000%) </p>
-                                                          <div class="borde-barra w-100">
-                                                              <div class="barra-avance" style="width: 0%;">
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="col-4 px-1">
-                                                  <div class="card cards-avance h-12v p-1">
-                                                      <div class="titulo">
-                                                          <p class="prueba"><strong><i data-toggle="modal" data-target="#modalParticipacion" class="fas fa-question-circle cursor-hand"></i> Participación ciudadana </strong></p>
-                                                      </div>
-                                                      <div class="contenido dis-flex flex-col pt-3">
-                                                          <p class="participacion"><strong> 0.0000% </strong></p>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="col-4 px-1">
-                                                  <div class="card cards-avance h-12v p-1">
-                                                      <div class="titulo">
-                                                          <p><strong> Último corte </strong></p>
-                                                      </div>
-                                                      <div class="contenido dis-flex flex-col align-e pt-3">
-                                                          <div class="dis-flex w-100">
-                                                              <p class="fecha mr-1"> 24 noviembre 2020 </p>
-                                                              <div class="dis-flex flex-col borde-tiempo">
-                                                                  <p class="tiempo-centro"> Tiempo del Centro </p>
-                                                                  <p class="utc"> 21:30 h UTC-5 </p>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </app-avance-nacional>
+                              <app-avance-nacional >
+                    <!-- Avance entidad -->
+                  <div ng-include="'includes/diputaciones/avance-entidad.html'"></div>
+                </app-avance-nacional>
                           </div>
                           <div  class="col-xl-4 d-none d-xl-block altoAvance pl-0">
-                              <app-buscador  _nghost-lnm-c86="">
-                                  <div  class="buscador card bgMorado txBlanco dis-flex space-a align-s pl-2 pr-2 h-100">
-                                      <div  class="container-fluid bgPrototipo">
-                                          <div  class="row">
-                                              <div  class="col-12 px-0">
-                                                  <p  class="px16"> Conoce los resultados de tu casilla </p>
-                                                  <p  class="px10 pl-1">
-                                                      <i  aria-hidden="true" data-toggle="modal" data-target="#modalCasilla" class="fas fa-question-circle px14 cursor-hand"></i> Para conocer los resultados de tu casilla, ingresa los siguientes datos. 
-                                                  </p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div  class="container-fluid">
-                                          <form  novalidate="" class="ng-untouched ng-pristine ng-invalid">
-                                              <div  class="row px-1">
-                                                  <div  class="col-md-5 px-1">
-                                                      <div  class="form-group m-0">
-                                                          <label  for="seccion" class="m-0 px14">Sección</label>
-                                                          <div  class="input-group df-sw">
-                                                              <div  class="dropdown w-100 bgBlanco">
-                                                                  <input  type="text" id="valueSeccion" name="valueSeccion" ngmodel="" required="" valueseccion="" class="form-control ng-untouched ng-pristine ng-invalid" ng-reflect-name="valueSeccion" ng-reflect-model="" ng-reflect-required="">
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                                  <div  class="col-md-7 px-1">
-                                                      <div  class="form-group">
-                                                          <label  for="primerApellido" class="m-0 px14">Primer apellido</label>
-                                                          <div  class="input-group df-sw">
-                                                              <div  class="dropdown w-100 bgBlanco">
-                                                                  <input  type="text" id="apellido" name="apellido" ngmodel="" required="" apellido="" class="form-control ng-untouched ng-pristine ng-invalid" ng-reflect-name="apellido" ng-reflect-model="" ng-reflect-required="">
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div  class="row px-1">
-                                                  <div  class="col-md-5 px-1">
-                                                      <div  class="form-group">
-                                                          <label  for="submit" class="m-0 px14">&nbsp;</label>
-                                                          <div  class="input-group df-sw">
-                                                              <button  type="submit" class="btn btn-block px14 px-1 btn-rosa-buscador"> Consulta </button>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </form>
-                                      </div>
-                                  </div>
-                              </app-buscador>
+                                <app-buscador>
+                              <!-- /Encabezado -->
+                              <div ng-include="'includes/diputaciones/diputaciones-buscador.html'"></div>   
+                            </app-buscador>
                           </div>
                       </div>
                   </div>
@@ -365,207 +163,33 @@
                           "ng-reflect-ng-for-of": "8,9"
                         }--></div></div></div><div    class="cuerpo dis-flex bgGrisTenue p-2"><div    class="w-50"><p   >Votos</p><p    class="votos"><strong   >0</strong></p></div><div    class="w-50 dis-flex flex-col align-e pr-3 pr-xl-0"><p   >Porcentaje</p><p   >0.0000%</p></div></div></div></div><!--bindings={
                           "ng-reflect-ng-for-of": "[object Object],[object Object"
-                        }--></div></div><div    class="boton-scroll dis-flex cursorPointer"><i    aria-hidden="true" class="fas fa-chevron-right"></i></div></div></div><div    class="container-fluid resumen-votacion"><div    class="row"><div    class="col-12 col-lg-8 col-xl-8 bgGris py-2 pxx"><p    class="titulo"><strong   >Resumen de la votación</strong></p><div    class="container-fluid"><div    class="row dis-flex"><div    class="apartado dis-flex flex-col"><div    class="dis-flex w-100 align-s"><p    class="subtitulo"> Votos acumulados &nbsp; </p><span    tooltip="Es la sumatoria de los votos obtenidos por Partido Político, Coalición o Candidatura Independiente." placement="top" show-delay="200" ng-reflect-tooltip-value="Es la sumatoria de los votos o" ng-reflect-placement="top" ng-reflect-show-delay="200"><i    aria-hidden="true" class="fas fa-info-circle"></i></span></div><div    class="row dis-flex w-100 space-b"><p    class="col-12 cantidad"><strong   > 0 </strong></p><p    class="col-12 porcentaje"> 0.0000% </p></div></div><p    class="separador"><strong   >+</strong></p><div    class="apartado dis-flex flex-col"><div    class="dis-flex w-100"><p    class="subtitulo"> Candidaturas no registradas </p></div><div    class="row dis-flex w-100 space-b"><p    class="col-12 cantidad"><strong   > 0 </strong></p><p    class="col-12 porcentaje"> 0.0000% </p></div></div><p    class="separador"><strong   >+</strong></p><div    class="apartado dis-flex flex-col"><div    class="dis-flex w-100"><p    class="subtitulo"> Nulos </p></div><div    class="row dis-flex w-100 space-b"><p    class="col-12 cantidad"><strong   > 0 </strong></p><p    class="col-12 porcentaje"> 0.0000% </p></div></div><p    class="d-none d-lg-block separador pr-3"><strong   >=</strong></p><div    class="d-none d-lg-block apartado dis-flex flex-col"><div    class="dis-flex w-100 justify-e"><p    class="px20"><strong   >Total de votos</strong></p></div><div    class="dis-flex w-100 space-b justify-e"><p    class="total"><strong    class="txRosaIne"> 0 </strong></p></div><div    class="dis-flex w-100 space-b justify-e"><p   ><strong    class="txRosaIne"> 100.0000% </strong></p></div></div></div><div    class="container-fluid d-lg-none"><div    class="row"><div    class="col-12 dis-flex flex-col mt-3"><div    class="dis-flex w-100 justify-e"><p    class="px20 mb-0"><strong   >Total de votos</strong></p></div><div    class="dis-flex w-100 justify-e"><p    class="total"><strong   > = <span    class="txRosaIne"> 0 </span></strong></p></div><div    class="dis-flex w-100 justify-e"><p   ><strong   ><span    class="txRosaIne">100.0000%</span></strong></p></div></div></div></div></div></div></div></div><div    class="row"><div    class="col-12 px-0 mt-4"><div   ><div    class="table-responsive tabla-seccion"><table    class="table table-striped contenido table-bordered"><thead    class="titulos"><tr   ><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><div    class="dis-flex"><strong    class="txGris dis-flex text-center"> Casilla </strong></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": ""
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><div    class="dis-flex"><strong    class="txGris dis-flex text-center"> Acta digitalizada </strong></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": ""
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "1"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PRI.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "2"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "3"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PVEM.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "4"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PT.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "5"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/MC.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "6"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PANAL.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "7"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "8"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PES.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "9"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/MC.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "1,3,6"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "1,3"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PAN.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/MC.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "1,6"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PRD.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/MC.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "3,6"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PT.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PES.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "5,8,9"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PT.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "5,8"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PT.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PES.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "5,9"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/MORENA.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><div    class="dis-flex"><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><div    class="dis-flex"><img    alt="" class="img-partido" src="./assets/img/logos-partidos/PES.png"></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": "8,9"
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><div    class="dis-flex"><strong    class="txGris dis-flex text-center"> Candidaturas no registradas </strong></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": ""
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><div    class="dis-flex"><strong    class="txGris dis-flex text-center"> Votos nulos </strong></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": ""
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><div    class="dis-flex"><strong    class="txGris dis-flex text-center"> Total </strong></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": ""
-                        }--></div></th><th   ><div    class="inter-partido dis-flex"><div    class="dis-flex"><div    class="dis-flex"><strong    class="txGris dis-flex text-center"> Observaciones en Acta </strong></div><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--></div><!--bindings={
-                          "ng-reflect-ng-for-of": ""
-                        }--></div></th><!--bindings={
+                        }--></div></div><div    class="boton-scroll dis-flex cursorPointer"><i    aria-hidden="true" class="fas fa-chevron-right"></i></div></div></div>
+							
+							
+							<div class="container-fluid resumen-votacion">                                             
+								<div ng-include="'includes/ayuntamientos/resumen-votacion-casilla.html'"></div> 
+ 							</div>
+							
+							
+								<app-detalle-votos-casilla>
+									<div ng-include="'includes/gubernatura/tabla-detalle-votos-casilla.html'"></div>
+								</app-detalle-votos-casilla>
+							
+							
+							
+							
+							
+							</div></div></div><div    class="container-fluid"><div    class="row"></div></div><div    class="row"><div    class="col-md-12"><div    class="estadistica-casilla card mt-3 p-3"><div    class="container-fluid"><div    class="row"><div    class="col"><h4    class="subtitulo-seccion pleca-izquierda"><strong   >Estadística de Casilla</strong></h4></div></div></div><div    class="container-fluid py-4"><div    class="row"><div    class="col"><p    class="subtitulo underline"><strong   >Participación ciudadana con base en la Lista Nominal de las Actas PREP Contabilizadas</strong></p></div></div></div><div    class="container-fluid"><div    class="row my-2"><div    class="col-10"><div    class="grafica dis-flex justify-s px-2"><div    class="textos"><p    class="casilla px10"> 375 Básica 1 </p><p    class="porcentaje px12"><strong   > 0.0000% </strong></p><div    class="interno" ng-reflect-ng-style="[object Object]" style="width: 0%;"></div></div></div></div><div    class="col-2 dis-flex flex-col align-e pr-5"><p    class="lista-nominal px10"><strong   > Total de la Lista Nominal </strong></p><p    class="total-nominal px12"><strong   > 514 </strong></p></div></div><div    class="row my-2"><div    class="col-10"><div    class="grafica dis-flex justify-s px-2"><div    class="textos"><p    class="casilla px10"> 375 Contigua 1 </p><p    class="porcentaje px12"><strong   > 0.0000% </strong></p><div    class="interno" ng-reflect-ng-style="[object Object]" style="width: 0%;"></div></div></div></div><div    class="col-2 dis-flex flex-col align-e pr-5"><p    class="lista-nominal px10"><strong   > Total de la Lista Nominal </strong></p><p    class="total-nominal px12"><strong   > 513 </strong></p></div></div><!--bindings={
                           "ng-reflect-ng-for-of": "[object Object],[object Object"
-                        }--></tr></thead><tbody   ><tr    class="filas text-center"><td   > 375 Básica 1 </td><td   ><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><a    target="_blank"><div    class="txGris"><i    class="far fa-file"></i><i    class="far fa-hourglass"></i></div></a><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><!--bindings={
-                          "ng-reflect-ng-for-of": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-                        }--><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > - </td></tr><!--bindings={
-                          "ng-reflect-ng-for-of": "[object Object]"
-                        }--><!--ng-container--><tr    class="filas text-center"><td   > 375 Contigua 1 </td><td   ><!--bindings={
-                          "ng-reflect-ng-if": "false"
-                        }--><a    target="_blank"><div    class="txGris"><i    class="far fa-file"></i><i    class="far fa-hourglass"></i></div></a><!--bindings={
-                          "ng-reflect-ng-if": "true"
-                        }--></td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > 0 </td><!--bindings={
-                          "ng-reflect-ng-for-of": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-                        }--><td   > 0 </td><td   > 0 </td><td   > 0 </td><td   > - </td></tr><!--bindings={
-                          "ng-reflect-ng-for-of": "[object Object]"
-                        }--><!--ng-container--><!--bindings={
-                          "ng-reflect-ng-for-of": "[object Object],[object Object"
-                        }--></tbody></table></div></div></div></div></div></div></div><div    class="container-fluid"><div    class="row"></div></div><div    class="row"><div    class="col-md-12"><div    class="estadistica-casilla card mt-3 p-3"><div    class="container-fluid"><div    class="row"><div    class="col"><h4    class="subtitulo-seccion pleca-izquierda"><strong   >Estadística de Casilla</strong></h4></div></div></div><div    class="container-fluid py-4"><div    class="row"><div    class="col"><p    class="subtitulo underline"><strong   >Participación ciudadana con base en la Lista Nominal de las Actas PREP Contabilizadas</strong></p></div></div></div><div    class="container-fluid"><div    class="row my-2"><div    class="col-10"><div    class="grafica dis-flex justify-s px-2"><div    class="textos"><p    class="casilla px10"> 375 Básica 1 </p><p    class="porcentaje px12"><strong   > 0.0000% </strong></p><div    class="interno" ng-reflect-ng-style="[object Object]" style="width: 0%;"></div></div></div></div><div    class="col-2 dis-flex flex-col align-e pr-5"><p    class="lista-nominal px10"><strong   > Total de la Lista Nominal </strong></p><p    class="total-nominal px12"><strong   > 514 </strong></p></div></div><div    class="row my-2"><div    class="col-10"><div    class="grafica dis-flex justify-s px-2"><div    class="textos"><p    class="casilla px10"> 375 Contigua 1 </p><p    class="porcentaje px12"><strong   > 0.0000% </strong></p><div    class="interno" ng-reflect-ng-style="[object Object]" style="width: 0%;"></div></div></div></div><div    class="col-2 dis-flex flex-col align-e pr-5"><p    class="lista-nominal px10"><strong   > Total de la Lista Nominal </strong></p><p    class="total-nominal px12"><strong   > 513 </strong></p></div></div><!--bindings={
-                          "ng-reflect-ng-for-of": "[object Object],[object Object"
-                        }--></div><div    class="container-fluid py-4"><div    class="row"><div    class="col"><p    class="px14"> El cálculo de Participación ciudadana puede rebasar el 100% si vota toda la ciudadanía de la Lista Nominal de una casilla; así como las Representaciones de Partidos Políticos y Candidaturas Independientes. </p></div></div></div></div></div></div><div    class="row"><div    class="col-md-12"><div    class="estadistica-casilla observacionesActa card mt-3 p-3"><div    class="container-fluid"><div    class="row"><div    class="col"><h4    class="subtitulo-seccion pleca-izquierda"><strong   >Observaciones en Acta</strong></h4></div></div></div><div    class="container-fluid py-4"><div    class="row justify-content-center"><div    class="col-11"><div    class="container-fluid"><div    class="row"><div    class="col-12 col-md-6"><h4    class="subtitulo-seccion pleca-izquierda"><strong    class="txRosa2">Contabilizadas</strong></h4><div    class="grupo py-3"><p    class="pb-2"><strong   > Ilegible </strong></p><p   > La cantidad de votos en algún campo del Acta PREP no puede leerse, tanto en letra como en número. </p></div><div    class="grupo py-3"><p    class="pb-2"><strong   > Sin Dato </strong></p><p   > La cantidad de votos no fue asentada en el Acta PREP ni en letra ni en número en algún campo del Acta PREP. </p></div><div    class="grupo py-3 mb-2"><p    class="pb-2"><strong   > Identificación por Proceso Técnico Operativo </strong></p><p   > Los datos del Acta PREP no se identificaron y sé solicitó verificarlos por algún procedimiento válido establecido en el Proceso Técnico Operativo. </p></div><h4    class="subtitulo-seccion pleca-izquierda pleca-morada mt-5"><strong   ><span    class="txMorado">No identificadas -</span> Fuera del catálogo</strong></h4><div    class="grupo py-3"><p   > No es posible ubicar el Acta PREP dentro de la lista de Actas de casillas aprobadas por el INE, al presentar alguna omisión, ilegibilidad o error en sus datos de identificación. Para fines de publicación, el Acta se muestra al final del listado de Actas aprobadas en la Base de Datos. </p></div></div><div    class="col-12 col-md-6"><h4    class="subtitulo-seccion pleca-izquierda pleca-aqua"><strong    class="txAqua">No Contabilizadas</strong></h4><div    class="grupo py-3"><p    class="pb-2"><strong   > Excede Lista Nominal </strong></p><p   > La suma de todos los votos en el Acta PREP, excede el número de ciudadanas y ciudadanos en la Lista Nominal de Electores de la casilla, incluido el número de votos emitidos por los representantes de los Partidos Políticos y, en su caso Candidaturas Independientes. </p></div><div    class="grupo py-3"><p    class="pb-2"><strong   > Sin Acta </strong></p><p    class="pb-2"> El Acta PREP no llegó junto con el paquete electoral al Centro de Acopio y Transmisión de Datos (CATD), por algunas de las siguientes causas: </p><p   > 1. Sin Acta por paquete no entregado. </p><p   > 2. Sin Acta por casilla no instalada. </p><p   > 3. Sin Acta por paquete entregado sin sobre. </p></div><div    class="grupo py-3"><p    class="pb-2"><strong   > Todos los campos ilegibles </strong></p><p   > Todos los campos del Acta PREP correspondientes al número de votos, son ilegibles tanto en letra como en número. </p></div><div    class="grupo py-3"><p    class="pb-2"><strong   > Todos los campos vacíos </strong></p><p   > Todos los campos del Acta PREP correspondientes al número de votos, se encuentran vacíos tanto en letra como en número. </p></div></div></div></div></div></div></div></div></div></div></div></app-seccion-resumen>
+                        }--></div><div    class="container-fluid py-4"><div    class="row"><div    class="col"><p    class="px14"> El cálculo de Participación ciudadana puede rebasar el 100% si vota toda la ciudadanía de la Lista Nominal de una casilla; así como las Representaciones de Partidos Políticos y Candidaturas Independientes. </p></div></div></div></div></div></div><div    class="row"><div    class="col-md-12">
+							
+							<div class="estadistica-casilla observacionesActa card mt-3 p-3">
+                                        <div ng-include="'includes/ayuntamientos/estadistica-observaciones-acta.html'"></div> 
+                                    </div>
+							
+							
+							
+							</div></div></div></app-seccion-resumen>
 
                       
                       
