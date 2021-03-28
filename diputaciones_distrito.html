@@ -167,11 +167,11 @@
                                       <p class="votos"><strong> 835 </strong></p>
                                     </div>
                                   <div class="w-50 dis-flex flex-col align-e">
-                                    <p>Porcentaje</p>
+                                    <br>
                                       <p> 2.8914% </p>
                                     </div>
                                 </div>
-                                <div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
+                                <div id="voto1" onclick="selecciona('voto1')" class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
                                     <p>Seleccionar</p>
                                 </div>
                                 <!--bindings={
@@ -197,11 +197,11 @@
                                       <p class="votos"><strong> 10,029 </strong></p>
                                     </div>
                                   <div class="w-50 dis-flex flex-col align-e">
-                                    <p>Porcentaje</p>
+                                    <br>
                                       <p> 34.7288% </p>
                                     </div>
                                 </div>
-                                <div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
+                                <div id="voto2" onclick="selecciona('voto2')" class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
                                     <p>Seleccionar</p>
                                 </div>
                                 <!--bindings={
@@ -227,11 +227,11 @@
                                       <p class="votos"><strong> 433 </strong></p>
                                     </div>
                                   <div class="w-50 dis-flex flex-col align-e">
-                                    <p>Porcentaje</p>
+                                    <br>
                                       <p> 1.4994% </p>
                                     </div>
                                 </div>
-                                <div class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
+                                <div id="voto3" onclick="selecciona('voto3')" class="pie w-100 dis-flex bgMorado txBlanco p-2 cursorPointer">
                                     <p>Seleccionar</p>
                                 </div>
                                 <!--bindings={
@@ -263,7 +263,7 @@
                                       <p class="votos"><strong> 6,186 </strong></p>
                                     </div>
                                   <div class="w-50 dis-flex flex-col align-e">
-                                    <p>Porcentaje</p>
+                                    <br>
                                       <p> 21.4211% </p>
                                     </div>
                                 </div>
@@ -299,7 +299,7 @@
                                       <p class="votos"><strong> 9,136 </strong></p>
                                     </div>
                                   <div class="w-50 dis-flex flex-col align-e">
-                                    <p>Porcentaje</p>
+                                    <br>
                                       <p> 31.6365% </p>
                                     </div>
                                 </div>
@@ -330,7 +330,7 @@
                     <div class="row">
                         <div class="col-md-12 dis-flex justify-e"><i aria-hidden="true" class="fas fa-info-circle mr-2"></i>
                             <p class="texto"> Da clic en <strong>Seleccionar</strong> para visualizar el detalle de la votación. Puedes seleccionar hasta tres opciones. </p><button data-toggle="modal" data-target="#modalComparativa" class="boton-detalle btn bgMorado txBlanco btn-sm texto ml-2 px-4 cursorPointer"
-                                disabled=""> Ver detalle </button></div>
+                                > Ver detalle </button></div>
                     </div>
                 </div>
                 <div class="container-fluid resumen-votacion">
@@ -780,7 +780,8 @@
 		<script src="https://code.highcharts.com/modules/exporting.js"></script>
 		<script src="https://code.highcharts.com/modules/accessibility.js"></script>
         <script src="main.js"></script>	 	
-		 
+	<script src="./assets/js/diputaciones.js"></script>
+        
 		<!--Inicialización de Tooltip -->
   			
         <script>
