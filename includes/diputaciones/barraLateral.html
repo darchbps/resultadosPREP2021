@@ -3,7 +3,7 @@
         <i aria-hidden="true" class="fas fa-chevron-left"></i>
     </div>
 
-    <div class="container-fluid barra-lateral txBlanco px14">
+    <div id="barra-lateral" class=" container-fluid  txBlanco px14 ">
         <div class="row pl-2">
             <div class="col-12">
                 <div class="pt-2">
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 </div>
 
  
@@ -75,13 +75,15 @@
                 $('i', this).removeClass('fa-chevron-left').addClass('fa-chevron-right');
                 $("#MenuLateral").removeClass('col-md-12 col-xl-2').addClass("w-5");
                 $("#CenterContent").removeClass('col-md-12 col-xl-10').addClass("w-95");
+				$("#barra-lateral").removeClass('d-block').addClass("d-none");
                 $elem.removeClass('abierto').addClass("cerrado");
 
             } else {
 
                 $('i', this).removeClass('fa-chevron-right').addClass('fa-chevron-left');
                 $("#MenuLateral").removeClass("w-5").addClass('col-md-12 col-xl-2');
-                $("#CenterContent").removeClass("w-95").addClass('col-md-12 col-xl-10');
+                $("#CenterContent").removeClass("w-95").addClass('col-md-12 col-xl-10');				
+				$("#barra-lateral").removeClass('d-none').addClass("d-block");
                 $elem.removeClass("cerrado").addClass('abierto');
             }
         });
