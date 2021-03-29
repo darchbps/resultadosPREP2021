@@ -1,4 +1,4 @@
-<div class="bgPrototipo">
+<div class="bgPrototipo"> <!-- data-toggle="collapse" data-target="#MenuLateral"-->
     <div placement="right" show-delay="200" id="colapsador" class="colapsador dis-flex d-none d-xl-block" data-toggle="tooltip" data-placement="right" title="Ocultar Menú">
         <i aria-hidden="true" class="fas fa-chevron-left"></i>
     </div>
@@ -16,15 +16,20 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-xl-14 mb-1 px-1">
-                <div class="btn btn-rosa btn-block px14 px-1 py-3 btn-rosa-active" tabindex="0">Votos por Candidatura</div>
-            </div>
+        <div  class="row"> 
+                                  <div  class="col-12 col-xl-14 mb-1 px-1">
+                                      <div  class="btn btn-rosa btn-block px14 px-1 py-3 btn-rosa-active" tabindex="0" ng-reflect-router-link="/votos-distrito"  > Votos por Distritos </div>
+                                  </div> 
+                                  <div  class="col-12 col-xl-14 mb-1 px-1" onclick="window.location.href='./diputaciones_distrito_ppc.html'">
+                                      <div  class="btn btn-ajuste btn-rosa btn-block px14 px-1"  > Votos por Partido Político y Candidatura Independiente </div>
+                                  </div>
+                                  <div   class="col-12 col-xl-14 mb-1 px-1" onclick="window.location.href='./diputaciones_distrito_dpc.html'">
+                                      <div   class="btn btn-rosa btn-block px14 px-1 py-3"  > Detalle por Casilla </div>
+                                          
+                                  </div>                
 
-            <div class="col-12 col-xl-14 mb-1 px-1" onclick="window.location.href='./diputaciones_ppc.html'">
-                <div class="btn btn-ajuste btn-rosa btn-block px14 px-1">Votos por Partido Político y Candidatura Independiente</div>
-            </div>
-        </div>
+         </div>
+
         <div class="row my-4">
             <div class="col">
                 <p class="px16">Detalle por:</p>
@@ -33,8 +38,8 @@
                         <label for="distrito" class="px14"> Distrito </label>
                         <div class="input-group df-sw">                            							
 							<select class="form-control" name="select" onChange="MM_jumpMenu('parent',this,1)">
-							  <option selected>Todas</option>
-							  <option value="diputaciones_distrito.html">Distrito 1 Jesus Maria</option>							 
+							 
+							  <option>Distrito 1 Jesus Maria</option>							 
 							</select>														
                         </div>
                     </div>
@@ -44,21 +49,26 @@
                             <div class="dropdown w-100 bgBlanco">
                               <select class="form-control" name="select" onChange="MM_jumpMenu('parent',this,1)">
 							  <option selected>Todas</option>
-							  							 
+							   <option value="diputaciones_distrito_seccion.html">Sección 375</option>							 
 							</select>
+								
+								
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> 	
+    </div> 
+	
 	<div id="btn_consulta" class="h-100 d-none dis-flex flex-col justify-s txBlanco cursorPointer text-center">
 		<i _ngcontent-nlp-c85="" aria-hidden="true" class="fas fa-filter pt-5 mt-5"></i>
 		<p class="px14">Consulta</p>
 	</div>
+	
 </div>
 
+ 
 <script>
     $(function () {
         $("[data-toggle='tooltip']").tooltip();

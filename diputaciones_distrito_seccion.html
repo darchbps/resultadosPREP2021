@@ -38,70 +38,10 @@
               </app-avance-nacional>
               </div>
               
-              <div  class="px-0 bgMorado col-md-12 col-xl-2" ng-reflect-ng-class="col-md-12 col-xl-2">
-                  <app-menu-lateral  _nghost-lnm-c85="">
-                      <div  class="bgPrototipo">
-                          <div  placement="right" show-delay="200" class="colapsador dis-flex d-none d-xl-block abierto" ng-reflect-placement="right" ng-reflect-show-delay="200" ng-reflect-ng-class="abierto" ng-reflect-tooltip-value="Ocultar Menú">
-                              <i  aria-hidden="true" class="fas fa-chevron-left" ng-reflect-ng-class="fa-chevron-left"></i>
-                          </div><!--bindings={  "ng-reflect-ng-if": "false"}-->
-                          <div  class="container-fluid barra-lateral txBlanco px14">
-                              <div  class="row pl-2">
-                                  <div  class="col-12">
-                                      <div  class="pt-2">
-                                          <h3  class="px16"><strong >Consulta de votación</strong></h3>
-                                      </div>
-                                      <div  class="row mb-4"><div  class="col">
-                                              <p >Selecciona el reporte que deseas consultar:</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              
-                              <div  class="row my-4">
-                                  <div  class="col">
-                                      <p  class="px16">Detalle por:</p>
-                                      <div  class="row grupo-combos pl-2">
-                                          
-                                          
-                                          <div  class="col-4 col-xl-12 combo mb-2">
-                                              <label  for="distrito" class="px14"> Distrito </label>
-                                              <div  class="input-group df-sw">
-                                                  <div  class="dropdown w-100 bgBlanco">
-                                                      <button  type="button" id="dDistrito" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle dis-flex space-b w-100 p-1 px14" disabled=""> &nbsp; Distrito 1. Jesus Maria <i  aria-hidden="true" class="mcad mcad-drop-down_flecha mr-1"></i></button>
-                                                      <div  aria-labelledby="dDistrito" class="dropdown-menu px14 w-100">
-                                                          <a  href="" class="dropdown-item">Todas</a><!--bindings={ "ng-reflect-ng-for-of": null}-->
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div  class="col-12 d-none d-xl-block combo mb-2">
-                                              <label  for="seccion" class="px14"> Sección </label>
-                                              <div  class="input-group df-sw">
-                                                  <div  class="dropdown w-100 bgBlanco">
-                                                      <button  type="button" id="dSeccion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle dis-flex space-b w-100 p-1 px14" disabled=""> &nbsp; Seccion 375 <i  aria-hidden="true" class="mcad mcad-drop-down_flecha mr-1"></i></button>
-                                                      <div  aria-labelledby="dSeccion" size="3" class="dropdown-menu px14 w-100">
-                                                          <a  href="" class="dropdown-item">Todas</a><!--bindings={ "ng-reflect-ng-for-of": null}-->
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div  class="col-12 d-none d-xl-block combo mb-2">
-                                              <label  for="casilla" class="px14"> Casilla </label>
-                                              <div  class="input-group df-sw">
-                                                  
-                                                    <select name="cbcasilla" id="cbcasilla" class="dropdown w-100 bgBlanco" onchange="combo_casilla()">
-                                                        <option value="0">Todos</option>
-                                                        <option value="1">Casilla Básica 1</option>
-                                                    </select> 
-                                                  
-                                              </div>
-                                          </div>                                
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </app-menu-lateral>
+              <!-- Inicia barra lateral -->
+               <div class="px-0 bgMorado col-md-12 col-xl-2" id="MenuLateral">
+                <!-- barra lateral -->
+                <div ng-include="'includes/diputaciones/barraLateral-distrito-seccion.html'"></div>
               </div>
               <div  class="bgGrisTenue px-0 my-3 my-xl-0 col-md-12 col-xl-10" ng-reflect-ng-class="col-md-12 col-xl-10">
                   <div  class="container-fluid py-xl-3">
@@ -133,7 +73,7 @@
                                         <div class="row">
                                             <div class="col-12 col-lg-10">
                                                 <h3 class="titulo-seccion"> Diputaciones - <span class="txRosaIne"><strong   >Sección - </strong>Casilla</span></h3>
-                                                <h4><a routerlinkactive="router-link-active" class="linkAzul" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="circunscripcion1/entidad/baja-" href="/diputaciones/nacional/circunscripcion1/baja-california/distrito1-mexicali/seccion/375/circunscripcion1/entidad/baja-california">San Luis Potosí</a>                                / <a routerlinkactive="router-link-active" class="linkAzul" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="circunscripcion1/entidad/baja-" href="/diputaciones/nacional/circunscripcion1/baja-california/distrito1-mexicali/seccion/375/circunscripcion1/entidad/baja-california/distrito/distrito1-mexicali">Distrito 1. Jesus Maria</a>                                / Seccion 375 </h4>
+                                                <h4><a routerlinkactive="router-link-active" class="linkAzul" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="circunscripcion1/entidad/baja-" href="diputaciones_tarjeta.html">San Luis Potosí</a>                                / <a routerlinkactive="router-link-active" class="linkAzul" ng-reflect-router-link-active="router-link-active" ng-reflect-router-link="circunscripcion1/entidad/baja-" href="diputaciones_distrito.html">Distrito 1. Jesus Maria</a>                                / Seccion 375 </h4>
                                                 <div class="texto font-medium">
                                                     <p> El total de votos calculado prueba y porcentaje que se muestran, se refieren a los votos asentados en las Actas PREP hasta el momento. </p>
                                                     <p> Por presentación, los decimales de los porcentajes muestran sólo cuatro dígitos. No obstante, al considerar todos los decimales, suman 200%. </p>
