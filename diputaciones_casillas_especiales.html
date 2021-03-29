@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>CEEPAC</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">      
+        
+        <!-- Custom styles for this template -->
+		<link href="css/INE.css" rel="stylesheet" type="text/css">
+        <link href="css/roboto-fontface.css" rel="stylesheet" type="text/css">
+        <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
+        <link href="assets/highcharts/css/highcharts.css" type="text/css">
+		
+
+    </head>
+    <body ng-app="PREPSLP"> 
+     <div style="display: none;"></div>  
+     <app-boton-compartir >
+           <!-- /redes sociales -->
+           <div ng-include="'includes/globales/compartir.html'"></div>
+     </app-boton-compartir>
+         <app-encabezado>
+        <!-- /Encabezado -->
+          <div ng-include="'includes/diputaciones/header.html'"></div>
+        </app-encabezado>
+      
+      <div  class="cuerpo container-fluid">
+          <div  class="row">
+              <div  class="col-12 my-3 d-xl-none">
+                <app-avance-nacional >
+                  <!-- Avance entidad -->
+                <div ng-include="'includes/diputaciones/avance-entidad.html'"></div>
+              </app-avance-nacional>
+              </div>
+              
+              <div  class="px-0 bgMorado col-md-12 col-xl-2" ng-reflect-ng-class="col-md-12 col-xl-2">
+                  <app-menu-lateral  _nghost-lnm-c85="">
+                      <div  class="bgPrototipo">
+                          <div  placement="right" show-delay="200" class="colapsador dis-flex d-none d-xl-block abierto" ng-reflect-placement="right" ng-reflect-show-delay="200" ng-reflect-ng-class="abierto" ng-reflect-tooltip-value="Ocultar Menú">
+                              <i  aria-hidden="true" class="fas fa-chevron-left" ng-reflect-ng-class="fa-chevron-left"></i>
+                          </div><!--bindings={  "ng-reflect-ng-if": "false"}-->
+                          <div  class="container-fluid barra-lateral txBlanco px14">
+                              <div  class="row pl-2">
+                                  <div  class="col-12">
+                                      <div  class="pt-2">
+                                          <h3  class="px16"><strong >Consulta de votación</strong></h3>
+                                      </div>
+                                      <div  class="row mb-4"><div  class="col">
+                                              <p >Selecciona el reporte que deseas consultar:</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div  class="row" ng-reflect-ng-class="[object Object]"><!--bindings={}-->
+                                  <div  class="col-12 col-xl-14 mb-1 px-1" onclick="window.location.href='./diputaciones_distrito.html'">
+                                      <div  class="btn btn-rosa btn-block px14 px-1 py-3" tabindex="0" ng-reflect-router-link="/votos-distrito" ng-reflect-ng-class="[object Object]"> Votos por Distritos </div>
+                                  </div><!--bindings={ "ng-reflect-ng-if": "true"}-->
+                                  <div  class="col-12 col-xl-14 mb-1 px-1" onclick="window.location.href='./diputaciones_distrito_ppc.html'">
+                                      <div  class="btn btn-ajuste btn-rosa btn-block px14 px-1" ng-reflect-ng-class="[object Object]"> Votos por Partido Político y Candidatura Independiente </div>
+                                  </div>
+                                  <div _ngcontent-nmq-c85="" class="col-12 col-xl-14 mb-1 px-1">
+                                      <div _ngcontent-nmq-c85="" class="btn btn-rosa btn-block px14 px-1 py-3  btn-rosa-active" ng-reflect-ng-class="[object Object]"> Detalle por Casilla </div>
+                                          
+                                  </div>                
+                                  
+                                  
+                                  
+                                  <!--bindings={}-->
+                              </div>
+                              <div  class="row my-4">
+                                  <div  class="col">
+                                      <p  class="px16">Detalle por:</p>
+                                      <div  class="row grupo-combos pl-2">
+                                          
+                                          
+                                          <div  class="col-4 col-xl-12 combo mb-2">
+                                              <label  for="distrito" class="px14"> Distrito </label>
+                                              <div  class="input-group df-sw">
+                                                  <div  class="dropdown w-100 bgBlanco">
+                                                      <button  type="button" id="dDistrito" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle dis-flex space-b w-100 p-1 px14" disabled=""> &nbsp; Distrito 1. Jesus Maria <i  aria-hidden="true" class="mcad mcad-drop-down_flecha mr-1"></i></button>
+                                                      <div  aria-labelledby="dDistrito" class="dropdown-menu px14 w-100">
+                                                          <a  href="" class="dropdown-item">Todas</a><!--bindings={ "ng-reflect-ng-for-of": null}-->
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div  class="col-12 d-none d-xl-block combo mb-2">
+                                              <label  for="seccion" class="px14"> Sección </label>
+                                              <div  class="input-group df-sw">
+                                                  
+                                                   
+                                                    <select name="cbseccion" id="cbseccion" class="dropdown w-100 bgBlanco" onchange="combo_seccion()">
+                                                        <option value="0">Todos</option>
+                                                        <option value="1">Sección 375</option>
+                                                    </select> 
+                                                  
+                                              </div>
+                                          </div><!--bindings={}-->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div><!--bindings={"ng-reflect-ng-if": "true" }--><!--bindings={"ng-reflect-ng-if": "false"}--><!--bindings={ "ng-reflect-ng-if": "false"}--><!--bindings={  "ng-reflect-ng-if": "false"}-->
+                      </div>
+                  </app-menu-lateral>
+              </div>
+              <div  class="bgGrisTenue px-0 my-3 my-xl-0 col-md-12 col-xl-10" ng-reflect-ng-class="col-md-12 col-xl-10">
+                  <div  class="container-fluid py-xl-3">
+                      <div  class="row">
+                          <div  class="col-xl-8 d-none d-xl-block altoAvance">
+                            <app-avance-nacional >
+                              <!-- Avance entidad -->
+                            <div ng-include="'includes/diputaciones/avance-entidad.html'"></div>
+                          </app-avance-nacional>
+                          </div>
+                          <div  class="col-xl-4 d-none d-xl-block altoAvance pl-0">
+                            <app-buscador>
+                              <!-- /Encabezado -->
+                              <div ng-include="'includes/diputaciones/diputaciones-buscador.html'"></div>   
+                            </app-buscador>
+                          </div>
+                      </div>
+                  </div>
+                  <router-outlet ></router-outlet>
+                  <app-votos-distrito _nghost-lnm-c47="">
+                      <router-outlet _ngcontent-lnm-c47=""></router-outlet>
+                      
+                                    <app-distrito-entidad-detalle-casilla _nghost-nmq-c65=""><div _ngcontent-nmq-c65="" class="casilla-resumen container-fluid"><div _ngcontent-nmq-c65="" class="row"><div _ngcontent-nmq-c65="" class="col-md-12"><div _ngcontent-nmq-c65="" class="card p-3"><div _ngcontent-nmq-c65="" class="row"><div _ngcontent-nmq-c65="" class="col-12 col-lg-10"><h3 _ngcontent-nmq-c65="" class="titulo-seccion"> Diputaciones - <span _ngcontent-nmq-c65="" class="txRosaIne"><strong _ngcontent-nmq-c65="">Casillas Especiales  </strong></span></h3><div _ngcontent-nmq-c65="" class="texto font-medium">
+                                                                    <p _ngcontent-nmq-c65=""> Cantidad de votos por Representación Proporcional en cada casilla especial que conforma la entidad; de acuerdo a la información asentada en las actas de escrutinio y cómputo. </p>
+                                                                    <p _ngcontent-nmq-c65=""> Por presentación, los decimales de los porcentajes muestran sólo cuatro dígitos. No obstante, al considerar todos los decimales, suman 100%. </p></div></div></div><div _ngcontent-nmq-c65="" class="row pb-4">
+                                                                        <div _ngcontent-nmq-c65="" class="col"><h4 _ngcontent-nmq-c65="" class="subtitulo-seccion pleca-izquierda"><strong _ngcontent-nmq-c65="">Votos en Actas Contabilizadas</strong></h4></div>
+                                                                    </div>
+                                                        
+                            <div  class="row tabla-seccion tabla-scroll mt-3"><div  class="col-12"><div  class="tabla card pb-3"><div  class="p-3 pb-0"><p  class="titulo text-left"><strong > Detalle de votos por casilla </strong></p><p  class="texto text-left"> Último corte: <strong > horas</strong> (UTC-5) Tiempo del Centro, <strong ></strong></p><div  class="acta-digitalizada container-fluid"><div  class="row"><div  class="col-5 px12 pl-0"><p  class="font-medium text-left"> Imagen procedente de: </p><div  class="container-fluid pl-0"><div  class="row"><div  class="col-3 dis-flex"><div  class="grupo gris dis-flex"><i  class="far fa-file"></i><i  class="far fa-hourglass"></i><p > Acta en proceso </p></div></div><div  class="col-4 dis-flex"><div  tooltip="Acta PREP digitalizada por medio de escáner." placement="top" max-width="500" class="grupo dis-flex cursor-hand" ng-reflect-tooltip-value="Acta PREP digitalizada por med" ng-reflect-placement="top" ng-reflect-max-width="500"><i  class="far fa-file"></i><i  aria-hidden="true" class="fas fa-print"></i><p > Escáner </p></div></div><div  class="col-3 dis-flex"><div  tooltip="Acta PREP digitalizada por medio de dispositivo móvil." placement="top" max-width="500" class="grupo dis-flex cursor-hand" ng-reflect-tooltip-value="Acta PREP digitalizada por med" ng-reflect-placement="top" ng-reflect-max-width="500"><i  class="far fa-file"></i><i  class="fas fa-mobile-alt"></i><p > Móvil </p></div></div></div></div></div></div></div></div><div  class="contenido"><div  class="container-fluid"><div  class="table-responsive max-500"><table  class="table table-striped table-bordered">
+										
+										<thead  class="table-header"><tr ><th ><div  class="dis-flex"><strong > Casilla </strong><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": ""
+                                    }--></div></th>
+                                    <th ><div  class="dis-flex"><strong > Corregida en cotejo </strong><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": ""
+                                    }--></div></th>
+                                    <th ><div  class="dis-flex"><strong > Acta digitalizada </strong><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": ""
+                                    }--></div></th>
+                                    <th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PAN.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "1"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PRI.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "2"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "3"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PVEM.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "4"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PT.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "5"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "6"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PANAL.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "7"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "8"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "9"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PAN.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "1,3,6"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PAN.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "1,3"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PAN.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "1,6"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PRD.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/MC.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "3,6"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PT.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "5,8,9"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PT.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "5,8"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PT.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "5,9"
+                                    }--></div></th><th ><div  class="dis-flex"><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/MORENA.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><p  class="m-1" style="width: 2.25em; height: 2.25em; background-image: url(&quot;./assets/img/logos-partidos/PES.png&quot;); background-size: contain; background-repeat: no-repeat; background-position: center center;" ng-reflect-ng-style="[object Object]"></p><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": "8,9"
+                                    }--></div></th><th ><div  class="dis-flex"><strong > Candidaturas no registradas </strong><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": ""
+                                    }--></div></th><th ><div  class="dis-flex"><strong > Votos nulos </strong><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": ""
+                                    }--></div></th><th ><div  class="dis-flex"><strong > Total </strong><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": ""
+                                    }--></div></th><th ><div  class="dis-flex"><strong > Observaciones </strong><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-if": "true"
+                                    }--><!--bindings={
+                                      "ng-reflect-ng-if": "false"
+                                    }--><!--ng-container--><!--bindings={
+                                      "ng-reflect-ng-for-of": ""
+                                    }--></div></th><!--bindings={
+                                      "ng-reflect-ng-for-of": "[object Object],[object Object"
+                                    }--></tr></thead>
+                                                                                
+                                            <tbody >
+                                            <tr ><td > 375 Especial </td><td > No </td><td ><div  class="grupo dis-flex txGris"><i  aria-hidden="true" class="far fa-file mr-1"></i><i  aria-hidden="true" class="fas fa-print"></i></div></td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><td > 0 </td><!--bindings={
+                                      "ng-reflect-ng-for-of": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+                                    }--><td > 0 </td><td > 0 </td><td > 0 </td><td > - </td></tr>
+                                                                                
+                                                                                
+										 
+										</tbody></table></div></div></div></div></div></div>
+                                                    
+										
+					<div  class="container-fluid resumen-votacion">
+                                            <div ng-include="'includes/diputaciones/resumen-votacion.html'"></div>
+                                          </div>
+										
+										
+										
+										</div></div></div>
+                                            
+                                            
+
+                                            <div    class="estadistica-casilla observacionesActa card mt-3 p-3">
+                                        <div ng-include="'includes/ayuntamientos/estadistica-observaciones-acta.html'"></div> 
+                                    </div>
+			
+
+            <app-pre-pie-pagina>
+                <!-- pie de pagina 1 -->
+                <div ng-include="'includes/footer-01.html'"></div>
+            </app-pre-pie-pagina>
+                                            
+    <div class="row">
+        <div class="col-md-12 px-0">
+            <app-pie-pagina>
+                <!-- pie de pagina 2 -->
+                <div ng-include="'includes/footer-02.html'"></div>
+            </app-pie-pagina>
+        </div>
+    </div>
+
+						
+        <!-- Modal participacion ciudadana -->
+    <div ng-include="'includes/modales/participacion_ciudadana.html'"></div>
+      <div  id="modalCasilla" tabindex="-1" role="dialog" aria-labelledby="ModalCasilla" aria-hidden="true" class="modal fade modal-casilla">
+          <div  role="document" class="modal-dialog">
+              <div  class="modal-content">
+                  <div  class="modal-header">
+                      <div  id="exampleModalLabel" class="modal-title font-regular px16"> Identifica la <span  class="font-bold">Entidad</span>, <span  class="font-bold">Sección</span> y <span  class="font-bold">Primer apellido</span> de acuerdo con tu credencial. 
+                      </div>
+                      <button  type="button" data-dismiss="modal" aria-label="Close" class="close">
+                          <i  class="fas fa-times-circle"></i>
+                      </button>
+                  </div>
+                  <div  class="modal-body px16 font-regular">
+                      <div  class="row">
+                          <div  class="col-6">
+                              <img  src="./assets/img/resultadoscasilla/Credencial-A.svg" alt="" class="img-credencial">
+                          </div><div  class="col-6">
+                              <img  src="./assets/img/resultadoscasilla/Credencial-B.svg" alt="" class="img-credencial">
+                          </div></div><div  class="row">
+                              <div  class="col-6">
+                                  <img  src="./assets/img/resultadoscasilla/Credencial-C.svg" alt="" class="img-credencial">
+                              </div>
+                              <div  class="col-6">
+                                  <img  src="./assets/img/resultadoscasilla/Credencial-D.svg" alt="" class="img-credencial">
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <app-comparativa  _nghost-lnm-c89="">
+          <div _ngcontent-lnm-c89="" id="modalComparativa" tabindex="-1" role="dialog" aria-labelledby="ModalComparativa" aria-hidden="true" class="modal fade modalComparativa">
+              <div _ngcontent-lnm-c89="" role="document" class="modal-dialog modal-dialog-centered modal-lg">
+
+              </div></div></app-comparativa> 
+
+
+ 
+
+
+	        <!-- /.container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        
+
+        <!-- Scripts angular -->
+        <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script-->
+        <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js"></script>
+	    <script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="main.js"></script>	 	
+		 
+		 
+</body>
+</html>
+				
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
