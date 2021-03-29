@@ -18,11 +18,15 @@
         </div>
         <div class="row">
             <div class="col-12 col-xl-14 mb-1 px-1">
-                <div class="btn btn-rosa btn-block px14 px-1 py-3 btn-rosa-active" tabindex="0">Votos por Candidatura</div>
+                <div class="btn btn-rosa btn-block px14 px-1 py-3 btn-rosa-active" tabindex="0" onclick="window.location.href='./gubernatura_distrito.html'"></div>>Votos por Candidatura</div>
             </div>
 
             <div class="col-12 col-xl-14 mb-1 px-1" onclick="window.location.href='./gubernatura_ppc.html'">
                 <div class="btn btn-ajuste btn-rosa btn-block px14 px-1">Votos por Partido Político y Candidatura Independiente</div>
+            </div>
+
+            <div class="col-12 col-xl-14 mb-1 px-1" onclick="window.location.href='./gubernatura_distrito_dpc.html'">
+                <div class="btn btn-ajuste btn-rosa btn-block px14 px-1">Detalle por casilla</div>
             </div>
         </div>
         <div class="row my-4">
@@ -33,8 +37,8 @@
                         <label for="distrito" class="px14"> Distrito </label>
                         <div class="input-group df-sw">                            							
 							<select class="form-control" name="select" onChange="MM_jumpMenu('parent',this,1)">
-							  <option selected>Todas</option>
-							  <option value="gubernatura_distrito.html">Distrito 1 Jesus Maria</option>							 
+							 
+							  <option >Distrito 1 Jesus Maria</option>							 
 							</select>														
                         </div>
                     </div>
@@ -44,7 +48,7 @@
                             <div class="dropdown w-100 bgBlanco">
                               <select class="form-control" name="select" onChange="MM_jumpMenu('parent',this,1)">
 							  <option selected>Todas</option>
-							  							 
+                              <option value="gubernatura_distrito_seccion.html">Distrito 1 Jesus Maria</option>						 
 							</select>
                             </div>
                         </div>

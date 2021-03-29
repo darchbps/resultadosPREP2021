@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
+				<meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+				<meta name="description" content="">
+				<meta name="author" content="">
         <title>CEEPAC</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">      
         
         <!-- Custom styles for this template -->
 		<link href="css/INE.css" rel="stylesheet" type="text/css">
-        <link href="css/roboto-fontface.css" rel="stylesheet" type="text/css">
-        <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
-        <link href="assets/highcharts/css/highcharts.css" type="text/css">
-		
-
+		<link href="css/roboto-fontface.css" rel="stylesheet" type="text/css">
+		<link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
+		<link href="assets/highcharts/css/highcharts.css" type="text/css">
+		<style>
+			path:hover {
+				opacity: 0.6;
+			}
+		</style>
     </head>
     <body ng-app="PREPSLP"> 
      <div style="display: none;"></div>  
@@ -37,7 +40,7 @@
                     <div ng-include="'includes/ayuntamientos/avance-entidad.html'"></div>
                   </app-avance-nacional>
               </div>
-               <!-- Inicia barra lateral -->
+               <!-- Inicia barra lateral -->                
                <div class="px-0 bgMorado col-md-12 col-xl-2" id="MenuLateral">
                 <!-- barra lateral -->
                 <div ng-include="'includes/ayuntamientos/barraLateral.html'"></div>
@@ -713,7 +716,9 @@
 	
 	
 	
-	        <!-- /.container -->
+	
+
+        <!-- /.container -->
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
@@ -727,22 +732,8 @@
         <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js"></script>
-	    <script src="https://code.highcharts.com/highcharts.js"></script>
-		<script src="https://code.highcharts.com/modules/exporting.js"></script>
-		<script src="https://code.highcharts.com/modules/accessibility.js"></script>
         <script src="main.js"></script>	 	
-		 
-		<!--Inicialización de Tooltip -->
-                
-                
-                <!--Cambio Arturo -->
-  			
-        <script>
-            $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-            })
-        </script>
-	
+ 
 
 	
 	

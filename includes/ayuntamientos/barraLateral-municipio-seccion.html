@@ -16,25 +16,26 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+          <div class="row">
             <div class="col-12 col-xl-14 mb-1 px-1">
-                <div class="btn btn-rosa btn-block px14 px-1 py-3 btn-rosa-active" tabindex="0">Votos por Candidatura</div>
+                <div class="btn btn-rosa btn-block px14 px-1 py-3 btn-rosa-active" tabindex="0" onclick="window.location.href='./ayuntamientos.html'">Votos por Candidatura</div>
             </div>
 
-            <div class="col-12 col-xl-14 mb-1 px-1" onclick="window.location.href='./gubernatura_ppc.html'">
+            <div class="col-12 col-xl-14 mb-1 px-1" onclick="window.location.href='./ayuntamientos_ppc.html'">
                 <div class="btn btn-ajuste btn-rosa btn-block px14 px-1">Votos por Partido Político y Candidatura Independiente</div>
             </div>
         </div>
+
         <div class="row my-4">
             <div class="col">
                 <p class="px16">Detalle por:</p>
                 <div class="row grupo-combos pl-2">
                     <div class="col-4 col-xl-12 combo mb-2">
-                        <label for="distrito" class="px14"> Distrito </label>
+                        <label for="distrito" class="px14">Municipio </label>
                         <div class="input-group df-sw">                            							
 							<select class="form-control" name="select" onChange="MM_jumpMenu('parent',this,1)">
-							  <option selected>Todas</option>
-							  <option value="gubernatura_distrito.html">Distrito 1 Jesus Maria</option>							 
+							 
+							  <option>Municipio 1 Jesus Maria</option>							 
 							</select>														
                         </div>
                     </div>
@@ -44,22 +45,26 @@
                             <div class="dropdown w-100 bgBlanco">
                               <select class="form-control" name="select" onChange="MM_jumpMenu('parent',this,1)">
 							  <option selected>Todas</option>
-							  							 
+							   <option value="ayuntamientos_municipio_seccion.html">Sección 375</option>							 
 							</select>
+								
+								
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="btn_consulta" class="h-100 d-none dis-flex flex-col justify-s txBlanco cursorPointer text-center">
+    </div> 
+	
+	<div id="btn_consulta" class="h-100 d-none dis-flex flex-col justify-s txBlanco cursorPointer text-center">
 		<i _ngcontent-nlp-c85="" aria-hidden="true" class="fas fa-filter pt-5 mt-5"></i>
 		<p class="px14">Consulta</p>
 	</div>
+	
 </div>
 
-
+ 
 <script>
     $(function () {
         $("[data-toggle='tooltip']").tooltip();
@@ -73,8 +78,8 @@
                 $('i', this).removeClass('fa-chevron-left').addClass('fa-chevron-right');
                 $("#MenuLateral").removeClass('col-md-12 col-xl-2').addClass("w-5");
                 $("#CenterContent").removeClass('col-md-12 col-xl-10').addClass("w-95");
-                $("#barra-lateral").removeClass('d-block').addClass("d-none");
-                $("#btn_consulta").removeClass('d-none').addClass("d-block");
+				$("#barra-lateral").removeClass('d-block').addClass("d-none");
+				$("#btn_consulta").removeClass('d-none').addClass("d-block");
                 $elem.removeClass('abierto').addClass("cerrado");
 
             } else {
@@ -82,8 +87,8 @@
                 $('i', this).removeClass('fa-chevron-right').addClass('fa-chevron-left');
                 $("#MenuLateral").removeClass("w-5").addClass('col-md-12 col-xl-2');
                 $("#CenterContent").removeClass("w-95").addClass('col-md-12 col-xl-10');				
-                $("#barra-lateral").removeClass('d-none').addClass("d-block");
-                $("#btn_consulta").removeClass('d-block').addClass("d-none");
+				$("#barra-lateral").removeClass('d-none').addClass("d-block");
+				$("#btn_consulta").removeClass('d-block').addClass("d-none");
                 $elem.removeClass("cerrado").addClass('abierto');
             }
         });
@@ -99,14 +104,4 @@ eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
 if (restore) selObj.selectedIndex=0;
 }
  
-</script> 
-<script>
-    $(function () {        
-        console.log("Desde el include " + $("[data-toggle='tooltip']").length);
-        $("[data-toggle='tooltip']").tooltip();
-        /*$("[data-toggle='tooltip']").each(function(){
-            console.log(this.id);
-        });*/
-    })
 </script>
- 

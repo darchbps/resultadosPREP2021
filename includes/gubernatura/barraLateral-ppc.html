@@ -1,9 +1,9 @@
-<div class="bgPrototipo" data-toggle="collapse" data-target="#MenuLateral">
+<div class="bgPrototipo" >
     <div placement="right" show-delay="200" id="colapsador" class="colapsador dis-flex d-none d-xl-block" data-toggle="tooltip" data-placement="right" title="Ocultar Menú">
         <i aria-hidden="true" class="fas fa-chevron-left"></i>
     </div>
 
-    <div class="container-fluid barra-lateral txBlanco px14">
+    <div id="barra-lateral" class=" container-fluid  txBlanco px14 ">
         <div class="row pl-2">
             <div class="col-12">
                 <div class="pt-2">
@@ -18,7 +18,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-xl-14 mb-1 px-1">
-                <div class="btn btn-rosa btn-block px14 px-1 py-3 btn-rosa" tabindex="0">Votos por Candidatura</div>
+                <div class="btn btn-rosa btn-block px14 px-1 py-3 btn-rosa" tabindex="0" onclick="window.location.href='./gubernatura.html'">Votos por Candidatura</div>
             </div>
 
             <div class="col-12 col-xl-14 mb-1 px-1" onclick="window.location.href='./gubernatura_ppc.html'">
@@ -31,27 +31,21 @@
                 <div class="row grupo-combos pl-2">
                     <div class="col-4 col-xl-12 combo mb-2">
                         <label for="distrito" class="px14"> Distrito </label>
-                        <div class="input-group df-sw">
-                            <div class="dropdown w-100 bgBlanco">
-                                <button type="button" id="dDistrito" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle dis-flex space-b w-100 p-1 px14" disabled="">
-                                    &nbsp; Todas <i aria-hidden="true" class="mcad mcad-drop-down_flecha mr-1"></i>
-                                </button>
-                                <div aria-labelledby="dDistrito" class="dropdown-menu px14 w-100">
-                                    <a href="" class="dropdown-item">Todas</a>
-                                </div>
-                            </div>
+                        <div class="input-group df-sw">                            							
+							<select class="form-control" name="select" onChange="MM_jumpMenu('parent',this,1)">
+							  <option selected>Todas</option>
+							  <option value="gubernatura_distrito_ppc.html">Distrito 1 Jesus Maria</option>							 
+							</select>														
                         </div>
                     </div>
                     <div class="col-12 d-none d-xl-block combo mb-2">
                         <label for="seccion" class="px14"> Sección </label>
                         <div class="input-group df-sw">
                             <div class="dropdown w-100 bgBlanco">
-                                <button type="button" id="dSeccion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle dis-flex space-b w-100 p-1 px14" disabled="">
-                                    &nbsp; Todas <i aria-hidden="true" class="mcad mcad-drop-down_flecha mr-1"></i>
-                                </button>
-                                <div aria-labelledby="dSeccion" size="3" class="dropdown-menu px14 w-100">
-                                    <a href="" class="dropdown-item">Todas</a>
-                                </div>
+                              <select class="form-control" name="select" onChange="MM_jumpMenu('parent',this,1)">
+							  <option selected>Todas</option>
+							  							 
+							</select>
                             </div>
                         </div>
                     </div>
@@ -59,12 +53,59 @@
             </div>
         </div>
     </div>
+    <div id="btn_consulta" class="h-100 d-none dis-flex flex-col justify-s txBlanco cursorPointer text-center">
+		<i _ngcontent-nlp-c85="" aria-hidden="true" class="fas fa-filter pt-5 mt-5"></i>
+		<p class="px14">Consulta</p>
+	</div>
 </div>
 
- 
 <script>
     $(function () {
-    $("[data-toggle='tooltip']").tooltip();
-    console.log("Desde el include " + $("[data-toggle='tooltip']").length);
+        $("[data-toggle='tooltip']").tooltip();
+        console.log("Desde el include " + $("[data-toggle='tooltip']").length);
+
+        $("#colapsador").click(function(){
+            var $elem = $(this);
+            var open = $('i', this).hasClass('fa-chevron-left');
+            if ( open ) {
+
+                $('i', this).removeClass('fa-chevron-left').addClass('fa-chevron-right');
+                $("#MenuLateral").removeClass('col-md-12 col-xl-2').addClass("w-5");
+                $("#CenterContent").removeClass('col-md-12 col-xl-10').addClass("w-95");
+                $("#barra-lateral").removeClass('d-block').addClass("d-none");
+                $("#btn_consulta").removeClass('d-none').addClass("d-block");
+                $elem.removeClass('abierto').addClass("cerrado");
+
+            } else {
+
+                $('i', this).removeClass('fa-chevron-right').addClass('fa-chevron-left');
+                $("#MenuLateral").removeClass("w-5").addClass('col-md-12 col-xl-2');
+                $("#CenterContent").removeClass("w-95").addClass('col-md-12 col-xl-10');				
+                $("#barra-lateral").removeClass('d-none').addClass("d-block");
+                $("#btn_consulta").removeClass('d-block').addClass("d-none");
+                $elem.removeClass("cerrado").addClass('abierto');
+            }
+        });
+    });
+</script>
+
+
+
+<script language="JavaScript">
+ 
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+if (restore) selObj.selectedIndex=0;
+}
+ 
+</script> 
+<script>
+    $(function () {        
+        console.log("Desde el include " + $("[data-toggle='tooltip']").length);
+        $("[data-toggle='tooltip']").tooltip();
+        /*$("[data-toggle='tooltip']").each(function(){
+            console.log(this.id);
+        });*/
     })
 </script>
+ 
