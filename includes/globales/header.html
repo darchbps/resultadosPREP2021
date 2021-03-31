@@ -21,7 +21,10 @@
                         </li>
                         <li class="pl-3 pr-3 modo-dark borde-izq-solido dis-flex">
                             <span class="claro">Claro</span>
-                            <label for="modo_dia_y_noche" class="switch margin-r-40 margin-b-0"><input type="checkbox" id="modo_dia_y_noche" value="Modo día o noche" aria-label="Modo día o noche" /><span class="slider round"></span></label>
+                            <label for="modo_dia_y_noche" class="switch margin-r-40 margin-b-0">
+                                <input type="checkbox" id="modo_dia_y_noche" value="Modo día o noche" aria-label="Modo día o noche" />
+                                <span class="slider round" id="mode-dark"></span>
+                            </label>
                             <span class="obscuro">Oscuro</span>
                         </li>
                     </ul>
@@ -169,6 +172,15 @@
 
 <script>
 $(document).ready(function () {
+
+    $("#mode-dark").click(function(){
+        //alert('paso');
+        if ( $("#style-dark").length === 0 )
+            $('head').append('<link rel="stylesheet" id="style-dark" href="css/dark-01.css" type="text/css" />');
+        else
+            $("#style-dark").remove();
+    });
+
   $("#range-slider").on("input change", function () {
     // $("h1, h2, h3, h4, h5, h6, p, .title, .titulo, .subtitulo, span, li, ul, a").css("font-size", $(this).val() + 'px');
     var setVal = parseInt($(this).val(), 10)
