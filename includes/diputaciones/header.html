@@ -6,12 +6,25 @@
                     <ul class="dis-flex justify-e m-0 p-1">
                         <a href="preguntasfrecuentes.html"> <li   class="pl-3 pr-3 cursorPointer" tabindex="0"><i aria-hidden="true" class="fas fa-question-circle"></i> Preguntas frecuentes</li></a>
                         <li class="pl-3 pr-3 borde-izq-solido"><i aria-hidden="true" class="fas fa-info-circle"></i> Centro de Ayuda</li>
-                        <li class="pl-3 pr-3 tamanio-fuente borde-izq-solido dis-flex">
-                            <span class="minimo">A</span><input type="range" id="customRange1" class="input-rango" /><span class="maximo"><strong>A</strong></span>
+                        <li class="pl-3 pr-3 tamanio-fuente borde-izq-solido dis-flex item-tamanio-fuente">
+                            <span class="minimo item-tamanio-fuente">A</span>
+
+                            <input type="range"
+                            id="range-slider"
+                            class="input-rango item-tamanio-fuente"
+                            min="14"
+                            max="18"
+                            value="16"
+                            />
+
+                            <span class="maximo item-tamanio-fuente"><strong>A</strong></span>
                         </li>
                         <li class="pl-3 pr-3 modo-dark borde-izq-solido dis-flex">
                             <span class="claro">Claro</span>
-                            <label for="modo_dia_y_noche" class="switch margin-r-40 margin-b-0"><input type="checkbox" id="modo_dia_y_noche" value="Modo día o noche" aria-label="Modo día o noche" /><span class="slider round"></span></label>
+                            <label for="modo_dia_y_noche" class="switch margin-r-40 margin-b-0">
+                                <input type="checkbox" id="modo_dia_y_noche" value="Modo día o noche" aria-label="Modo día o noche" />
+                                <span class="slider round" id="mode-dark"></span>
+                            </label>
                             <span class="obscuro">Oscuro</span>
                         </li>
                     </ul>
@@ -156,3 +169,53 @@
         </div>
     </div>
 </header>
+
+<script>
+    $(document).ready(function () {
+    
+        $("#mode-dark").click(function(){
+            //alert('paso');
+            if ( $("#style-dark").length === 0 )
+                $('head').append('<link rel="stylesheet" id="style-dark" href="css/dark-02.css" type="text/css" />');
+            else
+                $("#style-dark").remove();
+        });
+    
+      $("#range-slider").on("input change", function () {
+        // $("h1, h2, h3, h4, h5, h6, p, .title, .titulo, .subtitulo, span, li, ul, a").css("font-size", $(this).val() + 'px');
+        var setVal = parseInt($(this).val(), 10)
+        console.log(setVal);
+        if ( setVal < 14 || setVal > 18 ) {
+    
+            return;
+        }
+        
+        var size;
+    
+        $("h1, h2, h3, h4, h5, h6, p, .title, .titulo, .subtitulo, span, li, ul, a").each(function(){
+    
+            var $elem = $(this);   
+    
+            if ( ! $elem.hasClass('item-tamanio-fuente') ) {
+                
+                if ( ! $elem.attr('font-size-origin') ) {
+    
+                    $elem.attr('font-size-origin', $elem.css("font-size"));
+                    console.log( $elem.attr('font-size-origin') );
+                }
+                size = ( setVal - 16 ) + parseInt($elem.attr('font-size-origin'), 10);
+                //console.log( $elem.css("font-size"), size, setVal );
+                $elem.css("font-size", size + "px");
+    
+            } /*else {
+     
+                console.log("no: " + $elem.attr('class'));
+            }*/
+        });
+        
+        //change span value
+       // $(".value").text($(this).val() + "px");
+      });
+    });
+    </script>
+    
