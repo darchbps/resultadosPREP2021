@@ -50,7 +50,7 @@ body {
   line-height: 1.5;*/
   color: #e2e2e2;
   /*text-align: left;*/
-  background-color: #1d1d1d; }
+  background-color: #121212; }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important; }
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; */}
-
+/*
 h1, .h1 {
   font-size: 2.5rem; }
 
@@ -311,7 +311,7 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem; }
-/*
+ 
 .lead {
   font-size: 1.25rem;
   font-weight: 300; }
@@ -7181,8 +7181,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .cards-avance {
       background: #2c2c2c;
-      box-shadow: 0px 3px 3px #0000FF;
-      border: 1px solid #2c2c2c;
+     /* box-shadow: 0px 3px 3px #0000FF;
+      border: 1px solid #2c2c2c;*/
       min-height: 85px;
   }
 
@@ -7204,11 +7204,12 @@ a.text-dark:hover, a.text-dark:focus {
   } 
   
   .encabezado {
-      background: #1d1d1d;
+      background: #1d1d1d !important;
   } 
   
   .bgGrisTenue {
-      background: #1d1d1d;
+      /*background: #1d1d1d;*/
+      background:#121212
   }
 
   .fondoGrafica {
