@@ -8108,6 +8108,37 @@ a.text-dark:hover, a.text-dark:focus {
   color: #e2e2e2;
 }
 
+ 
 
-fill: rgb(34, 34, 34);
+.tarjeta {
+  background-color: #363636;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+
+.dip-migrante-block{
+  border: solid 2px #d1308a;
+  background-image: url("../assets/img/generales/mapa-puntos-dark.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ 
+
+.btn-azul {
+  background: #E58AC9 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  color: #fff;
+}
+
+
+ 
+.mundo { 
+  background-image: url("../assets/img/iconos-visualiza/world-white.svg");
+  height:40px;
+  width: 40px;
+  align-self:center;
+  display: inline-block;
+}
 

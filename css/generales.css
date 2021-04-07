@@ -157,3 +157,23 @@ body {
  
 
 .table-header{background-color: #23233E !important; color: #fff!important;}
+
+
+
+.dip-migrante-block{
+	border: solid 2px #d1308a;
+	background-image: url("../assets/img/generales/mapa-puntos.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+  
+
+  .mundo { 
+	background-image: url("../assets/img/iconos-visualiza/world.svg");
+	height:40px;
+  width: 40px;
+  align-self:center;
+  display: inline-block;
+ 
+  }
+  
