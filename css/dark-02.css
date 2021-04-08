@@ -7651,16 +7651,16 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1em;
  }
   .visualizar .selector {
-    background: #e1dfdf;
-    background: #f7f6f6;
+    background: #5E4358;
+    background: #5E4358;
     color: #bbbbc0;
     border-radius: 8px;
-    border: 1px solid #e1dfdf;
+    border: 1px solid #5E4358;
  }
   .visualizar .activo {
     background: #fff;
-    background: #181a2f;
-    color: #fff;
+    background: #C780B8;
+    color: #121212;
     box-shadow: 0px 3px 6px #000029;
  }
   .visualizar .activo.der {
@@ -7670,7 +7670,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-radius: 8px 0 0 8px;
  }
   .visualizar .selector .dis-flex:first-child {
-    border-right: 1px solid #e1dfdf;
+    border-right: 1px solid ##C780B8;
  }
   .visualizar .selector p {
     font-size: 0.75em;
@@ -8142,3 +8142,6 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-block;
 }
 
+span{ 
+  color: var(--light);
+}
