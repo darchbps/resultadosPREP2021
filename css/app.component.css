@@ -1,6 +1,11 @@
-.cuerpo {
+@media (min-width: 1200px) {
+      
+   .cuerpo {
     padding-top: 174px;
+  }
 }
+
+
 
 .altoAvance {
     height: 17vh;
@@ -12,3 +17,15 @@
         height: 20vh;
     }
 }
+
+
+
+
+
+@media (max-width: 1199px) {
+   
+    .cuerpo {
+      padding-top: 84px;
+    }
+  
+    }
