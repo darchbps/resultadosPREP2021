@@ -27,7 +27,6 @@
 	 color: #962464;
 	 font-size: 3.5em;
 }
-
  .base-datos {
 	 font-size: 16px;
 	 font-family: 'Roboto-Regular', sans-serif;
@@ -40,30 +39,8 @@
 	 background: #962464 !important;
 }
  .titulobase {
-	 font-size: 45px;
-	 font-family: 'Roboto-Bold', sans-serif;
-}
- .subtitulo {
 	 font-size: 35px;
-	 font-family: 'Roboto-Medium', sans-serif;
-}
- .texto-22 {
-	 font-size: 22px;
-}
- .texto-20 {
-	 font-size: 20px;
-}
- .p-l {
-	 padding-left: 150px;
-}
- .p-l-2 {
-	 padding-left: 100px;
-}
- .fila-titulo {
-	 font-size: 18px;
-}
- .fila {
-	 padding-left: 20px;
+	 font-family: 'Roboto-Bold', sans-serif;
 }
  .img-descargar {
 	 width: 100%;
